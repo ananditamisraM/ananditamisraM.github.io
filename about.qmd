@@ -2,23 +2,24 @@
 title: "About Me"
 ---
 
-
 ### Hi there, my name is Anandita!
 
 <p align="center">
-  <img src="Subject2.png" alt="Alt text" width="768" height="720">
+
+<img src="Subject2.png" alt="Alt text" width="768" height="720"/>
+
 </p>
 
-
 ## My intellectual interests!
+
 \
-Driven by a curiosity to study the intricacies of human behavior combined with my growing understanding of established theories of choice and decision-making, I am actively seeking opportunities to engage in research and analysis within the field. \
+Driven by a curiosity to study the intricacies of human behavior combined with my growing understanding of established theories of choice and decision-making, I am actively seeking opportunities to engage in research and analysis within the field.\
 \
-Passion combined with a belief in discipline, honest work, and regularity has made me strive for excellence and embrace every opportunity for growth. This kind of intensity has always made sense to me because these were the choices and resources presented to me since the beginning. \
+Passion combined with a belief in discipline, honest work, and regularity has made me strive for excellence and embrace every opportunity for growth. This kind of intensity has always made sense to me because these were the choices and resources presented to me since the beginning.\
 Excited and ready for the journey ahead at NUS and beyond with the same values and to combine my passion with my personal growth to understand the choices and resources presented to other people that are different from mine.\
 \
 
-I strive to be human-centric in every pursuit- the following summarises what I feel about being human-centric or user-centric. 
+I strive to be human-centric in every pursuit- the following summarises what I feel about being human-centric or user-centric.
 
 ```{mermaid}
 flowchart LR
@@ -29,15 +30,8 @@ flowchart LR
   D --> F[Maximum Impact]
 ```
 
-
-
-
-
-
-
 ## A bit more about me
-In less than a year, I have fallen in love with Singapore\'s environment in general and the positivity and satisfaction it offers to me as an individual. I love to write and have recently restarted my pet project- my blog to share insights and experiences about economics of everyday things, life in Singapore, academics, etc- https://ananditamisra.wordpress.com/\
+
+In less than a year, I have fallen in love with Singapore's environment in general and the positivity and satisfaction it offers to me as an individual. I love to write and have recently restarted my pet project- my blog to share insights and experiences about economics of everyday things, life in Singapore, academics, etc- https://ananditamisra.wordpress.com/\
 \
 Feel free to reach out to share insights, engage in meaningful conversations, discuss opportunities, or even talk about life in Singapore
-
-
