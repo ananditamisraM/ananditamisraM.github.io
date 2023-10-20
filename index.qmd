@@ -1,13 +1,34 @@
 ---
-title: "ananditamisraM.github.io"
+title: "Anandita Misra"
+about:
+  id: hero-heading
+  template: trestles
+  image: Subject.png
+  image-width: 30em
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
 
 
+:::{#hero-heading}
+
+## Who is Anandita?
+Anandita Misra is an Economics student at NUS. She has keen interest and great belief in the applicative powers of behavioral economics for social impact and in influencing us to make better choices day in and day out. Her goal is to contribute to the development of effective strategies that empower individuals to make better choices.
+
+## Education
+
+**Scottish High International School** | Gurgaon, India
+ISC Board | April 2008 - May 2022
+
+**National University of Singapore** | Singapore
+Bsc in Economics | August 2022 - Present
+
+## Experience
+
+Wengo Analytics | Head Data Scientist | April 2018 - present
+
+GeoScynce | Chief Analyst | Sept 2012 - April 2018
+
+:::
+
+##### Click on "About Me" tab to know about me! 
+##### Click on "Github" tab to access my Github!

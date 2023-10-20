@@ -4,16 +4,17 @@ project:
   
 
 website:
-  title: "Hello, this is Anandita's website!"
+  title: "My Personal Homepage"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - UsefulLinks.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: "litera"
     css: styles.css
     toc: true
 
