@@ -1,0 +1,33 @@
+---
+title: "Placeholders Sample"
+---
+
+Integration of the Shiny App was done on the tab- 'Data Story Visualizations'- a sample to show that integration code worked for me. 
+
+<Here are the examples of how the placeholders will be put- I will put the placeholders here and in each placeholder the visualization as in the tab of "Data Story Visualizations".  In this textbox, I will be putting the description of the overarching topic>
+
+### Visualization 1
+#### Description of the question (brief)
+
+<Visualization>
+
+#### Write-up explaining what was insightful from the visualization
+<small image related to the visualization>
+
+### Visualization 2
+#### Description of the question (brief)
+
+<Visualization>
+
+#### Write-up explaining what was insightful from the visualization
+
+### Visualization 3
+#### Description of the question (brief)
+
+<Visualization>
+
+#### Write-up explaining what was insightful from the visualization
+
+
+#### Overall story 
+#### I will add the writeup for importance of the story here and why is it interesting and how relevant it is. Final statsitics will be added here to create emphasis. 

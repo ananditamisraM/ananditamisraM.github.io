@@ -11,9 +11,29 @@ editor: visual
 ###<Visualization No.1>
 ####<Brief significance of the visualization>
 
-```{block}
+```{html}
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
+```
+
+###<Visualization No.2>
+####<Brief significance of the visualization>
+
+```{html}
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
+```
+
+###<Visualization No.3>
+####<Brief significance of the visualization>
+
+```{html}
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
 ```
 
 
+###<Visualization No.4>
+####<Brief significance of the visualization>
+
+```{html}
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
+```
 

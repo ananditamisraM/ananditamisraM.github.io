@@ -88,7 +88,7 @@
     "href": "hello.html",
     "title": "Data Story Visualizations",
     "section": "",
-    "text": "&lt;Description of the topic here&gt;"
+    "text": "&lt;Description of the topic here&gt;\n###&lt;Visualization No.1&gt; ####\n&lt;iframe height=\"400\" width=\"100%\" frameborder=\"no\" src=\"https://ananditamisram.shinyapps.io/ShinyApp/\"&gt; &lt;/iframe&gt;\n###&lt;Visualization No.2&gt; ####\n&lt;iframe height=\"400\" width=\"100%\" frameborder=\"no\" src=\"https://ananditamisram.shinyapps.io/ShinyApp/\"&gt; &lt;/iframe&gt;\n###&lt;Visualization No.3&gt; ####\n&lt;iframe height=\"400\" width=\"100%\" frameborder=\"no\" src=\"https://ananditamisram.shinyapps.io/ShinyApp/\"&gt; &lt;/iframe&gt;\n###&lt;Visualization No.4&gt; ####\n&lt;iframe height=\"400\" width=\"100%\" frameborder=\"no\" src=\"https://ananditamisram.shinyapps.io/ShinyApp/\"&gt; &lt;/iframe&gt;"
   },
   {
     "objectID": "hello.html#quarto",
@@ -109,6 +109,6 @@
     "href": "hello.html#placeholders-for-data-story-final-title-here",
     "title": "Data Story Visualizations",
     "section": "",
-    "text": "&lt;Description of the topic here&gt;"
+    "text": "&lt;Description of the topic here&gt;\n###&lt;Visualization No.1&gt; ####\n&lt;iframe height=\"400\" width=\"100%\" frameborder=\"no\" src=\"https://ananditamisram.shinyapps.io/ShinyApp/\"&gt; &lt;/iframe&gt;\n###&lt;Visualization No.2&gt; ####\n&lt;iframe height=\"400\" width=\"100%\" frameborder=\"no\" src=\"https://ananditamisram.shinyapps.io/ShinyApp/\"&gt; &lt;/iframe&gt;\n###&lt;Visualization No.3&gt; ####\n&lt;iframe height=\"400\" width=\"100%\" frameborder=\"no\" src=\"https://ananditamisram.shinyapps.io/ShinyApp/\"&gt; &lt;/iframe&gt;\n###&lt;Visualization No.4&gt; ####\n&lt;iframe height=\"400\" width=\"100%\" frameborder=\"no\" src=\"https://ananditamisram.shinyapps.io/ShinyApp/\"&gt; &lt;/iframe&gt;"
   }
 ]
