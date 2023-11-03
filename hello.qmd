@@ -1,0 +1,19 @@
+---
+title: "Data Story Visualizations"
+format: html
+editor: visual
+---
+
+## \<Placeholders for data story-Final Title here\>
+
+\<Description of the topic here\>
+
+###<Visualization No.1>
+####<Brief significance of the visualization>
+
+```{block}
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
+```
+
+
+

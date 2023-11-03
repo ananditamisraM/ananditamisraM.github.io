@@ -11,6 +11,8 @@ website:
         text: Home
       - about.qmd
       - UsefulLinks.qmd
+      - hello.qmd
+    
 
 format:
   html:

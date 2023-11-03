@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Anandita Misra",
     "section": "",
-    "text": "Anandita Misra is an Economics student at NUS. She has keen interest and great belief in the applicative powers of behavioral economics for social impact and in influencing us to make better choices day in and day out. Her goal is to contribute to the development of effective strategies that empower individuals to make better choices.\n\n\n\nScottish High International School | Gurgaon, India ISC Board | April 2008 - May 2022\nNational University of Singapore | Singapore Bsc in Economics | August 2022 - Present\n\n\n\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
+    "text": "Anandita Misra is an Economics student at NUS. She has keen interest and great belief in the applicative powers of behavioral economics for social impact and in influencing us to make better choices day in and day out. Her goal is to contribute to the development of effective strategies that empower individuals to make better choices.\n\n\n\nScottish High International School | Gurgaon, India ISC Board | April 2008 - May 2022\nNational University of Singapore | Singapore Bsc in Economics | August 2022 - Present\n\n\n\nFASS Club- Community Engagement Director| August, 2022- Present\nImpact Society Executive| August, 2022- Present"
   },
   {
     "objectID": "about.html",
@@ -32,7 +32,7 @@
     "href": "about.html#a-bit-more-about-me",
     "title": "About Me",
     "section": "A bit more about me",
-    "text": "A bit more about me\nIn less than a year, I have fallen in love with Singapore's environment in general and the positivity and satisfaction it offers to me as an individual. I love to write and have recently restarted my pet project- my blog to share insights and experiences about economics of everyday things, life in Singapore, academics, etc- https://ananditamisra.wordpress.com/\n\nFeel free to reach out to share insights, engage in meaningful conversations, discuss opportunities, or even talk about life in Singapore"
+    "text": "A bit more about me\nIn less than a year, I have fallen in love with Singapore’s environment in general and the positivity and satisfaction it offers to me as an individual. I love to write and have recently restarted my pet project- my blog to share insights and experiences about economics of everyday things, life in Singapore, academics, etc- https://ananditamisra.wordpress.com/\n\nFeel free to reach out to share insights, engage in meaningful conversations, discuss opportunities, or even talk about life in Singapore"
   },
   {
     "objectID": "index.html#education",
@@ -46,14 +46,14 @@
     "href": "index.html#experience",
     "title": "Anandita Misra",
     "section": "",
-    "text": "Wengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
+    "text": "FASS Club- Community Engagement Director| August, 2022- Present\nImpact Society Executive| August, 2022- Present"
   },
   {
     "objectID": "UsefulLinks.html",
     "href": "UsefulLinks.html",
     "title": "Useful Links",
     "section": "",
-    "text": "Find the link to my GitHub here!"
+    "text": "Find the link to my GitHub here!\nNM2207 - Week-1 to Week-9- Code Alongs + Challenges - Go to GitHub Folder"
   },
   {
     "objectID": "index.html#who-is-anandita",
@@ -61,5 +61,54 @@
     "title": "Anandita Misra",
     "section": "",
     "text": "Anandita Misra is an Economics student at NUS. She has keen interest and great belief in the applicative powers of behavioral economics for social impact and in influencing us to make better choices day in and day out. Her goal is to contribute to the development of effective strategies that empower individuals to make better choices."
+  },
+  {
+    "objectID": "UntitledQMD.html",
+    "href": "UntitledQMD.html",
+    "title": "Useful Links",
+    "section": "",
+    "text": "Find the link to my GitHub here!\nNM2207 - Week-1 to Week-9- Code Alongs + Challenges - Go to GitHub Folder"
+  },
+  {
+    "objectID": "Week-9_Submission.html",
+    "href": "Week-9_Submission.html",
+    "title": "Week-10 Submission",
+    "section": "",
+    "text": "The topic that I have chosen is Sockonomics Unveiled:This investigation explores the impact of missing socks in U.S. laundry between 2000-2019 on household finances, shedding light on how this seemingly trivial, unrelated and very bizarre issue can affect both current income and allocation of future expenses of households in the U.S. We evaluate the decrease in current income and change in allocation of future expenses.\n\n\n\n1- The data sources curated so far are from Kaggle on personal expenditures in the U.S. by State from 1997-2019- https://www.kaggle.com/code/davidbroberts/us-personal-expenditures-1997-2019. There is also a data source from Data.gov which provides data on expenditures, income and demographic characteristics of consumers in the U.S. It provides it in different forms which I have accessed from here- https://catalog.data.gov/dataset/consumer-expenditure-survey-dbf32 . These will tell me how much of income on average of a typical household in U.S. is allocated to clothing.\n2- The third data source is Statista from where I have accessed Average annual expenditure on laundry and cleaning supplies per consumer unit in the United States from 2007 to 2022 https://www.statista.com/statistics/305499/us-expenditure-on-laundry-and-cleaning-supplies/.\n3- To see the percentage of socks within the apparel expenditure, I have accessed- https://www.statista.com/topics/965/apparel-market-in-the-us/#topicOverview from Statista on the different categories of expenditure that make up the U.S. Apparel Market."
+  },
+  {
+    "objectID": "Week-9_Submission.html#challenges-and-errors",
+    "href": "Week-9_Submission.html#challenges-and-errors",
+    "title": "Week-10 Submission",
+    "section": "Challenges and Errors:",
+    "text": "Challenges and Errors:\nThe main challenge in this investigation to find relevant accurate data from surveys conducted. Collecting data on missing socks and their financial or economic impact is challenging. It is difficult to distinguish the direct impact of missing socks from other factors affecting household finances and amongst laundry-related variables like the types of wash, or the positivity towards wash. We are taking these as constant to avoid confusion. We also have to make estimations or take an average number in order to provide a clear pathway of cause-effect of only lost socks on current and future expenditure and no other variable. We make an estimation of the number of socks washed per week from the number of socks owned and take averages like the average price of all types of socks from CPI- Consumer Price Index.\nFurthermore, the dataset used does not specifically include a column for “missing socks.” Therefore, it is necessary to use proxy variables or devise a methodology to estimate the financial effect which we did through the sock loss formula.\nTo ensure the accuracy of results, we need to account for potential errors, such as missing or partial data in the surveys, and we extrapolate the survey information of an international audience into the average price of socks, average number of people in a household in US, the average total expenditure, we have to make an assumption to get a constant average number. We also have to figure out a way to take into account, from missing socks, the frequency of replacement socks in order to find an estimate of future expenditure."
+  },
+  {
+    "objectID": "hello.html",
+    "href": "hello.html",
+    "title": "Data Story Visualizations",
+    "section": "",
+    "text": "&lt;Description of the topic here&gt;"
+  },
+  {
+    "objectID": "hello.html#quarto",
+    "href": "hello.html#quarto",
+    "title": "hello",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "hello.html#running-code",
+    "href": "hello.html#running-code",
+    "title": "Data Story Visualizations",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "hello.html#placeholders-for-data-story-final-title-here",
+    "href": "hello.html#placeholders-for-data-story-final-title-here",
+    "title": "Data Story Visualizations",
+    "section": "",
+    "text": "&lt;Description of the topic here&gt;"
   }
 ]
