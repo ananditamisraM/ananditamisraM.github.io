@@ -4,36 +4,41 @@ format: html
 editor: visual
 ---
 
-## \<Placeholders for data story-Final Title here\>
+<Here are the examples of how the placeholders will be put- I will put the placeholders here and in each placeholder the visualization as in the tab of "Data Story Visualizations".  In this textbox, I will be putting the description of the overarching topic>
 
-\<Description of the topic here\>
+### Visualization 1
+###### *Description of the question (brief)*
 
-###<Visualization No.1>
-####<Brief significance of the visualization>
-
-```{html}
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
-```
-
-###<Visualization No.2>
-####<Brief significance of the visualization>
-
-```{html}
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
-```
-
-###<Visualization No.3>
-####<Brief significance of the visualization>
+<Visualization>
 
 ```{html}
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
 ```
 
 
-###<Visualization No.4>
-####<Brief significance of the visualization>
+Proof of integration- I was able to integrate before but suddenly, it started requiring python and jupyter- i installed the necessary packages, but was unable to integrate after that- no error also was showing up and hence, adding the image to show that i was able to integrate before
 
-```{html}
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
-```
 
+
+![Caption](Proof.png)
+
+###### *Write-up explaining what was insightful from the visualization*
+<small image related to the visualization>
+
+### Visualization 2
+###### *Description of the question (brief)*
+
+<Visualization>
+
+###### *Write-up explaining what was insightful from the visualization*
+
+### Visualization 3
+###### *Description of the question (brief)*
+
+<Visualization>
+
+###### *Write-up explaining what was insightful from the visualization*
+
+
+#### Overall story 
+#### *I will add the writeup for importance of the story here and why is it interesting and how relevant it is. Final statsitics will be added here to create emphasis.* 
