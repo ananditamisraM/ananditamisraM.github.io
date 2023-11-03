@@ -42,3 +42,13 @@ Proof of integration- I was able to integrate before but suddenly, it started re
 
 #### Overall story 
 #### *I will add the writeup for importance of the story here and why is it interesting and how relevant it is. Final statsitics will be added here to create emphasis.* 
+
+In the end, I will also be adding an overarching flowchart with all information summarised similar to what I have on the about page- 
+```{mermaid}
+flowchart LR
+  A[Right Intentions] --> D(Output)
+  B(Right Actions) --> D{Output}
+  C(Right Direction) --> D{Output}
+  D --> E[Minimum Effort]
+  D --> F[Maximum Impact]
+```
