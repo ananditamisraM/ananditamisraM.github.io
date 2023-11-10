@@ -11,17 +11,11 @@ title: "Data Story Visualizations"
 
 <Visualization>
 
-Proof of integration- I was able to integrate before but suddenly, it started requiring python and jupyter- i installed the necessary packages, but was unable to integrate after that- no error also was showing up and hence, adding the image to show that i was able to integrate before
-
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
-
-![Caption](Proof.png)
 
 ###### *Write-up explaining what was insightful from the visualization*
 
 <small image related to the visualization>
-
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
 
 ### Visualization 2
 
@@ -34,6 +28,27 @@ Proof of integration- I was able to integrate before but suddenly, it started re
 ###### *Write-up explaining what was insightful from the visualization*
 
 ### Visualization 3
+
+###### *Description of the question (brief)*
+
+<Visualization>
+
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
+
+###### *Write-up explaining what was insightful from the visualization*
+
+### Visualization 4
+
+###### *Description of the question (brief)*
+
+<Visualization>
+
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
+
+###### *Write-up explaining what was insightful from the visualization*
+
+
+### Visualization 5
 
 ###### *Description of the question (brief)*
 
