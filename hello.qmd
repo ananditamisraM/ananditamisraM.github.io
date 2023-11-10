@@ -23,56 +23,69 @@ Hence, the field is mostly dominated by men in terms of faculty members in unive
 
 ### Visualization 1
 
-###### *Description of the question (brief)*
+###### *What is the number of identified positions and senior positions of women by different types of institutions?*
 
 <Visualization>
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
 
 ###### *Write-up explaining what was insightful from the visualization*
+
+- senior positions will be a very small number as compared to the total identified positions- expand on that and why
+- different colours for the dots and bars and to be made interactive
+- this will overall be a bar graph with the dots shown on it (one point/dot for each bar since it is grouped by type of institution)
 
 <small image related to the visualization>
 
+<p align="center">
+
+<img src="misc.png" alt="Alt text" width="500" height="200"/>
+
+</p>
+
 ### Visualization 2
 
-###### *Description of the question (brief)*
+###### *What is the number of identified positions and senior positions of women by different regions of the world?*
 
 <Visualization>
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
 
 ###### *Write-up explaining what was insightful from the visualization*
+- is it only in the US or is it everywhere- graph will show accordingly 
+- again, dots for senior positions and bars for identified, bar graph and points for each bar grouped by institution 
+- trying to be made into a world map to show distribution of both identified positions and senior positions
 
 ### Visualization 3
 
-###### *Description of the question (brief)*
+###### *What is the difference in number of women at entry level and senior level?*
 
 <Visualization>
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
 
 ###### *Write-up explaining what was insightful from the visualization*
+- this will be a line graph and the colours of the lines will be different 
+- x-axis will be the region and the y-axis will be entry and senior level because we are showing the differences in region as well as the entry and senior level. the differences in entry and senior level number of women can be differentiated in different regions easily 
 
 ### Visualization 4
 
-###### *Description of the question (brief)*
+###### *What is the correlation between gender gap index and the share/number of women in the workforce?*
 
 <Visualization>
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
 
 ###### *Write-up explaining what was insightful from the visualization*
+- here the ranking effect will be talked about 
+- there will be two scatter plots- if that cannot be shown side by side then they will be shown separately
+- this will answer a bigger question if gender gap actually affects the number of women and hence, leading to glass ceiling and leaky pipelines phenomenon
 
+<p align="center">
 
-### Visualization 5
+<img src="misc2.png" alt="Alt text" width="500" height="200"/>
 
-###### *Description of the question (brief)*
-
-<Visualization>
-
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>
-
-###### *Write-up explaining what was insightful from the visualization*
+</p>
 
 #### Overall story
 
@@ -82,9 +95,21 @@ In the end, I will also be adding an overarching flowchart with all information 
 
 ```{mermaid}
 flowchart LR
-  A[Right Intentions] --> D(Output)
-  B(Right Actions) --> D{Output}
-  C(Right Direction) --> D{Output}
-  D --> E[Minimum Effort]
-  D --> F[Maximum Impact]
+  A[Social conditioning eliminated] --> D(Output)
+  B(Gender pay equality) --> D{Output}
+  C(More economic opportunities for women) --> D{Output}
+  D --> E[Economic growth potential]
+  D --> F[Labour efficiency]
 ```
+
+*Economic Growth Potential:*
+
+According to a report by McKinsey & Company, advancing women's equality and reducing the gender gap in the workplace could add $12 trillion to global GDP by 2025. There is a lot of potential in women who are getting educated and shifting to the workfield- it is important to recognize and utilize the potential to add to the labor productivity in the economy. 
+
+*Labor Market Efficiency:*
+According to the World Economic Forum's Global Gender Gap Report 2020,  reducing gender disparity in the workplace can improve labor market efficiency, contributing to economic growth.
+This means that workers should be allocated based on skills, qualifications and merit rather than gender/sex, resulting in more optimum use of human resources. This efficiency will then translate into greater productivity and economic growth, because companies and industries will operate at their full potential.
+
+
+*Reducing Income Inequality:*
+The gender pay gap remains a significant issue in all fields. In the United States, women earned about only 82 cents for each dollar earned by men in the year of 2020, according to the U.S. Bureau of Labor Statistics. The glass ceiling and leaky pipeline phenomenon often contribute to this gender wage gap. By addressing these two issues, we can actually work to reduce income inequality. By not holding women back in their careers due to social conditioning, by systemic changes in mindset, they can progress to higher-paying roles and it will have a direct impact on narrowing the gender pay gap. 
