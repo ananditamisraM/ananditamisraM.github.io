@@ -1,9 +1,25 @@
 ---
 title: "Data Story Visualizations"
 ---
+## The Glass Ceiling and Leaky Pipeline: Let’s talk about the gender inequality in the workforce. 
 
-\<Here are the examples of how the placeholders will be put- I will put the placeholders here and in each placeholder the visualization as in the tab of "Data Story Visualizations". In this textbox, I will be putting the description of the overarching topic\>
+##### Let's define terms
+The glass ceiling is a phenomenon that describes the existence of artificial barriers that slow down the growth of women in the workforce. These factors can be inherent such as the will for women to value personal life more than professional life with age, emotional inclination of women, or the social (gender-biased) conditioning such as the need to tend to domestic duties. They can also be external such as the gender pay gap, inequality in the workforce in terms of opportunities or the gender-biased discriminatory attitude of superiors towards their juniors in the field. 
 
+The leaky pipeline is a phenomenon that explains why women disappear as they move up the ranks in their respective fields like a leaky pipeline. There are less number of women at the higher ranks of different fields.
+
+##### Why Economics? 
+Although this type of gender gap/inequality exists for other fields as well, the inequality is much stronger for economics than in other social sciences. Most researchers at current do realize that women are underrepresented in STEM fields and thus, required measures are starting to be put in place. There is very slow growth for the same in economics and researchers and the general public at large are not aware of the gap in economics and how slow the change is taking place. The gender gap in economics also indicates some general bias in science since economics unlike other social sciences requires and relies heavily on analytical skills and mathematics and statistics. 
+
+It is important to note this gender gap because it is not only for women in the field who endure sexist policies and hostile behaviour but even government policies would be different if more women were involved in the committees who formulated them. Some famous economists even mentioned that “economics is the worst field to be a woman in.”  
+
+Hence, the field is mostly dominated by men in terms of faculty members in universities or positions in banks, etc, relative to the overall population and relative to other disciplines. 
+
+<p align="center">
+
+<img src="economic.png" alt="Alt text" width="768" height="720"/>
+
+</p>
 
 ### Visualization 1
 

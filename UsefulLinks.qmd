@@ -10,5 +10,4 @@ about:
 
 Find the link to my GitHub here!
 
-
 NM2207 - Week-1 to Week-9- Code Alongs + Challenges - [Go to GitHub Folder](https://github.com/ananditamisraM/NM2207.git)
