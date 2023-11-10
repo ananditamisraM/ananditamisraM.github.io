@@ -94,6 +94,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -159,6 +162,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#visualizations-to-be-used-" id="toc-visualizations-to-be-used-" class="nav-link" data-scroll-target="#visualizations-to-be-used-">Visualizations to be used-</a></li>
   <li><a href="#concepts-" id="toc-concepts-" class="nav-link" data-scroll-target="#concepts-">Concepts-</a></li>
   <li><a href="#challenges-faced" id="toc-challenges-faced" class="nav-link" data-scroll-target="#challenges-faced">Challenges faced</a></li>
+  </ul></li>
+  <li><a href="#week-12" id="toc-week-12" class="nav-link" data-scroll-target="#week-12">Week-12</a>
+  <ul class="collapse">
+  <li><a href="#topic-" id="toc-topic-" class="nav-link" data-scroll-target="#topic-">Topic-</a></li>
+  <li><a href="#challenge-" id="toc-challenge-" class="nav-link" data-scroll-target="#challenge-">Challenge-</a></li>
+  <li><a href="#visualizations-description" id="toc-visualizations-description" class="nav-link" data-scroll-target="#visualizations-description">Visualizations (description)</a></li>
+  <li><a href="#more-challenges-and-errors-faced" id="toc-more-challenges-and-errors-faced" class="nav-link" data-scroll-target="#more-challenges-and-errors-faced">More challenges and errors faced</a></li>
+  <li><a href="#new-concepts-learnt-this-week-and-last-week" id="toc-new-concepts-learnt-this-week-and-last-week" class="nav-link" data-scroll-target="#new-concepts-learnt-this-week-and-last-week">New concepts learnt this week and last week</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -342,6 +354,143 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>It was difficult to learn how interactivity can be brought about- I searched for different graphs which were interactive so that I could have an idea of the possible ways to make it interactive- not in terms of how to do it but what features can be added. I have also added these graphs- this is the source- Yollin, B. (n.d.). Interactive charts in shiny. https://byollin.github.io/RInteractiveCharts/#20</p></li>
 <li><p>It is difficult to combine the columns of colour and breed to take both into account together in the heatmap. For that, a new column must be created of colour plus breed and can be shown along years. What we can also do to fix this challenge, is take colour on one axis and breed on another axis on the heatmap- choosing a heatmap helps solve the problem to a large extent instead of getting complex with data.</p></li>
 </ul>
+</section>
+</section>
+<section id="week-12" class="level2">
+<h2 class="anchored" data-anchor-id="week-12">Week-12</h2>
+<section id="topic-" class="level3">
+<h3 class="anchored" data-anchor-id="topic-">Topic-</h3>
+<p>After talking to the tutor and Professor, in order to make the topic more challenging to work with for more challenging scope and effort, I changed my topic to study the glass ceiling and leaky pipeline phenomenon. The datasets for the previous topic were clean and straightforward- I was able to use all the variables in 2-3 graphs and hence, I had either the option of adding more datasets for prediction or choosing a new topic. The topic of dog breed and colour popularity that I was working on had much less scope for any type of prediction and interactivity and even if there did exist scope, it was not very interesting topic to explore for the user or the viewer. Hence, I chose a more interesting as well as informative topic. My modified topic is as follows- The glass ceiling and leaky pipeline: Let’s talk about the gender inequality in the workforce.</p>
+<p>The glass ceiling is a phenomenon that describes the existence of artificial barriers that slow down the growth of women in the workforce. These factors can be inherent such as the will for women to value personal life more than professional life with age, emotional inclination of women, or the social (gender-biased) conditioning such as the need to tend to domestic duties. They can also be external such as the gender pay gap, inequality in the workforce in terms of opportunities or the gender-biased discriminatory attitude of superiors towards their juniors in the field.</p>
+<p>The leaky pipeline is a phenomenon that explains why women disappear as they move up the ranks in their respective fields like a leaky pipeline. There are less number of women at the higher ranks of different fields.</p>
+<p>I will be examining this question and phenomenon in the United States. I was able to find datasets for the country because the required survey has been conducted there for economics. I wish to explore the phenomenon for the field of economics. Although this type of gender gap/inequality exists for other fields as well, the inequality is much stronger for economics than in other social sciences. Hence, out of social sciences, I chose economics. The reason why I did not choose any field outside of social sciences such as STEM is because most researchers at current do realize that women are underrepresented in STEM fields and thus, required measures are starting to be put in place. There is very slow growth for the same in economics and researchers and the general public at large are not aware of the gap in economics and how slow the change is taking place. The gender gap in economics also indicates some general bias in science since economics unlike other social sciences requires and relies heavily on analytical skills and mathematics and statistics.</p>
+<p>It is important to note this gender gap because it is not only for women in the field who endure sexist policies and hostile behaviour but even government policies would be different if more women were involved in the committees who formulated them. Some famous economists even mentioned that “economics is the worst field to be a woman in.”</p>
+<p>Hence, the field is mostly dominated by men in terms of faculty members in universities or positions in banks, etc, relative to the overall population and relative to other disciplines. Why is this topic important (alongwith evidence statistics):-</p>
+<p>Economic Growth Potential:</p>
+<p>According to a report by McKinsey &amp; Company, advancing women’s equality and reducing the gender gap in the workplace could add $12 trillion to global GDP by 2025. There is a lot of potential in women who are getting educated and shifting to the workfield- it is important to recognize and utilize the potential to add to the labor productivity in the economy.</p>
+<p>Labor Market Efficiency: According to the World Economic Forum’s Global Gender Gap Report 2020, reducing gender disparity in the workplace can improve labor market efficiency, contributing to economic growth. This means that workers should be allocated based on skills, qualifications and merit rather than gender/sex, resulting in more optimum use of human resources. This efficiency will then translate into greater productivity and economic growth, because companies and industries will operate at their full potential.</p>
+<p>Reducing Income Inequality: The gender pay gap remains a significant issue in all fields. In the United States, women earned about only 82 cents for each dollar earned by men in the year of 2020, according to the U.S. Bureau of Labor Statistics. The glass ceiling and leaky pipeline phenomenon often contribute to this gender wage gap. By addressing these two issues, we can actually work to reduce income inequality. By not holding women back in their careers due to social conditioning, by systemic changes in mindset, they can progress to higher-paying roles and it will have a direct impact on narrowing the gender pay gap.</p>
+</section>
+<section id="challenge-" class="level3">
+<h3 class="anchored" data-anchor-id="challenge-">Challenge-</h3>
+<p>Switching to this topic was difficult since it was difficult finding datasets for the above topic. There were statistics available but no full datasets but at last I was able to find. However, the datasets that I have found were showing up distorted and although different columns could be seen on the Numbers application of mac, the csv file that was being read onto r studio could show that it contained only one column.</p>
+<p>Since the data was separated by semi-colon, I used the following code-</p>
+<p>newCol2&lt;- as.data.frame(do.call(rbind, strsplit(as.character(new2_data$<code>rank_toplist;institution;country;identified_positions;senior_positions;state_time;institution_classification;female_ratio;female_ratio_senior_positions;main_data_set;world_region</code>),“;”,fixed=TRUE)))</p>
+<p>However, once I started working on the visualizations using the data sets, I realized I was not getting the required graphs despite correct code. Hence, when I viewed the new datasets more clearly, despite using the above code, due to the blanks or missing values, the column values were mixing up into other columns. Hence, I decided to remove all the missing values. In order to not make my dataset smaller by deleting many observations with missing values, I decided to remove certain variables which had missing values which were making my dataset smaller but were not important- for example, since the variable “country” was already present, I decided to remove “state” since I was looking at the data country-wise.</p>
+<p>After cleaning the dataset as such, I was able to get a proper format of the datasets on r studio.</p>
+</section>
+<section id="visualizations-description" class="level3">
+<h3 class="anchored" data-anchor-id="visualizations-description">Visualizations (description)</h3>
+<p>I have in total 4 datasets.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"ss1.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ss1.png" width="800" height="400" class="figure-img"></p>
+<figcaption class="figure-caption">Insert caption here</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"ss2.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ss2.png" width="800" height="400" class="figure-img"></p>
+<figcaption class="figure-caption">Insert caption here</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"ss3.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ss3.png" width="800" height="400" class="figure-img"></p>
+<figcaption class="figure-caption">Insert caption here</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"ss4.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ss4.png" width="800" height="400" class="figure-img"></p>
+<figcaption class="figure-caption">Insert caption here</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Following are the details of the visualizations I will create using them-</p>
+<p>The first visualization is the simplest one and it is not a part of the main visualizations I wish to create per se. It is just a graph to show why I have chosen the field of economics for my study-</p>
+<p>The new thing I learnt from outside the class was to build a bar plot with bars of two categories side by side. I am yet to figure out how to differentiate them with different colours since I am trying it with scale_fill_manual but it is not working. I build a bar plot using the pivot longer function before using ggplot. This visualization will be using the dataset- sample_edited.csv. Following are the variables used-</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"economic.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="economic.png" width="800" height="400" class="figure-img"></p>
+<figcaption class="figure-caption">Insert caption here</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"economic2.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="economic2.png" width="800" height="400" class="figure-img"></p>
+<figcaption class="figure-caption">Insert caption here</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The second one is an important one- it will be a bar plot and it shows the identified positions of women in the different types of institutions such as university, bank, business school, etc. Hence, I have to group data by “institution_classification” so that I get aggregate number of “identified_positions” for each type. In this graph, I would also add the points which indicate the number of “senior_positions” within the identified positions which is also a new concept to learn. This will be interactive by converting the ggplot to an interactive shiny app simply. This visualization will be using the dataset 2- sample2_updated.csv.</p>
+<p>Since I am also focusing on the regions of Europe, US and the rest of the world, I want to show the same classification of “identified_positions” for each type of institution and the number of “senior_positions” in a bar plot as above but here, it would be showing the region-wise distribution of women. This visualization will be using the dataset 2- sample2_updated.csv. I also am trying to make this into a world map since it covers regions and gives me an opportunity to utilise a more helpful visual aid to show the distribution of “identified_positions” and “senior_positions”.</p>
+<p>The third visualization will take all institutions and identify the position occupied by women- such as entry level, senior level. This will be a crucial graph to show the leaky pipeline and compare the female ratio, grouped by country region- europe, US and the rest of the world. This will be a line graph to show two lines of senior level and entry level, and the “country” on the x-axis. This will use the dataset 1- sample1_updated.csv. The variables used will be- “country” and “level” and “female_ratio”.</p>
+<p>The fourth visualization will be two scatter plots with regression lines shown- the scatter plot is to show whether there is any relationship between the share of women in the field of economics and the gender gap index. For this I would use the 3rd dataset- sample3_updated.csv from where I will use the variable- “rank_gender_gap_index” for each country, form a new dataset so as to include the share of women in each country from dataset 2- sample2_updated.csv. In the dataset 2, I will have to group and sum “identified_positions” by the “country”.</p>
+<p>One scatter plot will be as above, and the other one will replace “identified_positions” by “senior_positions”. This will further highlight the glass ceiling and leaky pipeline phenomenon by showing the general share of women for the glass ceiling phenomenon and the senior position share for the leaky pipeline phenomenon. Both of these plots will be simply converted to be interactive by converting the ggplot to interactive shiny visualization.</p>
+</section>
+<section id="more-challenges-and-errors-faced" class="level3">
+<h3 class="anchored" data-anchor-id="more-challenges-and-errors-faced">More challenges and errors faced</h3>
+<p>Apart from scraping the old topic to decide quickly on the above topic and finalising the visualizations, I faced the following challenges and errors-</p>
+<p>There was a big challenge in integrating the shiny interactive app onto the quarto website. I tried putting {html} and {block} as well but r was not able to identify a symbol. There was an unexpected token “&lt;”. After multiple attempts of copying the code and writing it again and again, and sitting with the professor and tutor in the project help session, integration was successful but all of us have yet not been able to identify the error. We separated all other content and then tried it again and it was successful. We created a separate document for it also- an empty one, to remove all other codes + content, but it was still not working. There was a problem in the detection of the symbol. BUt, once we changed the other content and removed certain problematic symbols from the other content, we were able to solve the problem.</p>
+</section>
+<section id="new-concepts-learnt-this-week-and-last-week" class="level3">
+<h3 class="anchored" data-anchor-id="new-concepts-learnt-this-week-and-last-week">New concepts learnt this week and last week</h3>
+<ul>
+<li>To create a bar plot with two bars for each x-value to show side-by-side for two years</li>
+<li>To use pivot_longer to create a graph in order to group identified positions by institution type in the bar plot and also, add points to indicate another variable- the number of senior positions on the same graph.</li>
+<li>To create a manual flowchart on the quarto website- as follows-</li>
+<li>Adding a new tab or page to Quarto Website</li>
+<li>Choosing a custom template on website for image and text with a divider like on my “Home” tab for the web page</li>
+<li>Adding icons embedded with links on quarto website</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Right Intentions] --&gt; D(Output)
+  B(Right Actions) --&gt; D{Output}
+  C(Right Direction) --&gt; D{Output}
+  D --&gt; E[Minimum Effort]
+  D --&gt; F[Maximum Impact]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="next-steps" class="level3">
+<h3 class="anchored" data-anchor-id="next-steps">Next Steps</h3>
+<p>The next steps to be taken are to finalise the errors in graph which is coming in case of colours, for the first graph. They have to be made interactive once everything is checked for the static graphs. Going forward, since I was able to create the static graphs, as well as add the interactive placeholders by integrating the shiny app on my quarto website, the last steps are to just convert the ggplot to shiny and finalise my final writeup and the flowchart that I have added after learning myself, to summarise the concept that I am trying to explain. I wish to use more features of interactivity and hence, will learn more types of options to make it interactive in the next 2 days so that I learn new concepts outside of the class, apart from the ones learnt till now since right now, I have simply converted my ggplot to shiny directly in the simple way to convert the ggplots to shiny app.</p>
 
 
 </section>
