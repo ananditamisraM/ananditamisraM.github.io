@@ -1,0 +1,668 @@
+﻿rank;level;female_ratio;country;state_us;geo_classification_europe_us
+1;All Positions;26.269316;United Kingdom of Great Britain and Northern Ireland;;Europe
+1;Entry Level;49.090908;United Kingdom of Great Britain and Northern Ireland;;Europe
+1;Senior Level;20.967741;United Kingdom of Great Britain and Northern Ireland;;Europe
+2;All Positions;29.032259;United States of America;Massachusetts;USA
+2;Entry Level;27.777779;United States of America;Massachusetts;USA
+2;Senior Level;9.4339619;United States of America;Massachusetts;USA
+3;All Positions;24.170616;United States of America;Massachusetts;USA
+3;Entry Level;40;United States of America;Massachusetts;USA
+3;Senior Level;15.217391;United States of America;Massachusetts;USA
+4;All Positions;16;United States of America;California;USA
+4;Entry Level;37.5;United States of America;California;USA
+4;Senior Level;11.904762;United States of America;California;USA
+5;All Positions;34.343433;France;;Europe
+5;Senior Level;29.411764;France;;Europe
+6;All Positions;14.035088;United States of America;Illinois;USA
+6;Entry Level;7.1428571;United States of America;Illinois;USA
+6;Senior Level;10;United States of America;Illinois;USA
+7;All Positions;32.342659;Italy;;Europe
+7;Entry Level;39.830509;Italy;;Europe
+7;Senior Level;27.243589;Italy;;Europe
+8;All Positions;19.827587;United States of America;Illinois;USA
+8;Entry Level;26.4;United States of America;Illinois;USA
+8;Senior Level;11.428572;United States of America;Illinois;USA
+9;All Positions;23.809525;United States of America;New Jersey;USA
+9;Entry Level;36;United States of America;New Jersey;USA
+9;Senior Level;16.216217;United States of America;New Jersey;USA
+10;All Positions;14.925373;United States of America;California;USA
+10;Entry Level;23.076923;United States of America;California;USA
+10;Senior Level;15.625;United States of America;California;USA
+11;All Positions;26.143791;Spain;;Europe
+11;Senior Level;14.814815;Spain;;Europe
+12;All Positions;19.827587;United States of America;Rhode Island;USA
+12;Entry Level;16.666666;United States of America;Rhode Island;USA
+12;Senior Level;20.833334;United States of America;Rhode Island;USA
+13;All Positions;24.137932;United Kingdom of Great Britain and Northern Ireland;;Europe
+13;Entry Level;27.272728;United Kingdom of Great Britain and Northern Ireland;;Europe
+13;Senior Level;18.666666;United Kingdom of Great Britain and Northern Ireland;;Europe
+14;All Positions;31.052631;Switzerland;;Europe
+14;Entry Level;33.333332;Switzerland;;Europe
+14;Senior Level;16.216217;Switzerland;;Europe
+15;All Positions;27.848101;France;;Europe
+15;Entry Level;34.090908;France;;Europe
+15;Senior Level;20.338984;France;;Europe
+16;All Positions;29.464285;United Kingdom of Great Britain and Northern Ireland;;Europe
+16;Entry Level;50;United Kingdom of Great Britain and Northern Ireland;;Europe
+16;Senior Level;18.181818;United Kingdom of Great Britain and Northern Ireland;;Europe
+17;All Positions;26.041666;France;;Europe
+17;Entry Level;54.545456;France;;Europe
+17;Senior Level;10.526316;France;;Europe
+18;All Positions;18.965517;United States of America;California;USA
+18;Entry Level;45.454544;United States of America;California;USA
+18;Senior Level;11.111111;United States of America;California;USA
+19;All Positions;21.73913;United States of America;California;USA
+19;Entry Level;28.387096;United States of America;California;USA
+19;Senior Level;16.363636;United States of America;California;USA
+20;All Positions;36.700336;Australia;;
+20;Entry Level;44.848484;Australia;;
+20;Senior Level;28.971962;Australia;;
+21;All Positions;11.538462;United States of America;New York;USA
+21;Entry Level;31.25;United States of America;New York;USA
+21;Senior Level;8;United States of America;New York;USA
+22;All Positions;15.789474;United States of America;New York;USA
+22;Entry Level;15.384615;United States of America;New York;USA
+22;Senior Level;15.909091;United States of America;New York;USA
+23;All Positions;35.294117;United States of America;California;USA
+23;Entry Level;33.333332;United States of America;California;USA
+23;Senior Level;28;United States of America;California;USA
+24;All Positions;22.511848;United States of America;New York;USA
+24;Entry Level;30.208334;United States of America;New York;USA
+24;Senior Level;20.967741;United States of America;New York;USA
+25;All Positions;25.581396;United States of America;Indiana;USA
+25;Entry Level;26.31579;United States of America;Indiana;USA
+25;Senior Level;26.086956;United States of America;Indiana;USA
+26;All Positions;20.370371;United States of America;Massachusetts;USA
+26;Entry Level;32;United States of America;Massachusetts;USA
+26;Senior Level;7.1428571;United States of America;Massachusetts;USA
+27;All Positions;18.181818;United States of America;Connecticut;USA
+27;Entry Level;25;United States of America;Connecticut;USA
+27;Senior Level;17.073172;United States of America;Connecticut;USA
+28;All Positions;19.852942;United States of America;Pennsylvania;USA
+28;Entry Level;30.76923;United States of America;Pennsylvania;USA
+28;Senior Level;13.043478;United States of America;Pennsylvania;USA
+29;All Positions;18.367348;United States of America;California;USA
+29;Entry Level;21.428572;United States of America;California;USA
+29;Senior Level;16.129032;United States of America;California;USA
+30;All Positions;21.377672;United States of America;Pennsylvania;USA
+30;Entry Level;32.5;United States of America;Pennsylvania;USA
+30;Senior Level;17.050692;United States of America;Pennsylvania;USA
+31;All Positions;21.751413;United States of America;Illinois;USA
+31;Entry Level;22.916666;United States of America;Illinois;USA
+31;Senior Level;23.809525;United States of America;Illinois;USA
+32;All Positions;16;United States of America;Illinois;USA
+32;Entry Level;36.363636;United States of America;Illinois;USA
+32;Senior Level;10.526316;United States of America;Illinois;USA
+33;All Positions;42;Belgium;;Europe
+33;Senior Level;29.032259;Belgium;;Europe
+34;All Positions;24.100719;United States of America;Massachusetts;USA
+34;Entry Level;26.446281;United States of America;Massachusetts;USA
+34;Senior Level;24.166666;United States of America;Massachusetts;USA
+35;All Positions;26.244345;United States of America;Michigan;USA
+35;Entry Level;22.222221;United States of America;Michigan;USA
+35;Senior Level;18.518518;United States of America;Michigan;USA
+36;All Positions;24.528301;United States of America;Texas;USA
+36;Entry Level;35;United States of America;Texas;USA
+36;Senior Level;27.272728;United States of America;Texas;USA
+37;All Positions;26.623377;United States of America;Arizona;USA
+37;Entry Level;32.380951;United States of America;Arizona;USA
+37;Senior Level;24.683544;United States of America;Arizona;USA
+38;All Positions;33.557049;Belgium;;Europe
+38;Entry Level;44.117645;Belgium;;Europe
+38;Senior Level;35.632183;Belgium;;Europe
+39;All Positions;31.578947;United States of America;New Hampshire;USA
+39;Entry Level;50;United States of America;New Hampshire;USA
+39;Senior Level;20.833334;United States of America;New Hampshire;USA
+40;All Positions;15.873015;United States of America;Massachusetts;USA
+40;Entry Level;16.666666;United States of America;Massachusetts;USA
+40;Senior Level;7.6923075;United States of America;Massachusetts;USA
+41;All Positions;23.529411;Netherlands;;Europe
+41;Entry Level;30.405405;Netherlands;;Europe
+41;Senior Level;13.076923;Netherlands;;Europe
+42;All Positions;33.438484;Australia;;
+42;Entry Level;45.599998;Australia;;
+42;Senior Level;25.362318;Australia;;
+43;All Positions;24.626865;United Kingdom of Great Britain and Northern Ireland;;Europe
+43;Entry Level;25.925926;United Kingdom of Great Britain and Northern Ireland;;Europe
+43;Senior Level;19.642857;United Kingdom of Great Britain and Northern Ireland;;Europe
+44;All Positions;14.049587;Canada;Canada;
+44;Entry Level;18.518518;Canada;Canada;
+44;Senior Level;17.1875;Canada;Canada;
+46;All Positions;33.762058;Australia;;
+46;Entry Level;50;Australia;;
+46;Senior Level;27.659575;Australia;;
+47;All Positions;23.753666;United States of America;Massachusetts;USA
+47;Entry Level;30.476191;United States of America;Massachusetts;USA
+47;Senior Level;26.086956;United States of America;Massachusetts;USA
+48;All Positions;21.73913;United States of America;California;USA
+48;Entry Level;38.46154;United States of America;California;USA
+48;Senior Level;18.055555;United States of America;California;USA
+49;All Positions;25.853659;France;;Europe
+49;Senior Level;17.241379;France;;Europe
+50;All Positions;22.5;United Kingdom of Great Britain and Northern Ireland;;Europe
+50;Entry Level;45.454544;United Kingdom of Great Britain and Northern Ireland;;Europe
+50;Senior Level;16.32653;United Kingdom of Great Britain and Northern Ireland;;Europe
+51;All Positions;23.125;Canada;Canada;
+51;Entry Level;24.137932;Canada;Canada;
+51;Senior Level;22.580645;Canada;Canada;
+52;All Positions;33.442623;Australia;;
+52;Entry Level;36.496349;Australia;;
+52;Senior Level;29.166666;Australia;;
+53;All Positions;28.352489;Netherlands;;Europe
+53;Entry Level;36.666668;Netherlands;;Europe
+53;Senior Level;15.384615;Netherlands;;Europe
+54;All Positions;26.923077;United States of America;Maryland;USA
+54;Entry Level;31.818182;United States of America;Maryland;USA
+54;Senior Level;27.272728;United States of America;Maryland;USA
+55;All Positions;20.19544;United States of America;New York;USA
+55;Entry Level;28.40909;United States of America;New York;USA
+55;Senior Level;15.966387;United States of America;New York;USA
+56;All Positions;27.935223;Italy;;Europe
+56;Entry Level;35.714287;Italy;;Europe
+56;Senior Level;24.358974;Italy;;Europe
+57;All Positions;21.428572;United Kingdom of Great Britain and Northern Ireland;;Europe
+57;Entry Level;27.777779;United Kingdom of Great Britain and Northern Ireland;;Europe
+57;Senior Level;13.043478;United Kingdom of Great Britain and Northern Ireland;;Europe
+58;All Positions;33.802818;Germany;;Europe
+58;Senior Level;15.384615;Germany;;Europe
+59;All Positions;14.285714;Belgium;;Europe
+59;Senior Level;15.789474;Belgium;;Europe
+60;All Positions;29.133858;United Kingdom of Great Britain and Northern Ireland;;Europe
+60;Entry Level;30;United Kingdom of Great Britain and Northern Ireland;;Europe
+60;Senior Level;22.5;United Kingdom of Great Britain and Northern Ireland;;Europe
+61;All Positions;18.867924;United States of America;California;USA
+61;Entry Level;60;United States of America;California;USA
+61;Senior Level;11.764706;United States of America;California;USA
+62;All Positions;40.689655;United Kingdom of Great Britain and Northern Ireland;;Europe
+62;Entry Level;42;United Kingdom of Great Britain and Northern Ireland;;Europe
+62;Senior Level;27.868853;United Kingdom of Great Britain and Northern Ireland;;Europe
+63;All Positions;28.813559;Australia;;
+63;Entry Level;34.693878;Australia;;
+63;Senior Level;10.638298;Australia;;
+64;All Positions;26.851852;United States of America;Virginia;USA
+64;Entry Level;20;United States of America;Virginia;USA
+64;Senior Level;19.444445;United States of America;Virginia;USA
+66;All Positions;28.461538;United States of America;Connecticut;USA
+66;Entry Level;43.75;United States of America;Connecticut;USA
+66;Senior Level;19.642857;United States of America;Connecticut;USA
+67;All Positions;58.203125;Romania;;Europe
+67;Entry Level;70.909088;Romania;;Europe
+67;Senior Level;54.838711;Romania;;Europe
+68;All Positions;19.545454;Denmark;;Europe
+68;Entry Level;27.272728;Denmark;;Europe
+68;Senior Level;10.909091;Denmark;;Europe
+69;All Positions;30.844156;Sweden;;Europe
+69;Entry Level;43.18182;Sweden;;Europe
+69;Senior Level;22.5;Sweden;;Europe
+70;All Positions;27.435898;Norway;;Europe
+70;Entry Level;25.423729;Norway;;Europe
+70;Senior Level;24.418604;Norway;;Europe
+71;All Positions;18.421053;United States of America;North Carolina;USA
+71;Entry Level;26.086956;United States of America;North Carolina;USA
+71;Senior Level;14.084507;United States of America;North Carolina;USA
+72;All Positions;22.872341;Denmark;;Europe
+72;Entry Level;30.30303;Denmark;;Europe
+72;Senior Level;21.875;Denmark;;Europe
+73;All Positions;26.31579;United Kingdom of Great Britain and Northern Ireland;;Europe
+73;Entry Level;40;United Kingdom of Great Britain and Northern Ireland;;Europe
+73;Senior Level;24.285715;United Kingdom of Great Britain and Northern Ireland;;Europe
+74;All Positions;37.878788;Italy;;Europe
+74;Senior Level;35.227272;Italy;;Europe
+75;All Positions;31.979696;France;;Europe
+75;Entry Level;33.333332;France;;Europe
+75;Senior Level;21.428572;France;;Europe
+76;All Positions;32.627117;Switzerland;;Europe
+76;Entry Level;20;Switzerland;;Europe
+76;Senior Level;10;Switzerland;;Europe
+77;All Positions;19.387754;United States of America;California;USA
+77;Entry Level;26.31579;United States of America;California;USA
+77;Senior Level;16.32653;United States of America;California;USA
+78;All Positions;22.44898;Czechia;;Europe
+78;Entry Level;38.888889;Czechia;;Europe
+78;Senior Level;10;Czechia;;Europe
+79;All Positions;13.414634;Germany;;Europe
+79;Entry Level;22.222221;Germany;;Europe
+79;Senior Level;7.1428571;Germany;;Europe
+80;All Positions;26.470589;Norway;;Europe
+80;Entry Level;38.46154;Norway;;Europe
+80;Senior Level;17.391304;Norway;;Europe
+81;All Positions;32.882881;Italy;;Europe
+81;Entry Level;37.209301;Italy;;Europe
+81;Senior Level;29.67033;Italy;;Europe
+82;All Positions;32.307693;United States of America;District of Columbia;USA
+82;Entry Level;30.76923;United States of America;District of Columbia;USA
+82;Senior Level;19.23077;United States of America;District of Columbia;USA
+83;All Positions;27.160494;Australia;;
+83;Entry Level;16;Australia;;
+83;Senior Level;21.73913;Australia;;
+84;All Positions;6.7567568;Netherlands;;Europe
+84;Senior Level;6.7567568;Netherlands;;Europe
+85;All Positions;33.974358;United States of America;Wisconsin;USA
+85;Entry Level;39.130436;United States of America;Wisconsin;USA
+85;Senior Level;14.285714;United States of America;Wisconsin;USA
+86;All Positions;36.923077;Australia;;
+86;Entry Level;50;Australia;;
+86;Senior Level;20;Australia;;
+87;All Positions;33.22884;Sweden;;Europe
+87;Entry Level;27.027027;Sweden;;Europe
+87;Senior Level;28.695652;Sweden;;Europe
+88;All Positions;32.994923;France;;Europe
+88;Entry Level;53.703705;France;;Europe
+88;Senior Level;26.666666;France;;Europe
+89;All Positions;18.75;United States of America;New York;USA
+89;Entry Level;41.666668;United States of America;New York;USA
+89;Senior Level;11.428572;United States of America;New York;USA
+90;All Positions;25;Germany;;Europe
+90;Entry Level;0;Germany;;Europe
+90;Senior Level;26.666666;Germany;;Europe
+91;All Positions;18.181818;Germany;;Europe
+91;Entry Level;36.363636;Germany;;Europe
+91;Senior Level;15.094339;Germany;;Europe
+92;All Positions;28.395061;Canada;Canada;
+92;Entry Level;46.875;Canada;Canada;
+92;Senior Level;23.943663;Canada;Canada;
+93;All Positions;29.577465;United States of America;Texas;USA
+93;Entry Level;37.5;United States of America;Texas;USA
+93;Senior Level;28.571428;United States of America;Texas;USA
+94;All Positions;35.50296;France;;Europe
+94;Entry Level;33.333332;France;;Europe
+94;Senior Level;47.36842;France;;Europe
+95;All Positions;66.666664;Romania;;Europe
+95;Senior Level;50;Romania;;Europe
+96;All Positions;12.658228;Netherlands;;Europe
+96;Senior Level;14.0625;Netherlands;;Europe
+97;All Positions;43.902439;United States of America;Georgia;USA
+97;Entry Level;30.76923;United States of America;Georgia;USA
+97;Senior Level;33.766235;United States of America;Georgia;USA
+98;All Positions;41.176472;Australia;;
+98;Entry Level;45.192307;Australia;;
+98;Senior Level;27.868853;Australia;;
+99;All Positions;38.819878;Spain;;Europe
+99;Entry Level;38.235294;Spain;;Europe
+99;Senior Level;39.430893;Spain;;Europe
+100;All Positions;23.68421;United States of America;California;USA
+100;Entry Level;42.553192;United States of America;California;USA
+100;Senior Level;20.895523;United States of America;California;USA
+101;All Positions;22.857143;United States of America;Illinois;USA
+101;Entry Level;33.333332;United States of America;Illinois;USA
+101;Senior Level;8.5714283;United States of America;Illinois;USA
+102;All Positions;31.578947;United States of America;California;USA
+102;Senior Level;15;United States of America;California;USA
+103;All Positions;25.757576;United Kingdom of Great Britain and Northern Ireland;;Europe
+103;Entry Level;25;United Kingdom of Great Britain and Northern Ireland;;Europe
+103;Senior Level;25;United Kingdom of Great Britain and Northern Ireland;;Europe
+104;All Positions;32.07547;United States of America;Tennessee;USA
+104;Entry Level;45.454544;United States of America;Tennessee;USA
+104;Senior Level;17.647058;United States of America;Tennessee;USA
+105;All Positions;18.75;United States of America;Michigan;USA
+105;Entry Level;25;United States of America;Michigan;USA
+105;Senior Level;17.5;United States of America;Michigan;USA
+106;All Positions;19.444445;United States of America;Minnesota;USA
+106;Senior Level;18.75;United States of America;Minnesota;USA
+107;All Positions;38.888889;United Kingdom of Great Britain and Northern Ireland;;Europe
+107;Entry Level;36.842106;United Kingdom of Great Britain and Northern Ireland;;Europe
+107;Senior Level;25.925926;United Kingdom of Great Britain and Northern Ireland;;Europe
+108;All Positions;52.222221;France;;Europe
+108;Entry Level;70.909088;France;;Europe
+108;Senior Level;21.212122;France;;Europe
+109;All Positions;39.795918;United Kingdom of Great Britain and Northern Ireland;;Europe
+109;Entry Level;46.226414;United Kingdom of Great Britain and Northern Ireland;;Europe
+109;Senior Level;25.757576;United Kingdom of Great Britain and Northern Ireland;;Europe
+110;All Positions;24.050632;Spain;;Europe
+110;Entry Level;25;Spain;;Europe
+110;Senior Level;21.052631;Spain;;Europe
+111;All Positions;39.820358;Australia;;
+111;Entry Level;40.869564;Australia;;
+111;Senior Level;25;Australia;;
+112;All Positions;36.312851;Sweden;;Europe
+112;Entry Level;36.363636;Sweden;;Europe
+112;Senior Level;21.875;Sweden;;Europe
+113;All Positions;20.370371;Canada;Canada;
+113;Entry Level;26.666666;Canada;Canada;
+113;Senior Level;20;Canada;Canada;
+114;All Positions;36.391438;Denmark;;Europe
+114;Entry Level;42.857143;Denmark;;Europe
+114;Senior Level;32.365147;Denmark;;Europe
+115;All Positions;30.851065;Switzerland;;Europe
+115;Entry Level;20;Switzerland;;Europe
+115;Senior Level;30.232557;Switzerland;;Europe
+116;All Positions;20.588236;United States of America;California;USA
+116;Entry Level;20;United States of America;California;USA
+116;Senior Level;27.272728;United States of America;California;USA
+117;All Positions;37.64706;France;;Europe
+117;Entry Level;37.5;France;;Europe
+117;Senior Level;39.285713;France;;Europe
+118;All Positions;47.36842;China;;
+118;Senior Level;33.333332;China;;
+119;All Positions;37.037037;United States of America;New York;USA
+119;Entry Level;37.5;United States of America;New York;USA
+119;Senior Level;36.842106;United States of America;New York;USA
+120;All Positions;39.215687;Italy;;Europe
+120;Entry Level;85.714287;Italy;;Europe
+120;Senior Level;28.571428;Italy;;Europe
+121;All Positions;27;Switzerland;;Europe
+121;Entry Level;25;Switzerland;;Europe
+121;Senior Level;8.695652;Switzerland;;Europe
+122;All Positions;20.869566;Canada;Canada;
+122;Entry Level;23.809525;Canada;Canada;
+122;Senior Level;23.076923;Canada;Canada;
+123;All Positions;26.168224;United Kingdom of Great Britain and Northern Ireland;;Europe
+123;Entry Level;32.432434;United Kingdom of Great Britain and Northern Ireland;;Europe
+123;Senior Level;24.590164;United Kingdom of Great Britain and Northern Ireland;;Europe
+124;All Positions;22.727272;Switzerland;;Europe
+124;Senior Level;23.076923;Switzerland;;Europe
+125;All Positions;33.678757;Austria;;Europe
+125;Entry Level;48.837208;Austria;;Europe
+125;Senior Level;29.333334;Austria;;Europe
+126;All Positions;30.483271;United States of America;Michigan;USA
+126;Entry Level;45.599998;United States of America;Michigan;USA
+126;Senior Level;20.689655;United States of America;Michigan;USA
+127;All Positions;38.823528;Singapore;;
+127;Entry Level;35;Singapore;;
+127;Senior Level;15.789474;Singapore;;
+128;All Positions;19.565218;Germany;;Europe
+128;Entry Level;43.75;Germany;;Europe
+128;Senior Level;14.473684;Germany;;Europe
+129;All Positions;43.030304;Belgium;;Europe
+129;Senior Level;45.098038;Belgium;;Europe
+130;All Positions;12.903226;Netherlands;;Europe
+131;All Positions;21.854305;United States of America;Pennsylvania;USA
+131;Entry Level;19.23077;United States of America;Pennsylvania;USA
+131;Senior Level;15.384615;United States of America;Pennsylvania;USA
+132;All Positions;49.315067;Netherlands;;Europe
+132;Senior Level;16.666666;Netherlands;;Europe
+133;All Positions;28.735632;United States of America;New York;USA
+133;Entry Level;28.571428;United States of America;New York;USA
+133;Senior Level;21.052631;United States of America;New York;USA
+134;All Positions;26.666666;United Kingdom of Great Britain and Northern Ireland;;Europe
+134;Entry Level;28.571428;United Kingdom of Great Britain and Northern Ireland;;Europe
+134;Senior Level;14.285714;United Kingdom of Great Britain and Northern Ireland;;Europe
+135;All Positions;25.688074;United States of America;Ohio;USA
+135;Entry Level;28.571428;United States of America;Ohio;USA
+135;Senior Level;14.285714;United States of America;Ohio;USA
+136;All Positions;20.175438;France;;Europe
+136;Entry Level;12.5;France;;Europe
+136;Senior Level;21.25;France;;Europe
+137;All Positions;21.118011;United States of America;Indiana;USA
+137;Entry Level;25.316456;United States of America;Indiana;USA
+137;Senior Level;20.967741;United States of America;Indiana;USA
+138;All Positions;28.571428;United States of America;Colorado;USA
+138;Entry Level;14.285714;United States of America;Colorado;USA
+138;Senior Level;20;United States of America;Colorado;USA
+139;All Positions;27.586206;United States of America;California;USA
+139;Entry Level;34.782608;United States of America;California;USA
+139;Senior Level;10.526316;United States of America;California;USA
+140;All Positions;41.666668;United States of America;New Jersey;USA
+140;Entry Level;48.484848;United States of America;New Jersey;USA
+140;Senior Level;26.923077;United States of America;New Jersey;USA
+141;All Positions;37.288136;United Kingdom of Great Britain and Northern Ireland;;Europe
+141;Entry Level;39.473682;United Kingdom of Great Britain and Northern Ireland;;Europe
+141;Senior Level;38;United Kingdom of Great Britain and Northern Ireland;;Europe
+142;All Positions;42.079208;France;;Europe
+142;Entry Level;46.896553;France;;Europe
+142;Senior Level;34.615383;France;;Europe
+143;All Positions;27.62431;United States of America;Michigan;USA
+143;Entry Level;18.181818;United States of America;Michigan;USA
+143;Senior Level;21.428572;United States of America;Michigan;USA
+144;All Positions;32.58427;United States of America;Pennsylvania;USA
+144;Entry Level;45.833332;United States of America;Pennsylvania;USA
+144;Senior Level;30;United States of America;Pennsylvania;USA
+145;All Positions;25;Spain;;Europe
+145;Senior Level;18.75;Spain;;Europe
+146;All Positions;6.9767442;Japan;;
+146;Senior Level;6.9767442;Japan;;
+148;All Positions;29.523809;Sweden;;Europe
+148;Entry Level;13.333333;Sweden;;Europe
+148;Senior Level;21.052631;Sweden;;Europe
+149;All Positions;21.153847;Italy;;Europe
+150;All Positions;5.7142859;Israel;;
+150;Senior Level;10.526316;Israel;;
+151;All Positions;21.428572;Germany;;Europe
+151;Entry Level;37.5;Germany;;Europe
+151;Senior Level;21.052631;Germany;;Europe
+152;All Positions;24;United Kingdom of Great Britain and Northern Ireland;;Europe
+152;Entry Level;25;United Kingdom of Great Britain and Northern Ireland;;Europe
+152;Senior Level;23.809525;United Kingdom of Great Britain and Northern Ireland;;Europe
+153;All Positions;34.459461;Germany;;Europe
+153;Entry Level;44.444443;Germany;;Europe
+153;Senior Level;20.63492;Germany;;Europe
+154;All Positions;10.810811;Israel;;
+154;Senior Level;12.5;Israel;;
+155;All Positions;31.578947;Sweden;;Europe
+155;Entry Level;25;Sweden;;Europe
+155;Senior Level;16.666666;Sweden;;Europe
+156;All Positions;37.106918;Italy;;Europe
+156;Entry Level;58.333332;Italy;;Europe
+156;Senior Level;37.878788;Italy;;Europe
+157;All Positions;22.012579;Greece;;Europe
+157;Entry Level;25.490196;Greece;;Europe
+157;Senior Level;19.626167;Greece;;Europe
+158;All Positions;39.908257;France;;Europe
+158;Entry Level;46.42857;France;;Europe
+158;Senior Level;31.73077;France;;Europe
+159;All Positions;40.17094;Poland;;Europe
+159;Entry Level;40.697674;Poland;;Europe
+159;Senior Level;38.709679;Poland;;Europe
+160;All Positions;30.06135;Austria;;Europe
+160;Entry Level;31.818182;Austria;;Europe
+160;Senior Level;28.571428;Austria;;Europe
+161;All Positions;36.120399;United Kingdom of Great Britain and Northern Ireland;;Europe
+161;Entry Level;38.732395;United Kingdom of Great Britain and Northern Ireland;;Europe
+161;Senior Level;22.222221;United Kingdom of Great Britain and Northern Ireland;;Europe
+162;All Positions;30.90909;United Kingdom of Great Britain and Northern Ireland;;Europe
+162;Entry Level;33.333332;United Kingdom of Great Britain and Northern Ireland;;Europe
+162;Senior Level;14.285714;United Kingdom of Great Britain and Northern Ireland;;Europe
+163;All Positions;25;United States of America;New Hampshire;USA
+163;Entry Level;37.5;United States of America;New Hampshire;USA
+163;Senior Level;21.73913;United States of America;New Hampshire;USA
+164;All Positions;32.954544;United States of America;Indiana;USA
+164;Entry Level;37.5;United States of America;Indiana;USA
+164;Senior Level;17.142857;United States of America;Indiana;USA
+165;All Positions;42.372883;Ireland;;Europe
+165;Entry Level;66.666664;Ireland;;Europe
+165;Senior Level;27.272728;Ireland;;Europe
+166;All Positions;51.219513;Italy;;Europe
+166;Entry Level;75;Italy;;Europe
+166;Senior Level;45.945946;Italy;;Europe
+167;All Positions;20.930233;Germany;;Europe
+167;Senior Level;19.23077;Germany;;Europe
+168;All Positions;26.31579;Brazil;;
+169;All Positions;44.186047;Portugal;;Europe
+169;Entry Level;25.714285;Portugal;;Europe
+169;Senior Level;42.105263;Portugal;;Europe
+170;All Positions;36.470589;Italy;;Europe
+170;Entry Level;56.52174;Italy;;Europe
+170;Senior Level;29.032259;Italy;;Europe
+171;All Positions;20;Canada;Canada;
+171;Entry Level;44.444443;Canada;Canada;
+171;Senior Level;16.666666;Canada;Canada;
+172;All Positions;24.705883;United Kingdom of Great Britain and Northern Ireland;;Europe
+172;Entry Level;31.25;United Kingdom of Great Britain and Northern Ireland;;Europe
+172;Senior Level;6.060606;United Kingdom of Great Britain and Northern Ireland;;Europe
+173;All Positions;37.5;Italy;;Europe
+173;Entry Level;61.53846;Italy;;Europe
+173;Senior Level;37.777779;Italy;;Europe
+174;All Positions;19.354839;United States of America;Massachusetts;USA
+174;Entry Level;14.285714;United States of America;Massachusetts;USA
+174;Senior Level;25;United States of America;Massachusetts;USA
+175;All Positions;43.049328;United States of America;Pennsylvania;USA
+175;Entry Level;33.333332;United States of America;Pennsylvania;USA
+175;Senior Level;31.460674;United States of America;Pennsylvania;USA
+176;All Positions;26.530613;United States of America;Missouri;USA
+176;Entry Level;75;United States of America;Missouri;USA
+176;Senior Level;3.8461537;United States of America;Missouri;USA
+177;All Positions;34.939758;United Kingdom of Great Britain and Northern Ireland;;Europe
+177;Entry Level;18.181818;United Kingdom of Great Britain and Northern Ireland;;Europe
+177;Senior Level;30;United Kingdom of Great Britain and Northern Ireland;;Europe
+178;All Positions;35.682819;United Kingdom of Great Britain and Northern Ireland;;Europe
+178;Entry Level;42.857143;United Kingdom of Great Britain and Northern Ireland;;Europe
+178;Senior Level;33.128834;United Kingdom of Great Britain and Northern Ireland;;Europe
+179;All Positions;29.166666;United States of America;District of Columbia;USA
+179;Entry Level;50;United States of America;District of Columbia;USA
+179;Senior Level;27.272728;United States of America;District of Columbia;USA
+180;All Positions;39.166668;Luxembourg;;Europe
+180;Senior Level;17.948717;Luxembourg;;Europe
+181;All Positions;35.099339;United States of America;California;USA
+181;Entry Level;53.125;United States of America;California;USA
+181;Senior Level;26.190475;United States of America;California;USA
+182;All Positions;40;Italy;;Europe
+182;Senior Level;33.333332;Italy;;Europe
+183;All Positions;20.238094;United States of America;New York;USA
+183;Entry Level;11.111111;United States of America;New York;USA
+183;Senior Level;28.571428;United States of America;New York;USA
+184;All Positions;20.588236;United States of America;California;USA
+184;Entry Level;25.925926;United States of America;California;USA
+184;Senior Level;13.333333;United States of America;California;USA
+185;All Positions;21.621622;Germany;;Europe
+185;Entry Level;20;Germany;;Europe
+185;Senior Level;21.875;Germany;;Europe
+186;All Positions;30.120481;Germany;;Europe
+186;Entry Level;42.857143;Germany;;Europe
+186;Senior Level;21.052631;Germany;;Europe
+187;All Positions;31.337326;Norway;;Europe
+187;Entry Level;33.333332;Norway;;Europe
+187;Senior Level;28.514057;Norway;;Europe
+188;All Positions;48.387096;Sweden;;Europe
+188;Senior Level;28.571428;Sweden;;Europe
+189;All Positions;21.428572;Colombia;;
+189;Entry Level;12.5;Colombia;;
+189;Senior Level;24.242424;Colombia;;
+190;All Positions;26.168224;United States of America;Oregon;USA
+190;Entry Level;10;United States of America;Oregon;USA
+190;Senior Level;18.75;United States of America;Oregon;USA
+191;All Positions;19.354839;Czechia;;Europe
+191;Entry Level;28.571428;Czechia;;Europe
+191;Senior Level;3.4482758;Czechia;;Europe
+192;All Positions;25;Austria;;Europe
+192;Entry Level;11.111111;Austria;;Europe
+192;Senior Level;30.76923;Austria;;Europe
+193;All Positions;20.588236;Canada;Canada;
+193;Entry Level;14.285714;Canada;Canada;
+193;Senior Level;22.222221;Canada;Canada;
+194;All Positions;31.111111;United Kingdom of Great Britain and Northern Ireland;;Europe
+194;Entry Level;33.333332;United Kingdom of Great Britain and Northern Ireland;;Europe
+194;Senior Level;23.809525;United Kingdom of Great Britain and Northern Ireland;;Europe
+195;All Positions;33.333332;China;;
+195;Senior Level;37.5;China;;
+196;All Positions;19.607843;Hungary;;Europe
+196;Senior Level;6.25;Hungary;;Europe
+197;All Positions;26.470589;United Arab Emirates;;
+197;Entry Level;30;United Arab Emirates;;
+197;Senior Level;7.1428571;United Arab Emirates;;
+198;All Positions;38.636364;New Zealand;;
+198;Entry Level;53.658535;New Zealand;;
+198;Senior Level;24.390244;New Zealand;;
+199;All Positions;17.857143;Switzerland;;Europe
+199;Entry Level;15.384615;Switzerland;;Europe
+199;Senior Level;12.5;Switzerland;;Europe
+200;All Positions;42.708332;Germany;;Europe
+200;Senior Level;23.636364;Germany;;Europe
+201;All Positions;40.909092;France;;Europe
+201;Entry Level;46.153847;France;;Europe
+201;Senior Level;33.333332;France;;Europe
+202;All Positions;46.816479;Spain;;Europe
+202;Entry Level;53.333332;Spain;;Europe
+202;Senior Level;45.161289;Spain;;Europe
+203;All Positions;33.57016;United States of America;New York;USA
+203;Entry Level;44.444443;United States of America;New York;USA
+203;Senior Level;30.113636;United States of America;New York;USA
+204;All Positions;31.578947;Ireland;;Europe
+204;Entry Level;25;Ireland;;Europe
+204;Senior Level;50;Ireland;;Europe
+205;All Positions;34.177216;United States of America;Georgia;USA
+205;Entry Level;25;United States of America;Georgia;USA
+205;Senior Level;37.5;United States of America;Georgia;USA
+206;All Positions;29.05983;United States of America;Illinois;USA
+206;Entry Level;37.5;United States of America;Illinois;USA
+206;Senior Level;29.629629;United States of America;Illinois;USA
+207;All Positions;17.874395;Greece;;Europe
+207;Entry Level;20.408163;Greece;;Europe
+207;Senior Level;18.253969;Greece;;Europe
+208;All Positions;29.166666;United States of America;Ohio;USA
+208;Entry Level;28.225807;United States of America;Ohio;USA
+208;Senior Level;26.666666;United States of America;Ohio;USA
+209;All Positions;31.578947;Canada;Canada;
+209;Entry Level;37.037037;Canada;Canada;
+209;Senior Level;31.746031;Canada;Canada;
+210;All Positions;27.659575;Germany;;Europe
+210;Entry Level;44.444443;Germany;;Europe
+210;Senior Level;22.727272;Germany;;Europe
+211;All Positions;18.965517;United States of America;Maryland;USA
+211;Entry Level;45.454544;United States of America;Maryland;USA
+211;Senior Level;8;United States of America;Maryland;USA
+212;All Positions;28.395061;United States of America;Iowa;USA
+212;Entry Level;18.75;United States of America;Iowa;USA
+212;Senior Level;13.636364;United States of America;Iowa;USA
+213;All Positions;23.076923;Sweden;;Europe
+213;Entry Level;33.333332;Sweden;;Europe
+213;Senior Level;20;Sweden;;Europe
+214;All Positions;60.625;South Africa;;
+214;Entry Level;64.545456;South Africa;;
+214;Senior Level;57.777779;South Africa;;
+215;All Positions;43.939392;France;;Europe
+215;Entry Level;50;France;;Europe
+215;Senior Level;36;France;;Europe
+216;All Positions;23.71134;Switzerland;;Europe
+216;Entry Level;20.689655;Switzerland;;Europe
+216;Senior Level;30.76923;Switzerland;;Europe
+217;All Positions;28.030304;United States of America;Maryland;USA
+217;Entry Level;41.860466;United States of America;Maryland;USA
+217;Senior Level;27.083334;United States of America;Maryland;USA
+218;All Positions;26.086956;China;;
+218;Entry Level;35.384617;China;;
+218;Senior Level;18.571428;China;;
+219;All Positions;13.333333;Chile;;
+219;Entry Level;17.647058;Chile;;
+219;Senior Level;12;Chile;;
+220;All Positions;34.426231;Portugal;;Europe
+220;Entry Level;35.772358;Portugal;;Europe
+220;Senior Level;31.914894;Portugal;;Europe
+221;All Positions;33.333332;Singapore;;
+222;All Positions;31.325302;United States of America;Massachusetts;USA
+222;Entry Level;45;United States of America;Massachusetts;USA
+222;Senior Level;34.615383;United States of America;Massachusetts;USA
+223;All Positions;29.787233;United Kingdom of Great Britain and Northern Ireland;;Europe
+223;Entry Level;33.766235;United Kingdom of Great Britain and Northern Ireland;;Europe
+223;Senior Level;25.842697;United Kingdom of Great Britain and Northern Ireland;;Europe
+224;All Positions;35.294117;United States of America;South Carolina;USA
+224;Entry Level;44.615383;United States of America;South Carolina;USA
+224;Senior Level;26.785715;United States of America;South Carolina;USA
+225;All Positions;31.111111;United States of America;Massachusetts;USA
+225;Entry Level;27.777779;United States of America;Massachusetts;USA
+225;Senior Level;35;United States of America;Massachusetts;USA
+226;All Positions;41.935482;Poland;;Europe
+226;Senior Level;42.857143;Poland;;Europe
+227;All Positions;40.548782;Canada;Canada;
+227;Senior Level;41.785713;Canada;Canada;
+228;All Positions;27.338129;United States of America;Illinois;USA
+228;Entry Level;19.047619;United States of America;Illinois;USA
+228;Senior Level;10;United States of America;Illinois;USA
+229;All Positions;31.060606;France;;Europe
+229;Entry Level;35.483871;France;;Europe
+229;Senior Level;15.789474;France;;Europe
+230;All Positions;25.373135;Italy;;Europe
+230;Entry Level;53.846153;Italy;;Europe
+230;Senior Level;18.518518;Italy;;Europe
+231;All Positions;19.354839;Italy;;Europe
+231;Entry Level;25;Italy;;Europe
+231;Senior Level;19.047619;Italy;;Europe
+232;All Positions;34.945053;Australia;;
+232;Entry Level;36.666668;Australia;;
+232;Senior Level;35.652172;Australia;;
+233;All Positions;28.571428;Canada;Canada;
+233;Entry Level;10;Canada;Canada;
+233;Senior Level;38.888889;Canada;Canada;
+234;All Positions;22.222221;United States of America;North Carolina;USA
+234;Entry Level;34.482758;United States of America;North Carolina;USA
+234;Senior Level;21.333334;United States of America;North Carolina;USA
+235;All Positions;42.711864;Italy;;Europe
+235;Entry Level;50;Italy;;Europe
+235;Senior Level;44.186047;Italy;;Europe
+236;All Positions;32.478634;France;;Europe
+236;Entry Level;40;France;;Europe
+236;Senior Level;25;France;;Europe
+237;All Positions;10;Germany;;Europe
+237;Senior Level;0;Germany;;Europe
+238;All Positions;38.805969;Italy;;Europe
+238;Entry Level;46.031746;Italy;;Europe
+238;Senior Level;38.709679;Italy;;Europe

@@ -1,0 +1,67 @@
+---
+title: "Plots"
+author: "Anandita Misra"
+date: "2023-11-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+library(tidyverse)
+
+new1_data <- read_csv("sample1_updated.csv")
+
+glimpse(new1_data)
+
+new2_data <- read.csv("sample2_updated.csv")
+
+glimpse(new2_data)
+
+new3_data <- read.csv("sample3_updated.csv")
+
+glimpse(new3_data)
+
+```
+
+
+
+
+
+```{r}
+newSample<- read.csv("sample1_edited.csv")
+
+glimpse(newSample)
+
+library(ggplot2)
+
+library(tidyr)
+newSample_long <- pivot_longer(newSample, cols = c(`Year1`, `Year2`), names_to = "Year", values_to = "Percentage")
+
+# Create a side-by-side bar plot using ggplot2
+ggplot(data = newSample_long, aes(x = X.1, y = Percentage, fill = factor(Year))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Comparison of Degrees (1995 vs. 2014)",
+       y = "Percentage", x = "Degrees") +
+  scale_fill_manual(values = c("1995" = "blue", "2014" = "green"), guide = "none") +
+  theme_minimal()
+
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+# Load the ggplot2 library
+library(ggplot2)
+
+
+
+
+
+
+```

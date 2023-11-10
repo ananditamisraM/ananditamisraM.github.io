@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Anandita Misra">
+<meta name="dcterms.date" content="2023-11-06">
 
-<title>My Personal Homepage - Data Story Visualizations</title>
+<title>My Personal Homepage - Plots</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -58,9 +94,6 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -96,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Useful Links</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./hello.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./hello.html" rel="" target="">
  <span class="menu-text">Data Story Visualizations</span></a>
   </li>  
 </ul>
@@ -115,9 +148,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#visualization-1" id="toc-visualization-1" class="nav-link active" data-scroll-target="#visualization-1">Visualization 1</a></li>
-  <li><a href="#visualization-2" id="toc-visualization-2" class="nav-link" data-scroll-target="#visualization-2">Visualization 2</a></li>
-  <li><a href="#visualization-3" id="toc-visualization-3" class="nav-link" data-scroll-target="#visualization-3">Visualization 3</a></li>
+  <li><a href="#r-markdown" id="toc-r-markdown" class="nav-link active" data-scroll-target="#r-markdown">R Markdown</a></li>
   </ul>
 </nav>
     </div>
@@ -126,14 +157,26 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Story Visualizations</h1>
+<h1 class="title">Plots</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Anandita Misra </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 6, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -141,79 +184,111 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>&lt;Here are the examples of how the placeholders will be put- I will put the placeholders here and in each placeholder the visualization as in the tab of “Data Story Visualizations”. In this textbox, I will be putting the description of the overarching topic&gt;</p>
-<section id="visualization-1" class="level3">
-<h3 class="anchored" data-anchor-id="visualization-1">Visualization 1</h3>
-<section id="description-of-the-question-brief" class="level6">
-<h6 class="anchored" data-anchor-id="description-of-the-question-brief"><em>Description of the question (brief)</em></h6>
-<p><visualization></visualization></p>
-<p>Proof of integration- I was able to integrate before but suddenly, it started requiring python and jupyter- i installed the necessary packages, but was unable to integrate after that- no error also was showing up and hence, adding the image to show that i was able to integrate before</p>
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/">
-</iframe>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Proof.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Caption</figcaption>
-</figure>
-</div>
-</section>
-<section id="write-up-explaining-what-was-insightful-from-the-visualization" class="level6">
-<h6 class="anchored" data-anchor-id="write-up-explaining-what-was-insightful-from-the-visualization"><em>Write-up explaining what was insightful from the visualization</em></h6>
-<p><small image="" related="" to="" the="" visualization=""></small></p><small image="" related="" to="" the="" visualization="">
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/">
-</iframe>
-</small></section><small image="" related="" to="" the="" visualization="">
-</small></section><small image="" related="" to="" the="" visualization="">
-<section id="visualization-2" class="level3">
-<h3 class="anchored" data-anchor-id="visualization-2">Visualization 2</h3>
-<section id="description-of-the-question-brief-1" class="level6">
-<h6 class="anchored" data-anchor-id="description-of-the-question-brief-1"><em>Description of the question (brief)</em></h6>
-<p><visualization></visualization></p>
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/">
-</iframe>
-</section>
-<section id="write-up-explaining-what-was-insightful-from-the-visualization-1" class="level6">
-<h6 class="anchored" data-anchor-id="write-up-explaining-what-was-insightful-from-the-visualization-1"><em>Write-up explaining what was insightful from the visualization</em></h6>
-</section>
-</section>
-<section id="visualization-3" class="level3">
-<h3 class="anchored" data-anchor-id="visualization-3">Visualization 3</h3>
-<section id="description-of-the-question-brief-2" class="level6">
-<h6 class="anchored" data-anchor-id="description-of-the-question-brief-2"><em>Description of the question (brief)</em></h6>
-<p><visualization></visualization></p>
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/">
-</iframe>
-</section>
-<section id="write-up-explaining-what-was-insightful-from-the-visualization-2" class="level6">
-<h6 class="anchored" data-anchor-id="write-up-explaining-what-was-insightful-from-the-visualization-2"><em>Write-up explaining what was insightful from the visualization</em></h6>
-</section>
-<section id="overall-story" class="level4">
-<h4 class="anchored" data-anchor-id="overall-story">Overall story</h4>
-</section>
-<section id="i-will-add-the-writeup-for-importance-of-the-story-here-and-why-is-it-interesting-and-how-relevant-it-is.-final-statistics-will-be-added-here-to-create-emphasis." class="level4">
-<h4 class="anchored" data-anchor-id="i-will-add-the-writeup-for-importance-of-the-story-here-and-why-is-it-interesting-and-how-relevant-it-is.-final-statistics-will-be-added-here-to-create-emphasis."><em>I will add the writeup for importance of the story here and why is it interesting and how relevant it is. Final statistics will be added here to create emphasis.</em></h4>
-<p>In the end, I will also be adding an overarching flowchart with all information summarized similar to what I have on the about page-</p>
+<section id="r-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="r-markdown">R Markdown</h2>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.3     ✔ tibble    3.2.1
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>new1_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"sample1_updated.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 667 Columns: 4
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+chr (2): level, country
+dbl (2): rank, female_ratio
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(new1_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 667
+Columns: 4
+$ rank         &lt;dbl&gt; 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 6, 6, 6, 7, 7, …
+$ level        &lt;chr&gt; "All Positions", "Entry Level", "Senior Level", "All Posi…
+$ female_ratio &lt;dbl&gt; 26.269316, 49.090908, 20.967741, 29.032259, 27.777779, 9.…
+$ country      &lt;chr&gt; "United Kingdom of Great Britain and Northern Ireland", "…</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>new2_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"sample2_updated.csv"</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(new2_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 270
+Columns: 11
+$ rank_toplist                  &lt;int&gt; 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16…
+$ institution                   &lt;chr&gt; "London School of Economics (LSE)", "Eur…
+$ country                       &lt;chr&gt; "United Kingdom of Great Britain and Nor…
+$ identified_positions          &lt;int&gt; 453, 133, 341, 211, 50, 297, 57, 139, 13…
+$ senior_positions              &lt;int&gt; 124, 68, 53, 46, 42, 102, 30, 17, 3, 7, …
+$ state_time                    &lt;chr&gt; "30.10.2020", "20.10.2020", "31.01.2020"…
+$ institution_classification    &lt;chr&gt; "University", "Bank", "University", "Uni…
+$ female_ratio                  &lt;int&gt; 26, 21, 29, 24, 16, 34, 14, 22, 8, 14, 3…
+$ female_ratio_senior_positions &lt;int&gt; 21, 21, 9, 15, 12, 29, 10, 18, 0, 14, 27…
+$ main_data_set                 &lt;int&gt; 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1…
+$ world_region                  &lt;chr&gt; "Europe", "Europe", "North America", "No…</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>new3_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"sample3_updated.csv"</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(new3_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 32
+Columns: 4
+$ country                     &lt;chr&gt; "Australia", "Austria", "Belgium", "Canada…
+$ rank_gender_gap_index       &lt;int&gt; 44, 34, 27, 19, 57, 106, 22, 78, 14, 15, 1…
+$ rank_women_all_positions    &lt;int&gt; 13, 16, 9, 20, 31, 11, 27, 28, 22, 14, 21,…
+$ rank_women_senior_positions &lt;int&gt; 12, 10, 6, 9, 27, 20, 17, 32, 13, 11, 23, …</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>newSample<span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"sample1_edited.csv"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(newSample)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 5
+Columns: 3
+$ X.1   &lt;chr&gt; "Economics", "Social science excluding econ", "Business and mana…
+$ Year1 &lt;dbl&gt; 30.5, 46.7, 32.3, 51.1, 40.6
+$ Year2 &lt;dbl&gt; 31.4, 56.4, 42.8, 51.9, 55.7</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>newSample_long <span class="ot">&lt;-</span> <span class="fu">pivot_longer</span>(newSample, <span class="at">cols =</span> <span class="fu">c</span>(<span class="st">`</span><span class="at">Year1</span><span class="st">`</span>, <span class="st">`</span><span class="at">Year2</span><span class="st">`</span>), <span class="at">names_to =</span> <span class="st">"Year"</span>, <span class="at">values_to =</span> <span class="st">"Percentage"</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a side-by-side bar plot using ggplot2</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> newSample_long, <span class="fu">aes</span>(<span class="at">x =</span> X<span class="fl">.1</span>, <span class="at">y =</span> Percentage, <span class="at">fill =</span> <span class="fu">factor</span>(Year))) <span class="sc">+</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Comparison of Degrees (1995 vs. 2014)"</span>,</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Percentage"</span>, <span class="at">x =</span> <span class="st">"Degrees"</span>) <span class="sc">+</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"1995"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"2014"</span> <span class="ot">=</span> <span class="st">"green"</span>), <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  A[Right Intentions] --&gt; D(Output)
-  B(Right Actions) --&gt; D{Output}
-  C(Right Direction) --&gt; D{Output}
-  D --&gt; E[Minimum Effort]
-  D --&gt; F[Maximum Impact]
-</pre>
+<p><img src="Plots_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the ggplot2 library</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
 </section>
-</section>
 
-</small></main><small image="" related="" to="" the="" visualization=""> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -447,8 +522,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</small></div><small image="" related="" to="" the="" visualization=""> <!-- /content -->
+</div> <!-- /content -->
 
 
 
-</small></body></html>
+</body></html>
