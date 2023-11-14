@@ -24,13 +24,28 @@ Hence, the field is mostly dominated by men in terms of faculty members in unive
 
 </p>
 
+
+
+
 ### Visualization 1
 
 ###### *What is the number of identified positions and senior positions of women by different types of institutions?*
 
 <Visualization>
 
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/">
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ananditamisramgithub9/">
+
+</iframe>
+
+###### *Write-up explaining what was insightful from the visualization*
+
+### Visualization 1
+
+###### *What is the number of identified positions and senior positions of women by different types of institutions?*
+
+<Visualization>
+
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ananditamisramgithub8/">
 
 </iframe>
 
@@ -54,7 +69,7 @@ Hence, the field is mostly dominated by men in terms of faculty members in unive
 
 <Visualization>
 
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/">
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/ananditamisramgithub5/">
 
 </iframe>
 
@@ -70,7 +85,7 @@ Hence, the field is mostly dominated by men in terms of faculty members in unive
 
 <Visualization>
 
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/">
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/ananditamisramgithub4/">
 
 </iframe>
 
@@ -85,7 +100,7 @@ Hence, the field is mostly dominated by men in terms of faculty members in unive
 
 <Visualization>
 
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/">
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/ananditamisraMgithub/">
 
 </iframe>
 
@@ -100,6 +115,32 @@ Hence, the field is mostly dominated by men in terms of faculty members in unive
 <img src="misc2.png" alt="Alt text" width="500" height="200"/>
 
 </p>
+
+### Visualization 5
+
+###### *What is the correlation between gender gap index and the share/number of women in the workforce?*
+
+<Visualization>
+
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/ananditamisramgithub1/">
+
+</iframe>
+
+###### *Write-up explaining what was insightful from the visualization*
+
+
+### Visualization 6
+
+###### *What is the correlation between gender gap index and the share/number of women in the workforce?*
+
+<Visualization>
+
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/app3/">
+
+</iframe>
+
+###### *Write-up explaining what was insightful from the visualization*
+
 
 #### Overall story
 

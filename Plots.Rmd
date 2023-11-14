@@ -39,29 +39,443 @@ glimpse(newSample)
 
 library(ggplot2)
 
-library(tidyr)
-newSample_long <- pivot_longer(newSample, cols = c(`Year1`, `Year2`), names_to = "Year", values_to = "Percentage")
+library(dplyr)
 
-# Create a side-by-side bar plot using ggplot2
-ggplot(data = newSample_long, aes(x = X.1, y = Percentage, fill = factor(Year))) +
+newSample_long <- pivot_longer(newSample, cols = c(Year1, Year2), names_to = "Year", values_to = "Percentage") %>%
+  mutate(Year = factor(Year))
+
+library(ggplot2)
+
+ggplot(data = newSample_long, aes(x = X.1, y = Percentage, fill = Year)) +
   geom_bar(stat = "identity", position = "dodge") +
   labs(title = "Comparison of Degrees (1995 vs. 2014)",
        y = "Percentage", x = "Degrees") +
-  scale_fill_manual(values = c("1995" = "blue", "2014" = "green"), guide = "none") +
+  scale_fill_manual(values = c("1995" = "blue", "2014" = "green")) +
+  scale_fill_manual(values = c("1995" = "blue", "2014" = "green")) +
   theme_minimal()
+
+
+```
+
+
+
+
+## To be used- 
+```{r}
+
+
+library(ggplot2)
+
+# Assuming your data is in a data frame called "df"
+# If not, you can create it using the provided data
+df <- data.frame(
+  Serial = 1:10,
+  Field = c(
+    "Economics", "Social science excluding econ", "Business and management",
+    "Humanities", "STEM", "Economics", "Social science excluding econ",
+    "Business and management", "Humanities", "STEM"
+  ),
+  Percentage = c(30.5, 46.7, 32.3, 51.1, 40.6, 31.4, 56.4, 42.8, 51.9, 55.7),
+  Year = c(1995, 1995, 1995, 1995, 1995, 2014, 2014, 2014, 2014, 2014)
+)
+
+
+library(ggplot2)
+
+# Create the side-by-side bar plot with rotated x-axis labels
+ggplot(data = df, aes(x = Field, y = Percentage, fill = factor(Year))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(
+    title = "Comparison of share of women in different fields (1995 vs. 2014)",
+    y = "Percentage of Women",
+    x = "Fields of Work"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  guides(fill = guide_legend(title = "Year"))
+```
+
+
+
+## To be used
+
+```{r}
+
+library(ggplot2)
+
+# Assuming your dataset is called "df"
+# If not, replace "df" with your actual data frame name
+
+# Group the data by "institution_classification" and calculate the sum of "identified_positions"
+library(ggplot2)
+
+# Assuming your dataset is called "df"
+# If not, replace "df" with your actual data frame name
+
+# Group the data by "institution_classification" and calculate the sum of "identified_positions" and "senior_positions"
+summary2_data <- new2_data %>%
+  group_by(institution_classification) %>%
+  summarize(
+    total_identified_positions = sum(identified_positions),
+    total_senior_positions = sum(senior_positions)
+  )
+
+# Create the bar chart with points
+ggplot(data = summary2_data, aes(x = institution_classification)) +
+  geom_bar(aes(y = total_identified_positions), stat = "identity", fill = "blue", width = 0.5) +
+  geom_point(aes(y = total_senior_positions), color = "red", size = 3) +
+  labs(
+    title = "Total Identified and Senior Positions by Institution Classification",
+    y = "Count",
+    x = "Institution Classification"
+  ) +
+  scale_y_continuous(sec.axis = sec_axis(~., name = "Senior Positions")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+
+
+
+```
+
+
+## To be used
+```{r}
+
+library(dplyr)
+
+library(dplyr)
+
+# Assuming your dataset is called "df"
+# Group by "world_region" and calculate the sums
+region_data <- new2_data %>%
+  group_by(country) %>%
+  summarize(
+    total_senior_positions = sum(senior_positions),
+    total_identified_positions = sum(identified_positions)
+  )
+
+library(maps)
+
+# Get world map data
+world_map <- map_data("world")
+
+# Check for duplicates in "world_region"
+if (any(duplicated(region_data$world_region))) {
+  stop("Duplicates found in 'world_region'. Please ensure unique values.")
+}
+
+# Merge your summarized data with the world map data
+merged_data <- merge(world_map, region_data, by.x = "region", by.y = "country", all.x = TRUE)
+
+library(ggplot2)
+
+# Create the world map
+ggplot(merged_data, aes(x = long, y = lat, group = group)) +
+  geom_polygon(fill = "white", color = "white") +  # Dark blue for map background
+  geom_polygon(aes(fill = total_senior_positions), color = "white", size = 0.001) +
+  scale_fill_gradient(low = "lightblue", high = "blue") +  # Lighter blue for data
+  coord_fixed(ratio = 1.3) +
+  labs(
+    title = "Distribution of Senior Positions by World Region",
+    x = "Longitude",
+    y = "Latitude"
+  )
+```
+
+
+
+
+## To be used
+```{r}
+ggplot(merged_data, aes(x = long, y = lat, group = group)) +
+  geom_polygon(fill = "white", color = "white") +  # Dark blue for map background
+  geom_polygon(aes(fill = total_identified_positions), color = "white", size = 0.001) +
+  scale_fill_gradient(low = "lightpink", high = "red") +  # Lighter blue for data
+  coord_fixed(ratio = 1.3) +
+  labs(
+    title = "Distribution of Identified Positions by World Region",
+    x = "Longitude",
+    y = "Latitude"
+  )
+
+
+distinct_countries <- new1_data %>% distinct(country)
+
+# Write distinct values to a text file
+writeLines(distinct_countries$country, "distinct_countries.txt")
+
+# Read and view the content of the text file
+distinct_content <- readLines("distinct_countries.txt")
+distinct_content
+
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+# Define a function to categorize countries into groups
+categorize_country <- function(country) {
+  europe_gb <- c(
+    "United Kingdom of Great Britain and Northern Ireland",
+    "France", "Italy", "Spain", "Switzerland", "Belgium", "Netherlands",
+    "Germany", "Romania", "Denmark", "Sweden", "Norway", "Czechia",
+    "Austria", "Greece", "Poland", "Ireland", "Portugal", "Luxembourg",
+    "Hungary"
+  )
+  
+  us_canada <- c("United States of America", "Canada")
+  aus_nz <- c("Australia", "New Zealand")
+  
+  if (country %in% europe_gb) {
+    return("Europe+Great Britain")
+  } else if (country %in% us_canada) {
+    return("United States+Canada")
+  } else if (country %in% aus_nz) {
+    return("Australia and New Zealand")
+  } else {
+    return("Rest of the World")
+  }
+}
+
+# Add a new column for country groups
+new1_data <- new1_data %>% mutate(country_group = sapply(country, categorize_country))
+
+# Filter data for "Entry Level" and "Senior Level" and calculate total counts
+filtered_data <- new1_data %>% filter(level %in% c("Entry Level", "Senior Level")) %>%
+  group_by(country_group, level) %>%
+  summarise(total_female = sum(female_ratio))
+
+# Reorder the levels of country_group
+filtered_data$country_group <- factor(filtered_data$country_group, levels = c(
+  "Europe+Great Britain", "United States+Canada", "Australia and New Zealand", "Rest of the World"
+))
+
+# Create the line chart with rotated x-axis labels
+ggplot(filtered_data, aes(x = country_group, y = total_female, color = level, group = level)) +
+  geom_line() +
+  labs(
+    title = "Total Female Count at Entry Level and Senior Level by Region",
+    x = "Region",
+    y = "Total Female Count",
+    color = "Level"
+  ) +
+  scale_color_manual(values = c("Entry Level" = "blue", "Senior Level" = "red")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
 
 ```{r}
 library(ggplot2)
-library(dplyr)
 
-# Load the ggplot2 library
-library(ggplot2)
+# Filter the data for the top 119 and top 120-238 institutions
+top_119_data <- new1_data %>% filter(rank %in% 1:119)
+top_120_238_data <- new1_data %>% filter(rank %in% 120:238)
 
-
-
+# Create kernel density plots for each category
+ggplot() +
+  geom_density(data = top_119_data, aes(x = female_ratio, color = rank), fill = "blue", alpha = 0.5) +
+  geom_density(data = top_120_238_data, aes(x = female_ratio, color = rank), fill = "red", alpha = 0.5) +
+  facet_wrap(~level, scales = "free_y") +
+  labs(
+    title = "Kernel Density Plot of Female Ratio by Institution Rank",
+    x = "Percentage of Women",
+    y = "Density"
+  ) +
+  scale_fill_manual(values = c("blue", "red")) +
+  scale_color_manual(values = c("Top 119" = "blue", "Top 120-238" = "red")) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5),
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  ) +
+  guides(fill = guide_legend(title = "Rank Group"), color = guide_legend(title = "Rank Group")) +
+  expand_limits(y = 0) +
+  coord_cartesian(xlim = c(0, 100))  # Adjust the x-axis limits as needed to make the graph larger
 
 
 
 ```
+
+
+```{r}
+library(ggplot2)
+library(gridExtra)
+
+# Define the countries in Europe+Great Britain and United States+Canada
+europe_great_britain <- c(
+  "United Kingdom of Great Britain and Northern Ireland", "France", "Italy", "Spain",
+  "Switzerland", "Belgium", "Netherlands", "Germany", "Romania", "Denmark",
+  "Sweden", "Norway", "Czechia", "Austria", "Greece", "Poland", "Ireland",
+  "Portugal", "Luxembourg", "Hungary"
+)
+us_canada <- c("United States of America", "Canada")
+
+# Filter the data for Europe+Great Britain and United States+Canada
+europe_great_britain_data <- new1_data %>% filter(country %in% europe_great_britain)
+us_canada_data <- new1_data %>% filter(country %in% us_canada)
+
+# Create a function to generate the side-by-side kernel density plots with different line colors
+create_density_plot <- function(data, title) {
+  ggplot(data, aes(x = female_ratio, color = rank)) +
+    geom_density(fill = "blue", alpha = 0.5) +
+    labs(
+      title = title,
+      x = "Percentage of Women",
+      y = "Density"
+    ) +
+    scale_color_manual(values = c("Top 1-119" = "red", "Top 120-238" = "blue")) +
+    theme_minimal() +
+    theme(
+      plot.title = element_text(hjust = 0.5),
+      axis.text.x = element_text(angle = 45, hjust = 1)
+    ) +
+    guides(color = guide_legend(title = "Rank Group")) +
+    expand_limits(y = 0)
+}
+
+# Create the side-by-side kernel density plots for Europe+Great Britain - All Positions
+europe_great_britain_data_all <- europe_great_britain_data %>%
+  filter(level == "All Positions") %>%
+  mutate(rank = ifelse(rank <= 119, "Top 1-119", "Top 120-238"))
+
+europe_great_britain_plot_all <- create_density_plot(europe_great_britain_data_all, "EU+Great Britain - All Positions")
+
+# Create the side-by-side kernel density plots for United States+Canada - All Positions
+us_canada_data_all <- us_canada_data %>%
+  filter(level == "All Positions") %>%
+  mutate(rank = ifelse(rank <= 119, "Top 1-119", "Top 120-238"))
+
+us_canada_plot_all <- create_density_plot(us_canada_data_all, "United States+Canada - All Positions")
+
+# Create the side-by-side kernel density plots for Europe+Great Britain - Senior Level
+europe_great_britain_data_senior <- europe_great_britain_data %>%
+  filter(level == "Senior Level") %>%
+  mutate(rank = ifelse(rank <= 119, "Top 1-119", "Top 120-238"))
+
+europe_great_britain_plot_senior <- create_density_plot(europe_great_britain_data_senior, "EU+Great Britain - Senior Level")
+
+# Create the side-by-side kernel density plots for United States+Canada - Senior Level
+us_canada_data_senior <- us_canada_data %>%
+  filter(level == "Senior Level") %>%
+  mutate(rank = ifelse(rank <= 119, "Top 1-119", "Top 120-238"))
+
+us_canada_plot_senior <- create_density_plot(us_canada_data_senior, "United States+Canada - Senior Level")
+
+# Create the side-by-side kernel density plots for Europe+Great Britain - Entry Level
+europe_great_britain_data_entry <- europe_great_britain_data %>%
+  filter(level == "Entry Level") %>%
+  mutate(rank = ifelse(rank <= 119, "Top 1-119", "Top 120-238"))
+
+europe_great_britain_plot_entry <- create_density_plot(europe_great_britain_data_entry, "EU+Great Britain - Entry Level")
+
+# Create the side-by-side kernel density plots for United States+Canada - Entry Level
+us_canada_data_entry <- us_canada_data %>%
+  filter(level == "Entry Level") %>%
+  mutate(rank = ifelse(rank <= 119, "Top 1-119", "Top 120-238"))
+
+us_canada_plot_entry <- create_density_plot(us_canada_data_entry, "United States+Canada - Entry Level")
+
+# Print all side-by-side plots
+grid.arrange(
+  europe_great_britain_plot_all, us_canada_plot_all,
+  europe_great_britain_plot_senior, us_canada_plot_senior,
+  europe_great_britain_plot_entry, us_canada_plot_entry,
+  ncol = 2
+)
+
+
+
+```
+
+```{r}
+library(ggplot2)
+
+# Define the countries in Europe+Great Britain and United States+Canada
+europe_great_britain <- c(
+  "United Kingdom of Great Britain and Northern Ireland", "France", "Italy", "Spain",
+  "Switzerland", "Belgium", "Netherlands", "Germany", "Romania", "Denmark",
+  "Sweden", "Norway", "Czechia", "Austria", "Greece", "Poland", "Ireland",
+  "Portugal", "Luxembourg", "Hungary"
+)
+us_canada <- c("United States of America", "Canada")
+
+# Filter the data for Europe+Great Britain and United States+Canada
+europe_great_britain_data <- new1_data %>% filter(country %in% europe_great_britain)
+us_canada_data <- new1_data %>% filter(country %in% us_canada)
+
+# Create a data frame for plotting
+plot_data <- rbind(
+  data.frame(rank = "Top 50", country_group = "Europe+Great Britain", freq = length(unique(europe_great_britain_data$rank[europe_great_britain_data$rank <= 50]))),
+  data.frame(rank = "Top 50", country_group = "United States+Canada", freq = length(unique(us_canada_data$rank[us_canada_data$rank <= 50]))),
+  data.frame(rank = "Top 100", country_group = "Europe+Great Britain", freq = length(unique(europe_great_britain_data$rank[europe_great_britain_data$rank <= 100]))),
+  data.frame(rank = "Top 100", country_group = "United States+Canada", freq = length(unique(us_canada_data$rank[us_canada_data$rank <= 100]))),
+  data.frame(rank = "Top 150", country_group = "Europe+Great Britain", freq = length(unique(europe_great_britain_data$rank[europe_great_britain_data$rank <= 150]))),
+  data.frame(rank = "Top 150", country_group = "United States+Canada", freq = length(unique(us_canada_data$rank[us_canada_data$rank <= 150]))),
+  data.frame(rank = "Top 200", country_group = "Europe+Great Britain", freq = length(unique(europe_great_britain_data$rank[europe_great_britain_data$rank <= 200]))),
+  data.frame(rank = "Top 200", country_group = "United States+Canada", freq = length(unique(us_canada_data$rank[us_canada_data$rank <= 200]))),
+  data.frame(rank = "Top 238", country_group = "Europe+Great Britain", freq = length(unique(europe_great_britain_data$rank))),
+  data.frame(rank = "Top 238", country_group = "United States+Canada", freq = length(unique(us_canada_data$rank)))
+)
+
+# Specify the order of levels for rank_group
+plot_data$rank <- factor(plot_data$rank, levels = c("Top 50", "Top 100", "Top 150", "Top 200", "Top 238"))
+
+# Create a bar plot
+ggplot(plot_data, aes(x = rank, y = freq, fill = country_group)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.9)) +
+  labs(
+    title = "Institution Frequency by Rank Category",
+    x = "Rank Category",
+    y = "Frequency"
+  ) +
+  scale_fill_manual(values = c("Europe+Great Britain" = "blue", "United States+Canada" = "red")) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5)
+  ) +
+  guides(fill = guide_legend(title = "Country Group"))
+
+```
+
+```{r}
+library(ggplot2)
+library(gridExtra)
+
+# Assuming your datasets are named 'dataset1' and 'dataset2'
+
+# Create a scatter plot with a curved regression line for "all positions"
+scatter_all_positions <- ggplot(data = new3_data, aes(x = rank_women_all_positions, y = rank_gender_gap_index)) +
+  geom_point() +  # Scatter plot
+  geom_smooth(method = "loess", se = FALSE, color = "blue") +  # Curved regression line
+  labs(
+    title = "All Positions",
+    x = "Share of Women",
+    y = "Rank Gender Gap Index"
+  ) +
+  theme_minimal()
+
+# Create a scatter plot with a curved regression line for "senior level"
+scatter_senior_level <- ggplot(data = new3_data, aes(x = rank_women_senior_positions, y = rank_gender_gap_index)) +
+  geom_point() +  # Scatter plot
+  geom_smooth(method = "loess", se = FALSE, color = "red") +  # Curved regression line
+  labs(
+    title = "Senior Level",
+    x = "Share of Women",
+    y = "Rank Gender Gap Index"
+  ) +
+  theme_minimal()
+
+# Arrange both scatter plots side by side
+scatter_grid <- grid.arrange(scatter_all_positions, scatter_senior_level, ncol = 2)
+
+# Display the combined scatter plots
+print(scatter_grid)
+
+
+```
+
+

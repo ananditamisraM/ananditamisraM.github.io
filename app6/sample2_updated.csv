@@ -1,0 +1,271 @@
+rank_toplist,institution,country,identified_positions,senior_positions,state_time,institution_classification,female_ratio,female_ratio_senior_positions,main_data_set,world_region
+4,London School of Economics (LSE),United Kingdom of Great Britain and Northern Ireland,453,124,30.10.2020,University,26,21,1,Europe
+5,European Central Bank,International Organization,133,68,20.10.2020,Bank,21,21,0,Europe
+6,"Department of Economics, Harvard University",United States of America,341,53,31.01.2020,University,29,9,1,North America
+7,"Economics  Department, Massachusetts Institute of Technology (MIT)",United States of America,211,46,18.02.2020,University,24,15,1,North America
+8,"Department of Economics, University of California-Berkeley",United States of America,50,42,31.01.2020,University,16,12,1,North America
+9,Paris School of Economics,France,297,102,28.10.2020,University,34,29,1,Europe
+11,"Department of Economics, University of Chicago",United States of America,57,30,31.01.2020,University,14,10,1,North America
+12,Bank for International Settlements (BIS),Switzerland,139,17,20.10.2020,Bank,22,18,0,Europe
+13,Institute of Labor Economics (IZA),Germany,13,3,20.10.2020,Organization,8,0,0,Europe
+14,Banca d'Italia,Italy,7,7,21.10.2020,Bank,14,14,0,Europe
+15,Università Commerciale Luigi Bocconi,Italy,572,312,28.10.2020,University,32,27,1,Europe
+16,"Booth School of Business, University of Chicago",United States of America,232,105,31.01.2020,Business School,20,11,1,North America
+17,"Department of Economics, Princeton University",United States of America,63,37,31.01.2020,University,24,16,1,North America
+18,"Department of Economics, Stanford University",United States of America,67,32,31.01.2020,University,15,16,1,North America
+19,Barcelona Graduate School of Economics (Barcelona GSE),Spain,153,27,20.10.2020,Business School,26,15,1,Europe
+20,Organisation de Coopération et de Développement Économiques (OCDE),International Organization,50,16,26.10.2020,Organization,20,19,0,Europe
+21,"Economics Department, Brown University",United States of America,116,24,31.01.2020,University,20,21,1,North America
+22,"Department of Economics, Oxford University",United Kingdom of Great Britain and Northern Ireland,145,75,20.10.2020,University,24,19,1,Europe
+23,Bank of England,United Kingdom of Great Britain and Northern Ireland,91,77,23.10.2020,Bank,29,25,0,Europe
+25,ifo Institut - Leibniz-Institut für Wirtschaftsforschung an der Universität München e.V.,Germany,129,12,28.10.2020,Organization,45,17,0,Europe
+26,"Wirtschaftswissenschaftliche Fakutät, Universität Zürich",Switzerland,380,74,20.10.2020,University,31,16,1,Europe
+27,Toulouse School of Economics (TSE),France,237,59,20.10.2020,University,28,20,1,Europe
+28,"Department of Economics, University College London (UCL)",United Kingdom of Great Britain and Northern Ireland,112,44,20.10.2020,University,29,18,1,Europe
+29,"Sciences économiques, Sciences Po",France,96,19,20.10.2020,University,26,11,1,Europe
+30,"Department of Economics, University of California-San Diego (UCSD)",United States of America,58,36,31.01.2020,University,19,11,1,North America
+31,"Graduate School of Business, Stanford University",United States of America,322,110,31.01.2020,Business School,22,16,1,North America
+32,"Monash Business School, Monash University",Australia,297,107,31.01.2020,Business School,37,29,1,Rest of the World
+34,DIW Berlin (Deutsches Institut für Wirtschaftsforschung),Germany,184,9,22.10.2020,Organization,41,22,0,Europe
+36,"Department of Economics, New York University (NYU)",United States of America,78,50,05.02.2020,University,12,8,1,North America
+37,"Department of Economics, School of Arts and Sciences, Columbia University",United States of America,76,44,05.02.2020,University,16,16,1,North America
+38,"Economics Department, University of California-Davis",United States of America,119,25,05.02.2020,University,35,28,1,North America
+39,Centre for Economic Policy Research (CEPR),International Organization,1476,1,05.11.2020,Organization,25,100,0,Europe
+40,Banque de France,France,91,31,06.11.2020,Bank,30,16,0,Europe
+41,Deutsche Bundesbank,Germany,92,26,20.10.2020,Bank,27,15,0,Europe
+42,"Stern School of Business, New York University (NYU)",United States of America,422,186,31.01.2020,Business School,23,21,1,North America
+43,"Department of Economics, University of Notre Dame",United States of America,43,23,05.02.2020,Business School,26,26,1,North America
+44,"Department of Economics, Boston University",United States of America,54,28,31.01.2020,Business School,20,7,1,North America
+46,"Economics Department, Yale University",United States of America,55,41,31.01.2020,University,18,17,1,North America
+48,"Department of Economics, University of Pennsylvania",United States of America,136,23,31.01.2020,University,20,13,1,North America
+49,Federal Reserve Bank of Chicago,United States of America,57,40,31.01.2020,Bank,26,23,0,North America
+51,"Department of Economics, University of California-Los Angeles (UCLA)",United States of America,49,31,05.02.2020,University,18,16,1,North America
+52,"Wharton School of Business, University of Pennsylvania",United States of America,421,217,05.02.2020,Business School,21,17,1,North America
+53,"Kellogg Graduate School of Management, Northwestern University",United States of America,354,126,05.02.2020,Business School,22,24,1,North America
+54,"Department of Economics, Northwestern University",United States of America,50,38,05.02.2020,University,16,11,1,North America
+55,"Solvay Brussels School of Economics and Management, Université Libre de Bruxelles",Belgium,150,62,21.10.2020,University,42,29,1,Europe
+56,"Sloan School of Management, Massachusetts Institute of Technology (MIT)",United States of America,278,120,05.02.2020,Business School,24,24,1,North America
+57,Banco de España,Spain,99,41,21.10.2020,Bank,31,17,0,Europe
+58,"Economics Department, University of Michigan",United States of America,221,27,05.02.2020,University,26,19,1,North America
+59,Federal Reserve Bank of Dallas,United States of America,41,2,31.01.2020,Bank,15,0,0,North America
+60,Bank of Canada,Canada,124,2,31.01.2020,Bank,22,50,0,North America
+61,"Department of Economics, University of Texas-Austin",United States of America,53,22,05.02.2020,University,25,27,1,North America
+62,"W.P. Carey School of Business, Arizona State University",United States of America,308,158,05.02.2020,Business School,27,25,1,North America
+63,"Faculteit Economie en Bedrijfswetenschappen, KU Leuven",Belgium,149,87,05.11.2020,University,34,36,1,Europe
+64,"Economics Department, Dartmouth College",United States of America,38,24,01.02.2020,University,32,21,1,North America
+65,"Department of Economics, Boston College",United States of America,63,26,05.02.2020,University,16,8,1,North America
+66,"School of Economics and Management, Universiteit van Tilburg",Netherlands,340,130,28.10.2020,University,24,13,1,Europe
+67,"UNSW Business School, UNSW Sydney",Australia,317,138,28.10.2020,Business School,33,25,1,Rest of the World
+68,"School of Economics, University of Nottingham",United Kingdom of Great Britain and Northern Ireland,134,56,28.10.2020,University,25,20,1,Europe
+70,"Department of Economics, University of Toronto",Canada,121,64,05.02.2020,University,14,17,1,North America
+72,"Crawford School of Public Policy, Australian National University",Australia,311,47,28.10.2020,Business School,34,28,1,Rest of the World
+73,"Harvard Business School, Harvard University",United States of America,341,138,05.02.2020,Business School,24,26,1,North America
+74,"Walter A. Haas School of Business, University of California-Berkeley",United States of America,138,72,05.02.2020,Business School,22,18,1,North America
+75,Centre de Recherche en Économie et Statistique (CREST),France,205,87,28.10.2020,University,26,17,1,Europe
+78,"Department of Economics, University of Warwick",United Kingdom of Great Britain and Northern Ireland,120,49,28.10.2020,University,23,16,1,Europe
+80,"Vancouver School of Economics, University of British Columbia",Canada,160,31,05.02.2020,University,23,23,1,North America
+81,"Faculty of Business and Economics, University of Melbourne",Australia,305,120,05.02.2020,University,33,29,1,Rest of the World
+82,"Faculteit der Economische Wetenschappen, Erasmus Universiteit Rotterdam",Netherlands,261,91,28.10.2020,University,28,15,1,Europe
+83,"Joint Research Centre, European Commission",International Organization,82,8,29.10.2020,Organization,33,0,0,Europe
+84,"Department of Economics, University of Maryland",United States of America,78,33,05.02.2020,University,27,27,1,North America
+85,"Graduate School of Business, Columbia University",United States of America,307,119,05.02.2020,Business School,20,16,1,North America
+86,"Dipartimento di Scienze Economiche, Alma Mater Studiorum - Università di Bologna",Italy,247,78,28.10.2020,University,28,24,1,Europe
+87,"Faculty of Economics, University of Cambridge",United Kingdom of Great Britain and Northern Ireland,140,23,27.10.2020,University,21,13,1,Europe
+88,"Volkswirtschaftliche Fakultät, Ludwig-Maximilians-Universität München",Germany,142,26,28.10.2020,University,34,15,1,Europe
+89,"École des Sciences Économiques de Louvain, Université Catholique de Louvain",Belgium,42,19,26.10.2020,University,14,16,1,Europe
+90,"School of Economics and Finance, Queen Mary University of London",United Kingdom of Great Britain and Northern Ireland,127,40,26.10.2020,University,29,23,1,Europe
+91,"Department of Economics, University of California-Irvine",United States of America,53,34,05.02.2020,University,19,12,1,North America
+92,"Sussex Business School, University of Sussex",United Kingdom of Great Britain and Northern Ireland,290,61,28.10.2020,Business School,41,28,1,Europe
+93,"Business School, Deakin University",Australia,177,47,05.02.2020,Business School,29,11,1,Rest of the World
+94,"Department of Economics, University of Virginia",United States of America,108,36,05.02.2020,University,27,19,1,North America
+96,"School of Management, Yale University",United States of America,130,56,05.02.2020,Business School,28,20,1,North America
+97,Academia de Studii Economice din Bucureşti,Romania,256,155,30.10.2020,University,58,55,1,Europe
+98,"Økonomisk Institut, Københavns Universitet",Denmark,220,55,28.10.2020,University,20,11,1,Europe
+99,Handelshögskolan i Stockholm,Sweden,308,80,26.10.2020,University,31,23,1,Europe
+100,Norges Handelshøyskole (NHH),Norway,390,172,28.10.2020,University,27,24,1,Europe
+101,"Department of Economics, Duke University",United States of America,114,71,05.02.2020,University,18,14,1,North America
+103,Leibniz-Zentrum für Europäische Wirtschaftsforschung (ZEW),Germany,212,3,28.10.2020,Organization,27,33,0,Europe
+104,"Institut for Økonomi, Aarhus Universitet",Denmark,188,96,27.10.2020,University,23,22,1,Europe
+105,London Business School (LBS),United Kingdom of Great Britain and Northern Ireland,152,70,27.10.2020,Business School,26,24,1,Europe
+106,"Dipartimenti e Istituti di Scienze Economiche, Università Cattolica del Sacro Cuore",Italy,132,88,28.10.2020,University,38,35,1,Europe
+107,"École d'Économie d'Aix-Marseille, Aix-Marseille Université",France,197,42,27.10.2020,University,32,21,1,Europe
+108,"Department of Management, Technology and Economics (D-MTEC), Eidgenössische Technische Hochschule Zürich (ETHZ)",Switzerland,236,20,28.10.2020,University,33,10,1,Europe
+109,"Department of Economics, University of Southern California",United States of America,98,49,05.02.2020,University,19,16,1,North America
+110,"Institut ekonomických studií, Univerzita Karlova v Praze",Czechia,49,20,28.10.2020,University,22,10,1,Europe
+111,"Wirtschaftswissenschaftlicher Fachbereich, Rheinische Friedrich-Wilhelms-Universität Bonn",Germany,82,28,28.10.2020,University,13,7,1,Europe
+112,"Økonomisk institutt, Universitetet i Oslo",Norway,68,23,28.10.2020,University,26,17,1,Europe
+113,"Facoltà di Economia, Università degli Studi di Roma ""Tor Vergata""",Italy,222,91,28.10.2020,University,33,30,1,Europe
+114,"Economics Department, Georgetown University",United States of America,130,26,05.02.2020,University,32,19,1,North America
+115,"School of Economics, University of Queensland",Australia,81,23,05.02.2020,University,27,22,1,Rest of the World
+116,"Faculteit Economie en Bedrijfskunde, Universiteit van Amsterdam",Netherlands,74,74,28.10.2020,University,7,7,1,Europe
+117,"Economics Department, University of Wisconsin-Madison",United States of America,156,35,05.02.2020,University,34,14,1,North America
+118,"School of Economics, Faculty of Arts and Social Sciences, University of Sydney",Australia,65,30,05.02.2020,University,37,20,1,Rest of the World
+119,"Ekonomihögskolan, Lunds Universitet",Sweden,319,115,28.10.2020,University,33,29,1,Europe
+120,"Centre d'Économie de la Sorbonne, Université Paris 1 (Panthéon-Sorbonne)",France,197,30,28.10.2020,University,33,27,1,Europe
+121,Österreichisches Institut für Wirtschaftsforschung (WIFO),Austria,62,1,29.10.2020,Organization,35,0,0,Europe
+122,CESifo,Germany,86,13,29.10.2020,Organization,40,8,0,Europe
+123,"Department of Economics, Cornell University",United States of America,48,35,05.02.2020,University,19,11,1,North America
+124,"Abteilung für Volkswirtschaftslehre, Universität Mannheim",Germany,80,30,29.10.2020,University,25,27,1,Europe
+125,Institut für Weltwirtschaft (IfW),Germany,91,20,29.10.2020,Organization,33,15,0,Europe
+126,"Fachbereich Wirtschaftswissenschaft, Goethe Universität Frankfurt am Main",Germany,66,53,25.10.2020,University,18,15,1,Europe
+127,de Nederlandsche Bank,Netherlands,50,5,23.10.2020,Bank,24,40,0,Europe
+128,"Rotman School of Management, University of Toronto",Canada,243,142,05.02.2020,Business School,28,24,1,North America
+129,"Department of Economics, Texas A&M University",United States of America,71,28,05.02.2020,University,30,29,1,North America
+130,"EconomiX, Université Paris-Nanterre (Paris X)",France,169,38,29.10.2020,University,36,47,1,Europe
+131,"Institutul National de Cercetari Economice (INCE), Academia Romana",Romania,93,8,29.10.2020,University,67,50,1,Europe
+133,"School of Business and Economics, Maastricht University",Netherlands,79,64,23.10.2020,University,13,14,1,Europe
+134,"Andrew Young School of Policy Studies, Georgia State University",United States of America,164,77,05.02.2020,University,44,34,1,North America
+135,"Business School, University of Technology Sydney",Australia,221,61,05.02.2020,Business School,41,28,1,Rest of the World
+136,"Facultat d'Economia i Empresa, Universitat de Barcelona",Spain,322,246,29.10.2020,University,39,39,1,Europe
+137,"Anderson Graduate School of Management, University of California-Los Angeles (UCLA)",United States of America,152,67,05.02.2020,Business School,24,21,1,North America
+138,"Harris School of Public Policy, University of Chicago",United States of America,70,35,05.02.2020,Business School,23,9,1,North America
+139,"Department of Agricultural and Resource Economics, University of California-Berkeley",United States of America,95,20,05.02.2020,University,32,15,1,North America
+140,"Economics Department, University of Essex",United Kingdom of Great Britain and Northern Ireland,66,20,29.10.2020,University,26,25,1,Europe
+141,"Department of Economics, Vanderbilt University",United States of America,106,17,05.02.2020,University,32,18,1,North America
+142,Institutet för Näringslivsforskning (IFN),Sweden,82,21,25.10.2020,Organization,22,10,0,Europe
+143,"Economics Department, Michigan State University",United States of America,48,40,05.02.2020,University,19,18,1,North America
+144,"Department of Economics, University of Minnesota",United States of America,36,16,05.02.2020,University,19,19,1,North America
+145,"Department of Economics and Related Studies, University of York",United Kingdom of Great Britain and Northern Ireland,108,27,29.10.2020,University,39,26,1,Europe
+146,Institut de Préparation à l'Administration et à la Gestion (IPAG),France,90,33,26.10.2020,University,52,21,1,Europe
+147,"Adam Smith Business School, University of Glasgow",United Kingdom of Great Britain and Northern Ireland,196,66,29.10.2020,Business School,40,26,1,Europe
+148,"Departamento de Economía, Universidad Carlos III de Madrid",Spain,79,38,29.10.2020,University,24,21,1,Europe
+149,"College of Business and Economics, Australian National University",Australia,334,72,05.02.2020,University,40,25,1,Rest of the World
+150,"Handelshögskolan, Göteborgs Universitet",Sweden,179,32,29.10.2020,University,36,22,1,Europe
+151,"Economics Department, Queen's University",Canada,54,25,05.02.2020,University,20,20,1,North America
+152,Copenhagen Business School,Denmark,327,241,29.10.2020,Business School,36,32,1,Europe
+153,"Faculté des Hautes Études Commerciales (HEC), Université de Lausanne",Switzerland,282,129,29.10.2020,University,31,30,1,Europe
+154,"Economics Department, University of California-Santa Cruz (UCSC)",United States of America,34,11,05.02.2020,University,21,27,1,North America
+155,"Groupe d'Analyse et de Théorie Économique Lyon St-Étienne (GATE Lyon St-Étienne), Université de Lyon",France,85,28,29.10.2020,University,38,39,1,Europe
+156,"Center for Energy and Environmental Policy Research (CEEP), Beijing Institute of Technology",China,114,21,05.02.2020,University,47,33,1,Rest of the World
+158,"Department of Policy Analysis and Management, College of Human Ecology, Cornell University",United States of America,27,19,05.02.2020,University,37,37,1,North America
+159,"Dipartimento di Economia, Management e Metodi Quantitativi (DEMM), Università degli Studi di Milano",Italy,102,42,29.10.2020,University,39,29,1,Europe
+160,"School of Economics and Political Science, Universität St. Gallen",Switzerland,100,23,29.10.2020,University,27,9,1,Europe
+161,"Department of Economics, University of Western Ontario",Canada,115,26,05.02.2020,University,21,23,1,North America
+162,"Business School, Imperial College",United Kingdom of Great Britain and Northern Ireland,107,61,25.10.2020,Business School,26,25,1,Europe
+163,Federal Reserve Bank of Cleveland,United States of America,30,1,31.01.2020,Bank,7,0,0,North America
+164,"International Economics Section, The Graduate Institute of International and Development Studies",Switzerland,22,13,29.10.2020,University,23,23,1,Europe
+166,WU Wirtschaftsuniversität Wien,Austria,193,150,29.10.2020,University,34,29,1,Europe
+167,"Ross School of Business, University of Michigan",United States of America,269,87,21.02.2020,Business School,30,21,1,North America
+168,"Department of Economics, National University of Singapore (NUS)",Singapore,85,19,05.02.2020,University,39,16,1,Rest of the World
+169,"Economic Research Service, Department of Agriculture, Government of the United States",United States of America,4,4,31.01.2020,Organization,25,25,0,North America
+170,"Wirtschafts- und Sozialwissenschaftliche Fakultät, Universität zu Köln",Germany,92,76,29.10.2020,University,20,14,1,Europe
+171,"Faculteit Economie en Bedrijfskunde, Universiteit Gent",Belgium,165,51,29.10.2020,University,43,45,1,Europe
+172,Gaidar Institute for Economic Policy,Russian Federation,42,9,29.10.2020,Organization,48,33,0,Europe
+174,"Department of Economics, Pennsylvania State University",United States of America,151,26,10.02.2020,University,22,15,1,North America
+175,United Nations University-Maastricht Economic Research Institute of Innovation and Technology (UNU-MERIT),Netherlands,146,30,26.10.2020,University,49,17,1,Europe
+177,"Charles H. Dyson School of Applied Economics and Management, Cornell University",United States of America,87,38,05.02.2020,Business School,29,21,1,North America
+178,"School of Economics, University of Surrey",United Kingdom of Great Britain and Northern Ireland,60,21,29.10.2020,University,27,14,1,Europe
+179,"Department of Economics, Ohio State University",United States of America,109,21,05.02.2020,University,26,14,1,North America
+180,HEC Paris (École des Hautes Études Commerciales),France,114,80,30.10.2020,University,20,21,1,Europe
+181,"Krannert School of Management, Purdue University",United States of America,161,62,05.02.2020,Business School,21,21,1,North America
+182,"Department of Economics, University of Colorado",United States of America,119,20,05.02.2020,University,29,20,1,North America
+183,"Department of Economics, University of California-Santa Barbara (UCSB)",United States of America,145,38,05.02.2020,University,28,11,1,North America
+184,"Department of Economics, Rutgers University-New Brunswick",United States of America,156,52,05.02.2020,University,42,27,1,North America
+185,"School of Economics, Finance and Management, University of Bristol",United Kingdom of Great Britain and Northern Ireland,177,50,29.10.2020,University,37,38,1,Europe
+186,Université Paris-Dauphine (Paris IX),France,404,130,29.10.2020,University,42,35,1,Europe
+187,"Department of Agricultural, Food and Resource Economics, College of Agriculture and Natural Resources, Michigan State University",United States of America,181,56,05.02.2020,University,28,21,1,North America
+188,Economic and Social Research Institute (ESRI),Ireland,63,15,29.10.2020,Organization,49,60,0,Europe
+189,"Department of Economics, University of Pittsburgh",United States of America,89,20,05.02.2020,University,33,30,1,North America
+190,Centro de Estudios Monetarios y Financieros (CEMFI),Spain,48,16,18.11.2020,University,25,19,1,Europe
+191,"Faculty of Economics, University of Tokyo",Japan,43,43,05.02.2020,University,7,7,1,Rest of the World
+193,"Nationalekonomiska Institutionen, Uppsala Universitet",Sweden,105,19,29.10.2020,University,30,21,1,Europe
+195,"Department of Economics, Hebrew University of Jerusalem",Israel,35,19,05.02.2020,University,6,11,1,Rest of the World
+196,Istituto Einaudi per l'Economia e la Finanza (EIEF),Italy,20,4,29.10.2020,Organization,20,25,0,Europe
+197,Banco de Portugal,Portugal,59,12,25.10.2020,Bank,49,25,0,Europe
+198,"Wirtschaftswissenschaftliche Fakultät, Heinriche-Heine-Universität Düsseldorf",Germany,42,19,29.10.2020,University,21,21,1,Europe
+199,"School of Economics, University of Edinburgh",United Kingdom of Great Britain and Northern Ireland,75,21,27.10.2020,University,24,24,1,Europe
+200,RWI - Leibniz-Institut für Wirtschaftsforschung,Germany,41,19,29.10.2020,Organization,20,11,0,Europe
+201,"Wirtschaftswissenschaftliche Fakultät, Humboldt-Universität Berlin",Germany,148,63,29.10.2020,University,34,21,1,Europe
+202,"Eitan Berglas School of Economics, Tel Aviv University",Israel,37,16,05.02.2020,University,11,13,1,Rest of the World
+203,Federal Reserve Bank of Boston,United States of America,31,2,31.01.2020,Bank,29,0,0,North America
+204,"Institute for International Economic Studies (IIES), Stockholms Universitet",Sweden,57,12,29.10.2020,University,32,17,1,Europe
+205,"Dipartimento di Economia, Università Ca' Foscari Venezia",Italy,159,66,29.10.2020,University,37,38,1,Europe
+208,University of Piraeus,Greece,159,107,29.10.2020,University,22,20,1,Europe
+209,Lille Économie et Management (LEM),France,218,104,29.10.2020,University,40,32,1,Europe
+211,"Wydział Nauk Ekonomicznych, Uniwersytet Warszawski",Poland,117,31,29.10.2020,University,40,39,1,Europe
+212,"Fakultät für Wirtschaftswissenschaften, Universität Wien",Austria,163,56,29.10.2020,University,30,29,1,Europe
+213,"Management School, Lancaster University",United Kingdom of Great Britain and Northern Ireland,299,72,29.10.2020,Business School,36,22,1,Europe
+214,"Judge Business School, University of Cambridge",United Kingdom of Great Britain and Northern Ireland,110,35,26.10.2020,Business School,31,14,1,Europe
+215,"Tuck School of Business, Dartmouth College",United States of America,108,46,05.02.2020,Business School,25,22,1,North America
+216,"Department of Agricultural Economics, Purdue University",United States of America,88,35,05.02.2020,University,33,17,1,North America
+217,"School of Economics, University College Dublin",Ireland,59,11,26.10.2020,University,42,27,1,Europe
+218,"Dipartimento di Economia e Statistica ""Cognetti de Martiis"", Università degli Studi di Torino",Italy,123,37,26.10.2020,University,51,46,1,Europe
+219,"Fakultät für Wirtschafts- und Sozialwissenschaften, Ruprecht-Karls-Universität Heidelberg",Germany,43,26,29.10.2020,University,21,19,1,Europe
+221,"School of Business and Economics, Universidade Nova de Lisboa",Portugal,129,19,27.10.2020,University,44,42,1,Europe
+222,"Facoltà di Economia ""Giorgio Fuà"", Università Politecnica delle Marche",Italy,85,62,27.10.2020,University,36,29,1,Europe
+223,"Department of Economics, McGill University",Canada,45,24,05.02.2020,University,20,17,1,North America
+224,Centre d'études prospectives et d'informations internationales (CEPII),France,31,2,29.10.2020,Organization,32,0,0,Europe
+225,"School of Economics, University of Manchester",United Kingdom of Great Britain and Northern Ireland,85,33,28.10.2020,University,25,6,1,Europe
+226,"Scuola di Economia e Management, Università degli Studi di Firenze",Italy,248,135,05.02.2020,University,38,38,1,Europe
+227,"Economics Department, Williams College",United States of America,31,20,05.02.2020,University,19,25,1,North America
+228,"LeBow College of Business, Drexel University",United States of America,223,89,05.02.2020,Business School,43,31,1,North America
+229,"Department of Economics, Washington University in St. Louis",United States of America,98,26,05.02.2020,University,27,4,1,North America
+230,"School of Economics, University of Kent",United Kingdom of Great Britain and Northern Ireland,83,30,29.10.2020,University,35,30,1,Europe
+231,Institut für Arbeitsmarkt- und Berufsforschung (IAB),Germany,57,22,29.10.2020,Organization,42,18,0,Europe
+232,"Warwick Business School, University of Warwick",United Kingdom of Great Britain and Northern Ireland,227,163,29.10.2020,Business School,36,33,1,Europe
+233,"Department of Economics, George Washington University",United States of America,48,33,05.02.2020,University,29,27,1,North America
+234,Institute for Fiscal Studies (IFS),United Kingdom of Great Britain and Northern Ireland,236,21,12.11.2020,Organization,33,43,0,Europe
+236,"Faculté de droit, d'économie et de finance, Université du Luxembourg",Luxembourg,120,39,29.10.2020,University,39,18,1,Europe
+237,Leibniz-Institut für Wirtschaftsforschung Halle (IWH),Germany,106,36,29.10.2020,Organization,25,8,0,Europe
+238,"Division of Social Sciences, California Institute of Technology",United States of America,151,42,05.02.2020,University,35,26,1,North America
+239,"Laboratory of Economics and Management (LEM), Scuola Superiore Sant'Anna",Italy,25,12,29.10.2020,University,40,33,1,Europe
+240,"Economics Department, University of Rochester",United States of America,84,14,05.02.2020,University,20,29,1,North America
+241,"Argyros School of Business and Economics, Chapman University",United States of America,102,45,05.02.2020,University,21,13,1,North America
+243,"Wirtschaftswissenschaftliche Fakultät, Georg-August-Universität Göttingen",Germany,37,32,29.10.2020,University,22,22,1,Europe
+244,"Fachbereich Wirtschaftswissenschaften, Universität Konstanz",Germany,83,19,29.10.2020,University,30,21,1,Europe
+245,BI Handelshøyskolen,Norway,501,249,29.10.2020,University,31,29,1,Europe
+246,"Institutet för Social Forskning (SOFI), Stockholms Universitet",Sweden,93,7,29.10.2020,University,48,29,1,Europe
+247,Oesterreichische Nationalbank,Austria,40,4,05.11.2020,Bank,33,50,0,Europe
+248,"Facultad de Economía, Universidad de los Andes",Colombia,42,33,05.02.2020,University,21,24,1,Rest of the World
+249,"Department of Economics, University of Oregon",United States of America,107,16,05.02.2020,University,26,19,1,North America
+250,Center for Economic Research and Graduate Education and Economics Institute (CERGE-EI),Czechia,62,29,29.10.2020,University,19,3,1,Europe
+251,"Institut für Volkswirtschaftslehre, Johannes-Kepler-Universität Linz",Austria,36,13,29.10.2020,University,25,31,1,Europe
+252,"Department of Economics, Simon Fraser University",Canada,34,27,05.02.2020,University,21,22,1,North America
+253,"Department of Economics, University of Sheffield",United Kingdom of Great Britain and Northern Ireland,45,21,29.10.2020,University,31,24,1,Europe
+254,Central University of Finance and Economics (CUFE),China,9,8,07.02.2020,University,33,38,1,Rest of the World
+255,"Department of Economics and Business, Central European University",Hungary,51,16,29.10.2020,University,20,6,1,Europe
+256,"Economics, New York University Abu Dhabi",United Arab Emirates,34,14,05.02.2020,University,26,7,1,Rest of the World
+257,"Waikato Management School, University of Waikato",New Zealand,88,41,05.02.2020,Business School,39,24,1,Rest of the World
+258,"Department Volkswirtschaftlehre, Universität Bern",Switzerland,56,16,29.10.2020,University,18,13,1,Europe
+259,"Wirtschaftswissenschaftliche Fakultät, Leibniz Universität Hannover",Germany,192,55,29.10.2020,University,43,24,1,Europe
+260,"École d'Économie, Université Clermont Auvergne",France,22,9,29.10.2020,University,41,33,1,Europe
+261,"Facultad de Economía y Empresa, Universidad de Zaragoza",Spain,267,217,30.10.2020,University,47,45,1,Europe
+262,"School of International and Public Affairs (SIPA), Columbia University",United States of America,563,176,05.02.2020,Business School,34,30,1,North America
+263,"Department of Economics, Trinity College Dublin",Ireland,38,6,29.10.2020,University,32,50,1,Europe
+264,Resources for the Future (RFF),International Organization,38,2,31.01.2020,Organization,29,50,0,North America
+265,"Department of Economics, Emory University",United States of America,79,16,05.02.2020,University,34,38,1,North America
+266,"Department of Agricultural and Consumer Economics, University of Illinois at Urbana-Champaign",United States of America,117,27,05.02.2020,University,29,30,1,North America
+267,"Max-Planck-Institut zur Erforschung von Gemeinschaftsgütern, Max-Planck-Gesellschaft",Germany,149,12,29.10.2020,Organization,46,33,0,Europe
+268,Athens University of Economics and Business (AUEB),Greece,207,126,29.10.2020,University,18,18,1,Europe
+269,"Fisher College of Business, Ohio State University",United States of America,288,75,05.02.2020,Business School,29,27,1,North America
+270,HEC Montréal (École des Hautes Études Commerciales),Canada,323,189,05.02.2020,University,32,32,1,North America
+271,"Wirtschaftswissenschaftlichen Fakultät, Eberhard-Karls-Universität Tübingen",Germany,47,22,29.10.2020,University,28,23,1,Europe
+272,"Department of Economics, Johns Hopkins University",United States of America,58,25,05.02.2020,University,19,8,1,North America
+273,"Department of Economics, Iowa State University",United States of America,162,22,30.10.2020,University,28,14,1,North America
+274,"Nationalekonomiska institutionen, Stockholms Universitet",Sweden,39,25,18.11.2020,University,23,20,1,Europe
+275,"Faculty of Economic and Management Sciences, University of Pretoria",South Africa,160,45,05.02.2020,University,61,58,1,Rest of the World
+276,"Institut Supérieur d'Économie et Management (ISEM), Université de Nice-Sophia Antipolis",France,66,25,26.10.2020,University,44,36,1,Europe
+277,"Geneva School of Economics and Management, Université de Genève",Switzerland,97,52,29.10.2020,University,24,31,1,Europe
+278,"Carey Business School, Johns Hopkins University",United States of America,132,48,05.02.2020,Business School,28,27,1,North America
+279,"Faculty of Business and Economics, University of Hong Kong",China,138,70,05.02.2020,University,26,19,1,Rest of the World
+280,"Facultad de Ciencia Económicas y Administrativas, Pontificia Universidad Católica de Chile",Chile,45,25,05.02.2020,University,13,12,1,Rest of the World
+281,"Instituto Superior de Economia e Gestão (ISEG), Universidade de Lisboa",Portugal,244,94,26.10.2020,University,34,32,1,Europe
+282,Singapore Management University,Singapore,6,3,05.02.2020,University,33,33,1,Rest of the World
+283,"Department of Economics, International Business School, Brandeis University",United States of America,83,26,05.02.2020,University,31,35,1,North America
+284,"Cass Business School, City University",United Kingdom of Great Britain and Northern Ireland,188,89,29.10.2020,Business School,30,26,1,Europe
+285,"College of Business and Behavioral Science, Clemson University",United States of America,136,56,05.02.2020,University,35,27,1,North America
+286,"Department of Economics, Tufts University",United States of America,45,20,05.02.2020,University,31,35,1,North America
+287,Szkoła Główna Handlowa w Warszawie,Poland,31,28,29.10.2020,University,42,43,1,Europe
+288,"École des Sciences de la Gestion (ESG), Université du Québec à Montréal (UQAM)",Canada,328,280,05.02.2020,University,41,42,1,North America
+289,"Department of Economics, University of Illinois at Urbana-Champaign",United States of America,139,20,05.02.2020,University,27,10,1,North America
+290,"Groupe de Recherche en Économie Théorique et Appliquée (GREThA), Université de Bordeaux",France,132,19,29.10.2020,University,31,16,1,Europe
+291,"Dipartimento di Scienze Economiche ""Marco Fanno"", Università degli Studi di Padova",Italy,67,54,29.10.2020,University,25,19,1,Europe
+292,"Dipartimento di Economia e Finanza (DEF), Libera Università Internazionale degli Studi Sociali Guido Carli (LUISS)",Italy,31,21,29.10.2020,University,19,19,1,Europe
+293,"Business School, University of Sydney",Australia,455,115,26.10.2020,Business School,35,36,1,Rest of the World
+294,"Department of Economics, University of Alberta",Canada,28,18,05.02.2020,University,29,39,1,North America
+295,"Fuqua School of Business, Duke University",United States of America,117,75,05.02.2020,Business School,22,21,1,North America
+296,"Scuola di Economia e Statistica, Università degli Studi di Milano-Bicocca",Italy,295,86,29.10.2020,University,43,44,1,Europe
+297,"Théorie Économique, Modélisation, Application (THEMA), Université de Cergy-Pontoise",France,117,28,29.10.2020,University,32,25,1,Europe
+298,Brookings Institution,United States of America,257,2,31.01.2020,Organization,27,50,0,North America
+299,"Rechts- und Wirtschaftswissenschaftliche Fakultät, Universität Bayreuth",Germany,20,7,29.10.2020,University,10,0,1,Europe
+300,"Facoltà di Economia, ""Sapienza"" Università di Roma",Italy,201,124,29.10.2020,University,39,39,1,Europe
