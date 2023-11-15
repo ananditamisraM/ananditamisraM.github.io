@@ -26,6 +26,10 @@ ui <- fluidPage(
 # Create Server ----
 server <- function(input, output) {
   
+  # ...
+  
+  # ...
+  
   output$density_plot <- renderPlot({
     # Filter data based on selected level
     selected_data <- switch(input$level,
@@ -36,26 +40,27 @@ server <- function(input, output) {
     # Create kernel density plots for each category
     ggplot() +
       geom_density(data = selected_data %>% filter(rank %in% 1:119),
-                   aes(x = female_ratio, color = rank), fill = "blue", alpha = 0.5) +
+                   aes(x = female_ratio, fill = "Top 119"), alpha = 0.5) +
       geom_density(data = selected_data %>% filter(rank %in% 120:238),
-                   aes(x = female_ratio, color = rank), fill = "red", alpha = 0.5) +
+                   aes(x = female_ratio, fill = "Top 120-238"), alpha = 0.5) +
       labs(
         title = paste("Kernel Density Plot of Female Ratio by Institution Rank -", input$level),
         x = "Percentage of Women",
         y = "Density"
       ) +
-      scale_fill_manual(values = c("blue", "red")) +
-      scale_color_manual(values = c("Top 119" = "blue", "Top 120-238" = "red")) +
+      scale_fill_manual(values = c("Top 119" = "blue", "Top 120-238" = "red")) +
       theme_minimal() +
       theme(
         plot.title = element_text(hjust = 0.5),
         axis.text.x = element_text(angle = 45, hjust = 1)
       ) +
-      guides(fill = guide_legend(title = "Rank Group"), color = guide_legend(title = "Rank Group")) +
-      expand_limits(y = 0) +
-      coord_cartesian(xlim = c(0, 100))
+      guides(fill = guide_legend(title = "Rank Group")) +
+      coord_cartesian(xlim = c(0, 100), ylim = c(0, 0.06))  # Adjust xlim and ylim as needed
   })
+  
+  
 }
 
 # Run Shiny app ----
 shinyApp(ui, server)
+
