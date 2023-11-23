@@ -19,15 +19,22 @@ It is important to note this gender gap because it is not only for women in the 
 Hence, the field is mostly dominated by men in terms of faculty members in universities or positions in banks, etc, relative to the overall population and relative to other disciplines.
 
 
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ananditamisramgithub6/">
+
+</iframe>
+
+
+
+
+
+
 ###### *What is the change in the share of women (all positions) from 1995 to 2014 in major fields?*
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ananditamisramgithub9/">
 
 </iframe>
 
-The above graph shows simply the share of women in different fields- these cover women in institutions like universities, laboratories, organizations, banks, schools, etc. We see from above that the smallest change is seen in the case of Economics and Humanities. We also see that the share of women both in 1995 and 2014 in the case of Economics is the lowest (hence, lower than Humanities in which also there is the smallest change). Business and Management also had about similar share of women in 1995 but it increased for B&M in 2014 but not that much for Economics. Hence, this is why the gender gap in the form of the leaky pipeline and the glass ceiling phenomonen must be studied urgently in the case of Economics. 
-
-
+The above graph shows simply the share of women in different fields- these cover women in institutions like universities, laboratories, organizations, banks, schools, etc. We see from above that the smallest change is seen in the case of Economics and Humanities. We also see that the share of women both in 1995 and 2014 in the case of Economics is the lowest (hence, lower than Humanities in which also there is the smallest change). Business and Management also had about similar share of women in 1995 but it increased for B&M in 2014 but not that much for Economics. Hence, this is why the gender gap in the form of the leaky pipeline and the glass ceiling phenomonen must be studied urgently in the case of Economics.
 
 ###### *What is the number of identified positions and senior positions of women by different types of institutions in the field of Economics?*
 
@@ -43,6 +50,16 @@ This is the first visualization and the simplest one to highlight the leaky pipe
 
 </p>
 
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/app7/">
+
+</iframe>
+
+
+<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ananditamisramgithub6/
+">
+
+</iframe>
+
 
 ###### *What is the difference in share of women at entry level (fresh graduates entering the industry) and senior level by different world regions?*
 
@@ -54,19 +71,17 @@ We see a clear difference from the above line graph between the number of women 
 
 What we also notice here is that, the difference is the largest for the United States + Canada world region group. It is important to further explore this because of the economic position currently held by USA and Canada. There may be specific gender norms, government policies or country-specific confounder that may be causing this. Let's further explore why is that.
 
-
 ###### *Do higher-ranked institutions hire less women?*
 
-Higher ranked institutions may hire less women due to the pressures associated with the uptake of their publication record. Due to this and the burdens of parenthood, women may drop out of the institutions. The stakes are low at entry level since fresh male and female graduates should be having the same research potential. Hence, we must explore the following two expectations to understand if the difference in entry level and senior level share of women in the USA is not because of the greater number of top-ranked institutions in the USA if Expectation 2 turns out to be true. 
+Higher ranked institutions may hire less women due to the pressures associated with the uptake of their publication record. Due to this and the burdens of parenthood, women may drop out of the institutions. The stakes are low at entry level since fresh male and female graduates should be having the same research potential. Hence, we must explore the following two expectations to understand if the difference in entry level and senior level share of women in the USA is not because of the greater number of top-ranked institutions in the USA if Expectation 2 turns out to be true.
 
-*Expectation 1*- Higher-ranked institutions hire women at a similar rate as lower-ranked institutions at all levels of seniority. 
-*Expectation 2*- Higher-ranked institutions hire less women at senior level than at entry level as compared to lower-ranked institutions.  
+*Expectation 1*- Higher-ranked institutions hire women at a similar rate as lower-ranked institutions at all levels of seniority. *Expectation 2*- Higher-ranked institutions hire less women at senior level than at entry level as compared to lower-ranked institutions.
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/ananditamisramgithub4/">
 
 </iframe>
 
-From the above kernel density plots, we see a clear difference in the percentage of women at all levels. At the entry level, the density plot is spread out as compared to "All positions" or "Senior level", and the peak of the plot for both the rank groups are at almost the same percentage of women at the x-axis. At the Senior level, the density plot peak for the top 119 rank group is more towards the left (lower percentage of women) than the lower ranked institutions which means higher ranked institutions higher less women at the senior level. Notice also that there is a general decrease in spread in both the plots at the senior level, showing less share of women in both type of institutions, further highlighting the leaky pipeline.  
+From the above kernel density plots, we see a clear difference in the percentage of women at all levels. At the entry level, the density plot is spread out as compared to "All positions" or "Senior level", and the peak of the plot for both the rank groups are at almost the same percentage of women at the x-axis. At the Senior level, the density plot peak for the top 119 rank group is more towards the left (lower percentage of women) than the lower ranked institutions which means higher ranked institutions higher less women at the senior level. Notice also that there is a general decrease in spread in both the plots at the senior level, showing less share of women in both type of institutions, further highlighting the leaky pipeline.
 
 ###### *Is the ranking effect responsible for the larger difference in share of women at entry versus senior level in the United States?*
 
@@ -74,10 +89,7 @@ From the above kernel density plots, we see a clear difference in the percentage
 
 </iframe>
 
-In the above visualization, we have kernel density plots for the percentage of women for two country groups for a closer look between Europe and Great Britain group and the United States of America and Canada group. Within each kernel density plot, we can see the difference between the top 119 ranked institutions and the top 120-238 ranked institutions. For Europe and Great Britain, the peak of the two plots at entry level are almost at the same point. For senior level also, the peak of the two plots are shifted to the left but are almost at the same point on the x-axis. 
-For United States of America and Canada, at the entry level only, we see a stark difference in spread of the plot of the higher vs lower ranked institutions. Lower-ranked institutions higher larger share of women as compared to higher-ranked institutions in US and Canada at the entry level. 
-A very interesting observation comes from the senior level graph- the lower-rank plot is now less spread which is according to the expectation of leaky pipeline but notice the clear difference in alignment of peaks of the two plots. The higher-rank plot is clearly more towards the left as compared to the lower-rank plot which shows that as compared to the Europe+Great Britain country group, at the senior level, higher-rank institutions hire less women as compared to lower-rank institutions in US+Canada. Hence, we see the existence of the previously explained ranking effect in the US+Canada country group. 
-The situation appears to indicate that prestigious institutions in the United States set elevated expectations for their female faculty members not only in senior positions but also at the entry level. This phenomenon could be attributed to cultural distinctions and disparities in hiring practices within the academic job market.
+In the above visualization, we have kernel density plots for the percentage of women for two country groups for a closer look between Europe and Great Britain group and the United States of America and Canada group. Within each kernel density plot, we can see the difference between the top 119 ranked institutions and the top 120-238 ranked institutions. For Europe and Great Britain, the peak of the two plots at entry level are almost at the same point. For senior level also, the peak of the two plots are shifted to the left but are almost at the same point on the x-axis. For United States of America and Canada, at the entry level only, we see a stark difference in spread of the plot of the higher vs lower ranked institutions. Lower-ranked institutions higher larger share of women as compared to higher-ranked institutions in US and Canada at the entry level. A very interesting observation comes from the senior level graph- the lower-rank plot is now less spread which is according to the expectation of leaky pipeline but notice the clear difference in alignment of peaks of the two plots. The higher-rank plot is clearly more towards the left as compared to the lower-rank plot which shows that as compared to the Europe+Great Britain country group, at the senior level, higher-rank institutions hire less women as compared to lower-rank institutions in US+Canada. Hence, we see the existence of the previously explained ranking effect in the US+Canada country group. The situation appears to indicate that prestigious institutions in the United States set elevated expectations for their female faculty members not only in senior positions but also at the entry level. This phenomenon could be attributed to cultural distinctions and disparities in hiring practices within the academic job market.
 
 <p align="center">
 
@@ -85,17 +97,13 @@ The situation appears to indicate that prestigious institutions in the United St
 
 </p>
 
-
 ###### *Given the existence of the ranking effect, is the lower share of women in the United States and Canada at the senior level because of more number of high-ranked institutions in the region?*
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/ananditamisramgithub1/">
 
 </iframe>
 
-We saw in the previous visualization that ranking effects do exist and are stronger in the United States and Canada, as compared to Europe and Great Britain. But is it because of the more number of the best institutions located in the United States and Canada? 
-According to the above visualization, we can see that US+Canada is better represented for the top ranked institutions (top50, top 100), and as we increase the number of lower-rank institutions to be included in consideration, we see that Europe+Great Britain is better represented (top 238). Hence, the stronger ranking effect in US+Canada can be attributed to the excellence in US+Canada in terms of the existence of more higher-ranked institutions in the region. 
-
-
+We saw in the previous visualization that ranking effects do exist and are stronger in the United States and Canada, as compared to Europe and Great Britain. But is it because of the more number of the best institutions located in the United States and Canada? According to the above visualization, we can see that US+Canada is better represented for the top ranked institutions (top50, top 100), and as we increase the number of lower-rank institutions to be included in consideration, we see that Europe+Great Britain is better represented (top 238). Hence, the stronger ranking effect in US+Canada can be attributed to the excellence in US+Canada in terms of the existence of more higher-ranked institutions in the region.
 
 ###### *What is the correlation between gender gap index and the share/number of women in the workforce?*
 
@@ -103,8 +111,7 @@ According to the above visualization, we can see that US+Canada is better repres
 
 </iframe>
 
-We saw that in all countries (in the third visualization), the share of women at entry level is greater than at senior level. From the second visualization, we also saw how the proportion of women at all positions is much higher than at senior positions. We also saw the heterogeneity between the Europe and Great Britain country group and the United States and Canada country group. The differences may be because of the respective features of gender inequality in that country group/region. This is captured by the Global Gender Gap Index provided by the World Economic Forum. The dataset had ranks for each country according to the Global Gender Gap Index and had ranks for the share of women in all positions and senior positions. 
-Now, the above visualization shows the correlation between the gender gap index rank of the countries and the rank of the share of women. There is a 41% correlation in the case of "All positions" and a 58% correlation for senior positions. The difference in the percentage of correlation, particularly the stronger correlation of the gender gap index (reflecting gender inequality values in respecive countries) and the share of women in senior positions, highlights that gender inequality is much more apparent in the case of senior positions, highlighting the leaky pipeline. 
+We saw that in all countries (in the third visualization), the share of women at entry level is greater than at senior level. From the second visualization, we also saw how the proportion of women at all positions is much higher than at senior positions. We also saw the heterogeneity between the Europe and Great Britain country group and the United States and Canada country group. The differences may be because of the respective features of gender inequality in that country group/region. This is captured by the Global Gender Gap Index provided by the World Economic Forum. The dataset had ranks for each country according to the Global Gender Gap Index and had ranks for the share of women in all positions and senior positions. Now, the above visualization shows the correlation between the gender gap index rank of the countries and the rank of the share of women. There is a 41% correlation in the case of "All positions" and a 58% correlation for senior positions. The difference in the percentage of correlation, particularly the stronger correlation of the gender gap index (reflecting gender inequality values in respecive countries) and the share of women in senior positions, highlights that gender inequality is much more apparent in the case of senior positions, highlighting the leaky pipeline.
 
 #### Overall story
 

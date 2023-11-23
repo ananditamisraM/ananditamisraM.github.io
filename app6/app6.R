@@ -4,11 +4,11 @@ library(maps)
 library(ggplot2)
 library(plotly)
 
-new2_data <- read.csv("sample2_updated.csv")
+new2_updated <- read.csv("sample2_updated2.csv")
 
 # Assuming your dataset is called "df"
 # Group by "world_region" and calculate the sums
-region_data <- new2_data %>%
+region_data <- new2_updated %>%
   group_by(country) %>%
   summarize(
     total_senior_positions = sum(senior_positions),
@@ -17,11 +17,6 @@ region_data <- new2_data %>%
 
 # Get world map data
 world_map <- map_data("world")
-
-# Check for duplicates in "world_region"
-if (any(duplicated(region_data$world_region))) {
-  stop("Duplicates found in 'world_region'. Please ensure unique values.")
-}
 
 # Merge your summarized data with the world map data
 merged_data <- merge(world_map, region_data, by.x = "region", by.y = "country", all.x = TRUE)

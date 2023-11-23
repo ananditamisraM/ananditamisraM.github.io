@@ -1,0 +1,12 @@
+name: app7
+title: app7
+username: ananditamisram
+account: ananditamisram
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10611967
+bundleId: 7961912
+url: https://ananditamisram.shinyapps.io/app7/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
