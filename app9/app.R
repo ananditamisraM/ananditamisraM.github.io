@@ -2,21 +2,17 @@ library(shiny)
 library(ggplot2)
 library(plotly)
 
-# Define the UI
+
 ui <- fluidPage(
   titlePanel("Comparison of share of women in different fields (1995 vs. 2014)"),
-  sidebarLayout(
-    sidebarPanel(),
     mainPanel(
       plotlyOutput("barPlot")
     )
   )
-)
 
-# Define the server
+
+
 server <- function(input, output) {
-  # Assuming your data is in a data frame called "df"
-  # If not, you can create it using the provided data
   df <- data.frame(
     Serial = 1:10,
     Field = c(
@@ -28,7 +24,7 @@ server <- function(input, output) {
     Year = c(1995, 1995, 1995, 1995, 1995, 2014, 2014, 2014, 2014, 2014)
   )
   
-  # Create the side-by-side bar plot with rotated x-axis labels
+
   output$barPlot <- renderPlotly({
     gg <- ggplot(data = df, aes(x = Field, y = Percentage, fill = factor(Year), 
                                 text = paste("Field: ", Field, "<br>Percentage: ", Percentage, "%<br>Year: ", Year))) +
@@ -43,11 +39,10 @@ server <- function(input, output) {
     
     ggplotly(gg, tooltip = "text") %>%
       layout(
-        title = "Comparison of share of women in different fields (1995 vs. 2014)",
         showlegend = TRUE
       )
   })
 }
 
-# Run the application
+
 shinyApp(ui, server)

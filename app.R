@@ -4,9 +4,9 @@ library(gridExtra)
 library(dplyr)
 library(readr)
 
-# Define UI ----
+
 ui <- fluidPage(
-  titlePanel("Kernel Density Plots for Different Countries"),
+  titlePanel("Kernel Density Plots for Percentage of Women in Different Country Groups"),
   sidebarLayout(
     sidebarPanel(
       selectInput("country_group", "Select Country Group:",
@@ -23,10 +23,9 @@ ui <- fluidPage(
   )
 )
 
-# Define Server ----
+
 server <- function(input, output) {
   
-  # Create a function to generate the side-by-side kernel density plots with different line colors
   create_density_plot <- function(data, title) {
     ggplot(data, aes(x = female_ratio, color = rank)) +
       geom_density(fill = "blue", alpha = 0.5) +
@@ -59,7 +58,6 @@ server <- function(input, output) {
       country_data <- new1_data %>% filter(country %in% c("United States of America", "Canada"))
     }
     
-    # Create the side-by-side kernel density plots for All Positions
     all_positions_data <- country_data %>%
       filter(level == "All Positions") %>%
       mutate(rank = ifelse(rank <= 119, "Top 1-119", "Top 120-238"))
@@ -68,7 +66,6 @@ server <- function(input, output) {
       create_density_plot(all_positions_data, paste(input$country_group, "- All Positions"))
     })
     
-    # Create the side-by-side kernel density plots for Senior Level
     senior_level_data <- country_data %>%
       filter(level == "Senior Level") %>%
       mutate(rank = ifelse(rank <= 119, "Top 1-119", "Top 120-238"))
@@ -77,7 +74,6 @@ server <- function(input, output) {
       create_density_plot(senior_level_data, paste(input$country_group, "- Senior Level"))
     })
     
-    # Create the side-by-side kernel density plots for Entry Level
     entry_level_data <- country_data %>%
       filter(level == "Entry Level") %>%
       mutate(rank = ifelse(rank <= 119, "Top 1-119", "Top 120-238"))
@@ -88,6 +84,6 @@ server <- function(input, output) {
   })
 }
 
-# Run Shiny app ----
+
 shinyApp(ui, server)
 

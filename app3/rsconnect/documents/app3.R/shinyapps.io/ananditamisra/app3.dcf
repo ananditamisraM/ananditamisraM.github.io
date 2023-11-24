@@ -5,7 +5,7 @@ account: ananditamisra
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 10517062
-bundleId: 7926521
+bundleId: 7964417
 url: https://ananditamisra.shinyapps.io/app3/
 version: 1
 asMultiple: FALSE

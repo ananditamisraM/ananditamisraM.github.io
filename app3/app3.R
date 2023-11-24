@@ -3,11 +3,10 @@ library(ggplot2)
 library(dplyr)
 library(plotly)
 
-# Assuming your datasets are named 'dataset1' and 'dataset2'
 
-# Define UI ----
+
 ui <- fluidPage(
-  titlePanel("Scatter Plot and Regression Line"),
+  titlePanel("Scatter Plot of Gender Gap Index Rank vs. Rank by Share of Women"),
   sidebarLayout(
     sidebarPanel(
       selectInput("position", "Choose Position", choices = c("All Positions", "Senior Positions"))
@@ -20,10 +19,9 @@ ui <- fluidPage(
 
 new3_data <- read.csv("sample3_updated.csv")
 
-# Define Server ----
+
 server <- function(input, output) {
-  
-  # Create a scatter plot function
+
   create_scatter_plot <- function(data, x_var, y_var, color) {
     gg <- ggplot(data, aes_string(x = x_var, y = y_var)) +
       geom_point() +
@@ -38,7 +36,7 @@ server <- function(input, output) {
     ggplotly(gg, tooltip = "all")
   }
   
-  # Render the scatter plot
+  
   output$scatter_plot <- renderPlotly({
     position <- input$position
     if (position == "All Positions") {
@@ -51,5 +49,5 @@ server <- function(input, output) {
   })
 }
 
-# Run Shiny app ----
+
 shinyApp(ui, server)

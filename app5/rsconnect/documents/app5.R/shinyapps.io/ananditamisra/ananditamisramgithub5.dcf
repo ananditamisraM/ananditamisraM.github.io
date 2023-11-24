@@ -5,7 +5,7 @@ account: ananditamisra
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 10519056
-bundleId: 7926491
+bundleId: 7964304
 url: https://ananditamisra.shinyapps.io/ananditamisramgithub5/
 version: 1
 asMultiple: FALSE

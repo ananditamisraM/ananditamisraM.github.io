@@ -1,54 +1,51 @@
 ---
-title: "Data Story Visualizations"
+title: "Leaky Pipeline Phenomenon"
 ---
+<p align="center">
+
+<img src="heading.png" alt="Alt text" width="800" height="500"/>
+
+</p>
 
 ## The Glass Ceiling and Leaky Pipeline: Let's talk about the gender inequality in the workforce.
 
-##### Let's define terms
+In the realm of Economics, where analytical prowess needs to be utilized along with the knowledge of societal dynamics, a persistent gender gap remains. Unveiling this gender gap necessitates an exploration of the leaky pipeline phenomenon, reflecting the artificial barriers hampering the ascension of women in the workforce. As we embark on this data-driven journey, the question lingers: what revelations lie beneath the surface?
 
-The glass ceiling is a phenomenon that describes the existence of artificial barriers that slow down the growth of women in the workforce. These factors can be inherent such as the will for women to value personal life more than professional life with age, emotional inclination of women, or the social (gender-biased) conditioning such as the need to tend to domestic duties. They can also be external such as the gender pay gap, inequality in the workforce in terms of opportunities or the gender-biased discriminatory attitude of superiors towards their juniors in the field.
+We will explore these revelations as to where, why and how they occur. Are these actually related to the existing gender gap in the field of Economics? 
+
+
+## Let's define terms
 
 The leaky pipeline is a phenomenon that explains why women disappear as they move up the ranks in their respective fields like a leaky pipeline. There are less number of women at the higher ranks of different fields.
 
-##### Why Economics?
+## Why Economics?
 
-Although this type of gender gap/inequality exists for other fields as well, the inequality is much stronger for economics than in other social sciences. Most researchers at current do realize that women are underrepresented in STEM fields and thus, required measures are starting to be put in place. There is very slow growth for the same in economics and researchers and the general public at large are not aware of the gap in economics and how slow the change is taking place. The gender gap in economics also indicates some general bias in science since economics unlike other social sciences requires and relies heavily on analytical skills and mathematics and statistics.
+Although this type of gender gap/inequality exists for other fields as well, the inequality is much stronger for economics than in other social sciences. Most researchers at current do realize that women are underrepresented in STEM fields and thus, required measures are starting to be put in place. There is very slow growth for the same in economics and researchers and the general public at large are **not aware of the gap in economics and how slow the change is taking place.** 
 
-It is important to note this gender gap because it is not only for women in the field who endure sexist policies and hostile behaviour but even government policies would be different if more women were involved in the committees who formulated them. Some famous economists even mentioned that "economics is the worst field to be a woman in."
+- The gender gap in economics also indicates some general bias in science since economics unlike other social sciences requires and relies heavily on analytical skills and mathematics and statistics.
+
+It is important to note this gender gap because it is not only for women in the field who endure sexist policies and hostile behaviour but even government policies would be different if more women were involved in the committees who formulated them. Some famous economists even mentioned that **"economics is the worst field to be a woman in."**
 
 Hence, the field is mostly dominated by men in terms of faculty members in universities or positions in banks, etc, relative to the overall population and relative to other disciplines.
 
 
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ananditamisramgithub6/">
 
-</iframe>
-
-
-
-
-
-
-###### *What is the change in the share of women (all positions) from 1995 to 2014 in major fields?*
+## *What is the change in the share of women (all positions) from 1995 to 2014 in major fields?*
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ananditamisramgithub9/">
 
 </iframe>
 
-The above graph shows simply the share of women in different fields- these cover women in institutions like universities, laboratories, organizations, banks, schools, etc. We see from above that the smallest change is seen in the case of Economics and Humanities. We also see that the share of women both in 1995 and 2014 in the case of Economics is the lowest (hence, lower than Humanities in which also there is the smallest change). Business and Management also had about similar share of women in 1995 but it increased for B&M in 2014 but not that much for Economics. Hence, this is why the gender gap in the form of the leaky pipeline and the glass ceiling phenomonen must be studied urgently in the case of Economics.
+The graph above illustrates the share of women across various fields, encompassing institutions such as universities, laboratories, organizations, and banks, spanning the years from 1995 to 2014. Notably, Economics and Humanities exhibit minimal changes during this period, with Economics sadly maintaining the lowest share of women in both 1995 and 2014. While Business and Management, starting from around the same level as Economics, witnessed a modest increase by 2014, the persistent gender gap in Economics is clear. This graph underscores the urgency of studying the gender dynamics within Economics and delving into the phenomenon of the leaky pipeline. It also serves as a compelling rationale for my choice of the subject of Economics for my data story study. We will see if the leaky pipeline is actually related to the existing gender inequality in the field. 
 
-###### *What is the number of identified positions and senior positions of women by different types of institutions in the field of Economics?*
+
+## *What is the number of identified positions and senior positions of women by different types of institutions in the field of Economics?*
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ananditamisramgithub8/">
 
 </iframe>
 
-This is the first visualization and the simplest one to highlight the leaky pipeline. Senior positions form a very small share of the total identified positions of women in Economics in different institutions. Hence, it shows that since senior positions occupy a very small share, as we go up, we tend to see less women in senior positions
-
-<p align="center">
-
-<img src="misc.png" alt="Alt text" width="500" height="200"/>
-
-</p>
+This visualization serves as the most straightforward depiction of the leaky pipeline phenomenon within Economics. Notably, senior positions represent a disproportionately small fraction of the total identified positions held by women across diverse institutions in the field. This contrast highlights a concerning trend: as one ascends the professional hierarchy, the representation of women diminishes significantly in senior positions.
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/app7/">
 
@@ -61,7 +58,7 @@ This is the first visualization and the simplest one to highlight the leaky pipe
 </iframe>
 
 
-###### *What is the difference in share of women at entry level (fresh graduates entering the industry) and senior level by different world regions?*
+## *What is the difference in share of women at entry level (fresh graduates entering the industry) and senior level by different world regions?*
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/ananditamisramgithub5/">
 
@@ -71,53 +68,95 @@ We see a clear difference from the above line graph between the number of women 
 
 What we also notice here is that, the difference is the largest for the United States + Canada world region group. It is important to further explore this because of the economic position currently held by USA and Canada. There may be specific gender norms, government policies or country-specific confounder that may be causing this. Let's further explore why is that.
 
-###### *Do higher-ranked institutions hire less women?*
+<p align="center">
 
-Higher ranked institutions may hire less women due to the pressures associated with the uptake of their publication record. Due to this and the burdens of parenthood, women may drop out of the institutions. The stakes are low at entry level since fresh male and female graduates should be having the same research potential. Hence, we must explore the following two expectations to understand if the difference in entry level and senior level share of women in the USA is not because of the greater number of top-ranked institutions in the USA if Expectation 2 turns out to be true.
+<img src="middle1.png" alt="Alt text" width="800" height="500"/>
 
-*Expectation 1*- Higher-ranked institutions hire women at a similar rate as lower-ranked institutions at all levels of seniority. *Expectation 2*- Higher-ranked institutions hire less women at senior level than at entry level as compared to lower-ranked institutions.
+</p>
+
+## *Do higher-ranked institutions hire less women?*
+
+Higher-ranked institutions may exhibit a lower propensity to hire women, influenced by the demanding expectations associated with maintaining a robust publication record. This, coupled with the challenges of parenthood, could lead to the attrition of women from these institutions. The stakes are relatively lower at the entry level, where both male and female graduates are presumed to possess comparable research potential.
+
+So, let's explore two expectations to understand if the difference in the share of women at entry and senior levels in the USA is because of the higher number of top-ranked institutions. If Expectation 2 is true, we need to delve deeper into the reasons behind it.
+
+**Expectation 1**: Higher-ranked institutions hire women at a comparable rate to lower-ranked institutions across all levels of seniority.
+
+**Expectation 2**: Higher-ranked institutions hire fewer women at the senior level than at the entry level, especially when contrasted with their lower-ranked counterparts.
+
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/ananditamisramgithub4/">
 
 </iframe>
 
-From the above kernel density plots, we see a clear difference in the percentage of women at all levels. At the entry level, the density plot is spread out as compared to "All positions" or "Senior level", and the peak of the plot for both the rank groups are at almost the same percentage of women at the x-axis. At the Senior level, the density plot peak for the top 119 rank group is more towards the left (lower percentage of women) than the lower ranked institutions which means higher ranked institutions higher less women at the senior level. Notice also that there is a general decrease in spread in both the plots at the senior level, showing less share of women in both type of institutions, further highlighting the leaky pipeline.
+The kernel density plots above illustrate a discernible difference in the percentage of women across all levels. At the entry level, the plot exhibits a broader distribution compared to "All positions" or "Senior level." The peak of the plot for both rank groups aligns at almost the same percentage of women on the x-axis. Conversely, at the Senior level, the density plot peak for the top 119 rank group shifts more towards the left, indicating a lower percentage of women compared to lower-ranked institutions. This means that higher ranked institutions hire less women at the senior level. 
 
-###### *Is the ranking effect responsible for the larger difference in share of women at entry versus senior level in the United States?*
+Notice: there is a general reduction in spread in both plots at the senior level, underscoring a diminished share of women in both types of institutions and further emphasizing the presence of a leaky pipeline.
+
+Hence, our **Expectation 2** turns out to be true. Let's continue to explore further. 
+
+## *Is the ranking effect responsible for the larger difference in share of women at entry versus senior level in the United States?*
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/ananditamisraMgithub/">
 
 </iframe>
 
-In the above visualization, we have kernel density plots for the percentage of women for two country groups for a closer look between Europe and Great Britain group and the United States of America and Canada group. Within each kernel density plot, we can see the difference between the top 119 ranked institutions and the top 120-238 ranked institutions. For Europe and Great Britain, the peak of the two plots at entry level are almost at the same point. For senior level also, the peak of the two plots are shifted to the left but are almost at the same point on the x-axis. For United States of America and Canada, at the entry level only, we see a stark difference in spread of the plot of the higher vs lower ranked institutions. Lower-ranked institutions higher larger share of women as compared to higher-ranked institutions in US and Canada at the entry level. A very interesting observation comes from the senior level graph- the lower-rank plot is now less spread which is according to the expectation of leaky pipeline but notice the clear difference in alignment of peaks of the two plots. The higher-rank plot is clearly more towards the left as compared to the lower-rank plot which shows that as compared to the Europe+Great Britain country group, at the senior level, higher-rank institutions hire less women as compared to lower-rank institutions in US+Canada. Hence, we see the existence of the previously explained ranking effect in the US+Canada country group. The situation appears to indicate that prestigious institutions in the United States set elevated expectations for their female faculty members not only in senior positions but also at the entry level. This phenomenon could be attributed to cultural distinctions and disparities in hiring practices within the academic job market.
+In the depicted visualization, kernel density plots are employed to analyze the percentage of women in two country groups: Europe and Great Britain, and the United States of America and Canada. Within each plot, the distinction between the top 119 ranked institutions and the top 120-238 ranked institutions is evident. For Europe and Great Britain, the peaks of the plots at the entry level nearly coincide for the point on the x-axis. Similarly, at the senior level, the peaks of the two plots shift leftward but align closely on the x-axis. 
 
-<p align="center">
+Notably, in the United States of America and Canada, a marked contrast in the spread of the plot between higher and lower-ranked institutions is observed right from the entry level. Lower-ranked institutions exhibit a larger share of women compared to their higher-ranked counterparts. A compelling observation arises from the senior level graph, where the lower-rank plot displays reduced spread, aligning with expectations of a leaky pipeline. But also notice that a distinct misalignment in the peaks of the two plots is apparent. The higher-rank plot is notably skewed leftward compared to the lower-rank plot, indicating that, in the US+Canada country group, prestigious institutions hire fewer women not only at senior positions but also at the entry level. 
 
-<img src="misc2.png" alt="Alt text" width="500" height="200"/>
+This phenomenon suggests the influence of cultural distinctions and hiring disparities within the academic job market, emphasizing the existence of a ranking effect. The situation appears to indicate that prestigious institutions in the United States set elevated expectations for their female faculty members not only in senior positions but also at the entry level. This phenomenon could be attributed to cultural distinctions and disparities in hiring practices within the academic job market.
 
-</p>
-
-###### *Given the existence of the ranking effect, is the lower share of women in the United States and Canada at the senior level because of more number of high-ranked institutions in the region?*
+## *Given the existence of the ranking effect, is the lower share of women in the United States and Canada at the senior level because of more number of high-ranked institutions in the region?*
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/ananditamisramgithub1/">
 
 </iframe>
 
-We saw in the previous visualization that ranking effects do exist and are stronger in the United States and Canada, as compared to Europe and Great Britain. But is it because of the more number of the best institutions located in the United States and Canada? According to the above visualization, we can see that US+Canada is better represented for the top ranked institutions (top50, top 100), and as we increase the number of lower-rank institutions to be included in consideration, we see that Europe+Great Britain is better represented (top 238). Hence, the stronger ranking effect in US+Canada can be attributed to the excellence in US+Canada in terms of the existence of more higher-ranked institutions in the region.
+The preceding visualization substantiates the existence of ranking effects, particularly accentuated in the United States and Canada in comparison to Europe and Great Britain. However, a pertinent question arises: is this phenomenon attributed to the greater concentration of higher-ranked institutions in the United States and Canada? Analyzing the data presented, it becomes apparent that the US+Canada region is more prominently featured in the top-ranked institutions (top 50, top 100). Conversely, as we expand our consideration to include a larger number of lower-ranked institutions, Europe+Great Britain emerges as better represented, specifically in the top 238 institutions. Consequently, the heightened ranking effect in the US+Canada region can be attributed to the excellence characterized by a greater presence of higher-ranked institutions in the region.
 
-###### *What is the correlation between gender gap index and the share/number of women in the workforce?*
+## *What is the correlation between gender gap index and the share/number of women in the workforce?*
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/app3/">
 
 </iframe>
 
-We saw that in all countries (in the third visualization), the share of women at entry level is greater than at senior level. From the second visualization, we also saw how the proportion of women at all positions is much higher than at senior positions. We also saw the heterogeneity between the Europe and Great Britain country group and the United States and Canada country group. The differences may be because of the respective features of gender inequality in that country group/region. This is captured by the Global Gender Gap Index provided by the World Economic Forum. The dataset had ranks for each country according to the Global Gender Gap Index and had ranks for the share of women in all positions and senior positions. Now, the above visualization shows the correlation between the gender gap index rank of the countries and the rank of the share of women. There is a 41% correlation in the case of "All positions" and a 58% correlation for senior positions. The difference in the percentage of correlation, particularly the stronger correlation of the gender gap index (reflecting gender inequality values in respecive countries) and the share of women in senior positions, highlights that gender inequality is much more apparent in the case of senior positions, highlighting the leaky pipeline.
+The observed trends across countries, as depicted in the third visualization, consistently reveal a higher share of women at the entry level compared to the senior level. This pattern is corroborated by the second visualization, indicating a notable contrast between the proportion of women in all positions versus senior positions. The nuanced distinctions between the Europe and Great Britain country group and the United States and Canada country group may be attributed to unique features of gender inequality within each region.
 
-#### Overall story
+- In delving deeper into the intricacies of gender dynamics, the Global Gender Gap Index provided by the World Economic Forum becomes a valuable metric. This index assigns rankings to countries based on their performance in gender-related indicators, offering comprehensive insights into the share of women in both all positions and senior positions across diverse nations. 
 
-#### *I will add the writeup for importance of the story here and why is it interesting and how relevant it is. Final statistics will be added here to create emphasis.*
+- The dataset had ranks for each country according to the Global Gender Gap Index and had ranks for the share of women in all positions and senior positions. Now, the above visualization shows the correlation between the gender gap index rank of the countries and the rank of the share of women.
 
-In the end, I will also be adding an overarching flowchart with all information summarized similar to what I have on the about page-
+- Examining the correlation, a substantial 58% exists for senior positions, surpassing the 41% correlation for all positions. This heightened correlation, particularly in the context of senior positions, underscores the pervasive impact of gender inequality, vividly illustrating the challenges posed by the leaky pipeline phenomenon.
+
+<p align="center">
+
+<img src="middle3.png" alt="Alt text" width="800" height="500"/>
+
+</p>
+
+
+##### **All in all, we saw why, where and how the leaky pipeline emerges- it is correlated as we expected to the country specific ranks of societal and institutional barriers and is seen more in higher-ranked institutions. Since, there are more number of higher-ranked institutions in USA and Canada, the leaky pipeline is much more apparent in those regions.**
+
+<p align="center">
+
+<img src="middle2.png" alt="Alt text" width="800" height="500"/>
+
+</p>
+
+
+## Overall story
+
+Let's go back to the start- our question- where, why and how they occur. Are these actually related to the existing gender gap in the field of Economics? 
+
+- Where: Starkly in USA+Canada regions
+- Why: Ranking effects because of expectation 2 being true. More top-ranked institutions in the above regions. - How: Societal and institutional barriers. Economics sees a stronger correlation with the overall gender gap index for senior level. 
+- Actually related to the existing gender gap in the field of Economics since the correlation 1) is greater for senior level than entry level 2) the gender gap index ranks are based on existing gender gap indices of the respective regions
+
+
+In Economics, the gender gap, exemplified by the leaky pipeline, persists, driven by societal biases and institutional barriers. 
+
+*Data from 1995 to 2014 shows minimal progress, urging a closer examination of the glass ceiling inhibiting women's advancement. The stark contrast in women's representation at entry and senior levels, especially in the United States and Canada, prompts exploration of cultural and policy dynamics. Higher-ranked institutions hiring fewer women at senior levels raises questions about academic expectations. Linking these insights to the Global Gender Gap Index emphasizes the correlation between gender inequality and women's underrepresentation in senior positions. This narrative will conclude with a call to action for economic growth through gender equality, stressing the need to repair the leaky pipeline.*
 
 ```{mermaid}
 flowchart LR
@@ -128,10 +167,25 @@ flowchart LR
   D --> F[Labour efficiency]
 ```
 
-*Economic Growth Potential:*
+The overarching flowchart presents a roadmap toward eliminating social conditioning, achieving gender pay equality, providing more economic opportunities for women, enhancing labor efficiency, and ultimately contributing to economic growth. McKinsey & Company's report projects a potential $12 trillion addition to global GDP by 2025 through advancing women's equality—a testament to the untapped potential awaiting recognition and utilization in the workforce.
+
+
+**Economic Growth Potential:**
 
 According to a report by McKinsey & Company, advancing women's equality and reducing the gender gap in the workplace could add \$12 trillion to global GDP by 2025. There is a lot of potential in women who are getting educated and shifting to the workfield- it is important to recognize and utilize the potential to add to the labor productivity in the economy.
 
-*Labor Market Efficiency:* According to the World Economic Forum's Global Gender Gap Report 2020, reducing gender disparity in the workplace can improve labor market efficiency, contributing to economic growth. This means that workers should be allocated based on skills, qualifications and merit rather than gender/sex, resulting in more optimum use of human resources. This efficiency will then translate into greater productivity and economic growth, because companies and industries will operate at their full potential.
+**Labor Market Efficiency:** 
 
-*Reducing Income Inequality:* The gender pay gap remains a significant issue in all fields. In the United States, women earned about only 82 cents for each dollar earned by men in the year of 2020, according to the U.S. Bureau of Labor Statistics. The glass ceiling and leaky pipeline phenomenon often contribute to this gender wage gap. By addressing these two issues, we can actually work to reduce income inequality. By not holding women back in their careers due to social conditioning, by systemic changes in mindset, they can progress to higher-paying roles and it will have a direct impact on narrowing the gender pay gap.
+According to the World Economic Forum's Global Gender Gap Report 2020, reducing gender disparity in the workplace can improve labor market efficiency, contributing to economic growth. This means that workers should be allocated based on skills, qualifications and merit rather than gender/sex, resulting in more optimum use of human resources. This efficiency will then translate into greater productivity and economic growth, because companies and industries will operate at their full potential.
+
+**Reducing Income Inequality:** 
+
+The gender pay gap remains a significant issue in all fields. In the United States, women earned about only 82 cents for each dollar earned by men in the year of 2020, according to the U.S. Bureau of Labor Statistics. The glass ceiling and leaky pipeline phenomenon often contribute to this gender wage gap. By addressing these two issues, we can actually work to reduce income inequality. By not holding women back in their careers due to social conditioning, by systemic changes in mindset, they can progress to higher-paying roles and it will have a direct impact on narrowing the gender pay gap.
+
+
+*In addressing the glass ceiling and plugging the leaky pipeline, not only do we pave the way for more equitable workplaces, but we also contribute to reducing income inequality and improving labor market efficiency. The journey through the data underscores the significance of systemic changes, emphasizing the need to recognize and harness the potential within women to maximize labor productivity and foster a more inclusive, prosperous economic future.*
+
+
+
+
+

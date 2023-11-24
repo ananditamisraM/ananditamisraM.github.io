@@ -3,7 +3,6 @@ library(ggplot2)
 library(dplyr)
 library(plotly)
 
-# Assuming your dataset is called "new2_data"
 new2_data <- read.csv("sample2_updated.csv")
 
 summary2_data <- new2_data %>%
@@ -13,14 +12,14 @@ summary2_data <- new2_data %>%
     total_senior_positions = sum(senior_positions)
   )
 
-# Define UI ----
+
 ui <- fluidPage(
   titlePanel("Total Identified and Senior Positions by Institution Classification"),
   sidebarLayout(
     sidebarPanel(
       radioButtons("plot_type", "Select Plot Type:",
-                   choices = c("Bars", "Dots", "Both"),
-                   selected = "Both")
+                   choices = c("Identified Positions", "Senior Positions", "Both Identified and Senior Positions"),
+                   selected = "Both Identified and Senior Positions")
     ),
     mainPanel(
       plotlyOutput("custom_plot")
@@ -28,7 +27,6 @@ ui <- fluidPage(
   )
 )
 
-# Define Server ----
 server <- function(input, output) {
   
   output$custom_plot <- renderPlotly({
@@ -41,11 +39,11 @@ server <- function(input, output) {
       theme_minimal() +
       theme(axis.text.x = element_text(angle = 45, hjust = 1))
     
-    if ("Bars" %in% input$plot_type || "Both" %in% input$plot_type) {
+    if ("Identified Positions" %in% input$plot_type || "Both Identified and Senior Positions" %in% input$plot_type) {
       gg <- gg + geom_bar(aes(y = total_identified_positions), stat = "identity", fill = "blue", width = 0.5)
     }
     
-    if ("Dots" %in% input$plot_type || "Both" %in% input$plot_type) {
+    if ("Senior Positions" %in% input$plot_type || "Both Identified and Senior Positions" %in% input$plot_type) {
       gg <- gg + geom_point(aes(y = total_senior_positions), color = "red", size = 3)
     }
     
@@ -53,6 +51,6 @@ server <- function(input, output) {
   })
 }
 
-# Run Shiny app ----
+
 shinyApp(ui, server)
 

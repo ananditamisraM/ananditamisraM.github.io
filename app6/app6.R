@@ -6,8 +6,6 @@ library(plotly)
 
 new2_updated <- read.csv("sample2_updated2.csv")
 
-# Assuming your dataset is called "df"
-# Group by "world_region" and calculate the sums
 region_data <- new2_updated %>%
   group_by(country) %>%
   summarize(
@@ -15,20 +13,18 @@ region_data <- new2_updated %>%
     total_identified_positions = sum(identified_positions)
   )
 
-# Get world map data
+
 world_map <- map_data("world")
 
-# Merge your summarized data with the world map data
 merged_data <- merge(world_map, region_data, by.x = "region", by.y = "country", all.x = TRUE)
 
-# Create a Shiny app
+
 ui <- fluidPage(
-  titlePanel("Distribution of Senior Positions by World Region"),
+  titlePanel("Distribution of Senior Positions held by women by World Region"),
   plotlyOutput("world_map")
 )
 
 server <- function(input, output) {
-  # Create the world map
   output$world_map <- renderPlotly({
     gg <- ggplot(merged_data, aes(x = long, y = lat, group = group, text = paste(region, "\nTotal Senior Positions: ", total_senior_positions))) +
       geom_polygon(fill = "white", color = "white") +

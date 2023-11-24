@@ -7,6 +7,7 @@ about:
   image-width: 30em
 ---
 
+
 ::: {#hero-heading}
 ## Who is Anandita?
 
@@ -28,6 +29,3 @@ Anandita Misra is an Economics student at NUS. She has keen interest and great b
 ##### Click on "About Me" tab to know about me!
 
 ##### Click on "Github" tab to access my Github!
-
-
-<iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ShinyApp/"> </iframe>

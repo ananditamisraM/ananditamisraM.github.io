@@ -8,13 +8,11 @@ library(readr)
 
 ui <- fluidPage(
   titlePanel("Institution Frequency by Rank"),
-  sidebarLayout(
-    sidebarPanel(),
     mainPanel(
       plotlyOutput("interactive_plot")
     )
   )
-)
+
 new1_data <- read_csv("sample1_updated.csv")
 
 europe_great_britain <- c(

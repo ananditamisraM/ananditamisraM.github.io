@@ -3,10 +3,8 @@ library(dplyr)
 library(ggplot2)
 library(plotly)
 
-# Assuming 'new1_data' is already loaded
 new1_data <- read.csv("sample1_updated.csv")
 
-# Define a function to categorize countries into groups
 categorize_country <- function(country) {
   europe_gb <- c(
     "United Kingdom of Great Britain and Northern Ireland",
@@ -28,28 +26,26 @@ categorize_country <- function(country) {
   }
 }
 
-# Add a new column for country groups
 new1_data <- new1_data %>% mutate(country_group = sapply(country, categorize_country))
 
-# Filter data for "Entry Level" and "Senior Level" and calculate total counts
+
 filtered_data <- new1_data %>%
   filter(level %in% c("Entry Level", "Senior Level")) %>%
   group_by(country_group, level) %>%
-  summarise(total_female = sum(female_ratio), .groups = 'drop')  # Add .groups argument to override grouping
+  summarise(total_female = sum(female_ratio), .groups = 'drop')  
 
-# Reorder the levels of country_group
+
 filtered_data$country_group <- factor(filtered_data$country_group, levels = c(
   "Europe+Great Britain", "United States+Canada", "Australia and New Zealand", "Rest of the World"
 ))
 
-# Create UI ----
 ui <- fluidPage(
-  titlePanel("Total Female Count by Region"),
+  titlePanel("Total Female Count by Region- Entry Level vs Senior Level"),
   sidebarLayout(
     sidebarPanel(
       selectInput("level", "Select Level:",
-                  choices = c("Entry Level", "Senior Level", "Both Lines"),
-                  selected = "Both Lines")
+                  choices = c("Entry Level", "Senior Level", "Both Levels"),
+                  selected = "Both Levels")
     ),
     mainPanel(
       plotlyOutput("line_chart")
@@ -57,27 +53,25 @@ ui <- fluidPage(
   )
 )
 
-# Create Server ----
+
 server <- function(input, output) {
   
   output$line_chart <- renderPlotly({
-    # Filter data based on selected level
-    if (input$level == "Both Lines") {
+    if (input$level == "Both Levels") {
       selected_data <- filtered_data
     } else {
       selected_data <- filtered_data %>% filter(level == input$level)
     }
     
-    # Create the line chart with rotated x-axis labels
-    gg <- ggplot(selected_data, aes(x = country_group, y = total_female, color = level, group = level)) +
-      geom_line() +
+    gg <- ggplot(selected_data, aes(x = country_group, y = total_female, fill = level)) +
+      geom_bar(stat = "identity", position = "identity", alpha = 0.7) + 
       labs(
-        title = paste("Total Female Count at", input$level, "Level by Region"),
+        title = paste("Total Female Count at", input$level, "by Region"),
         x = "Region",
         y = "Total Female Count",
-        color = "Level"
+        fill = "Level"
       ) +
-      scale_color_manual(values = c("Entry Level" = "blue", "Senior Level" = "red")) +
+      scale_fill_manual(values = c("Entry Level" = "blue", "Senior Level" = "red")) +
       theme_minimal() +
       theme(axis.text.x = element_text(angle = 45, hjust = 1))
     
@@ -85,6 +79,6 @@ server <- function(input, output) {
   })
 }
 
-# Run Shiny app ----
+
 shinyApp(ui, server)
 

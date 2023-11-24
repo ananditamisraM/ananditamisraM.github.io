@@ -12,13 +12,13 @@ website:
       - about.qmd
       - UsefulLinks.qmd
       - hello.qmd
-    
+ 
 
 format:
   html:
-    theme: "litera"
+    theme: "pulse"
     css: styles.css
     toc: true
-
+    backgroundcolor: "lavender"
 editor: visual
 
