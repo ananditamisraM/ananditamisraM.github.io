@@ -4,4 +4,4 @@ format: html
 editor: visual
 ---
 
-Hello! Here are the placeholders for the data story. 
+Hello! Here are the placeholders for the data story.

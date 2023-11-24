@@ -2,11 +2,17 @@
 title: "About Me"
 ---
 
-### Hi there, my name is Anandita!
+### Hi there, my name is Anandita! Here you will find ALL THINGS ANANDITA
 
 <p align="center">
 
 <img src="Subject2.png" alt="Alt text" width="768" height="720"/>
+
+</p>
+
+<p align="center">
+
+<img src="about1.png" alt="Alt text" width="800" height="500"/>
 
 </p>
 
@@ -19,6 +25,34 @@ Passion combined with a belief in discipline, honest work, and regularity has ma
 Excited and ready for the journey ahead at NUS and beyond with the same values and to combine my passion with my personal growth to understand the choices and resources presented to other people that are different from mine.\
 \
 
+#### These are some of my media reps from school, along with my twin brother!
+
+<p align="center">
+
+<img src="med1.png" alt="Alt text" width="800" height="500"/>
+
+</p>
+
+<p align="center">
+
+<img src="med2.png" alt="Alt text" width="800" height="500"/>
+
+</p>
+
+<p align="center">
+
+<img src="med3.png" alt="Alt text" width="800" height="500"/>
+
+</p>
+
+## My blog
+
+[Click on this link to access my blog!](https://ananditamisra.wordpress.com/)
+
+[Click here to contact me!](https://ananditamisra.wordpress.com/contact/)
+
+[Click here to view my Linkedin Profile!](https://www.linkedin.com/in/anandita-misra-7bab23276/)
+
 I strive to be human-centric in every pursuit- the following summarises what I feel about being human-centric or user-centric.
 
 ```{mermaid}
@@ -30,8 +64,22 @@ flowchart LR
   D --> F[Maximum Impact]
 ```
 
+
+## My video editing interests
+These are some videos I created!
+
+**Smart Cities Project with my twin brother!!!!**
+{{< video https://www.youtube.com/watch?v=CGSO-bpF8RM >}}
+
+**Competition Submission- Winner of National CSIR Comp!**
+{{< video https://www.youtube.com/watch?v=lxHqTtTe9mw >}}
+
+**DTK1234!!!!**
+This was a project under the module at NUS where we had to identify Norman Doors!
+{{< video https://www.youtube.com/watch?v=L_yqfXovUtg >}}
+
 ## A bit more about me
 
-In less than a year, I have fallen in love with Singapore's environment in general and the positivity and satisfaction it offers to me as an individual. I love to write and have recently restarted my pet project- my blog to share insights and experiences about economics of everyday things, life in Singapore, academics, etc- https://ananditamisra.wordpress.com/\
+In less than a year, I have fallen in love with Singapore's environment in general and the positivity and satisfaction it offers to me as an individual. I love to write and read!
 \
 Feel free to reach out to share insights, engage in meaningful conversations, discuss opportunities, or even talk about life in Singapore

@@ -130,7 +130,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./hello.html" rel="" target="">
- <span class="menu-text">Data Story Visualizations</span></a>
+ <span class="menu-text">Leaky Pipeline Phenomenon</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -295,33 +295,32 @@ Adding another scale for fill, which will replace the existing scale.</code></pr
 <div class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming your data is in a data frame called "df"</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># If not, you can create it using the provided data</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">Serial =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,</span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">Field =</span> <span class="fu">c</span>(</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Economics"</span>, <span class="st">"Social science excluding econ"</span>, <span class="st">"Business and management"</span>,</span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Humanities"</span>, <span class="st">"STEM"</span>, <span class="st">"Economics"</span>, <span class="st">"Social science excluding econ"</span>,</span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Business and management"</span>, <span class="st">"Humanities"</span>, <span class="st">"STEM"</span></span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  ),</span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">Percentage =</span> <span class="fu">c</span>(<span class="fl">30.5</span>, <span class="fl">46.7</span>, <span class="fl">32.3</span>, <span class="fl">51.1</span>, <span class="fl">40.6</span>, <span class="fl">31.4</span>, <span class="fl">56.4</span>, <span class="fl">42.8</span>, <span class="fl">51.9</span>, <span class="fl">55.7</span>),</span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">Year =</span> <span class="fu">c</span>(<span class="dv">1995</span>, <span class="dv">1995</span>, <span class="dv">1995</span>, <span class="dv">1995</span>, <span class="dv">1995</span>, <span class="dv">2014</span>, <span class="dv">2014</span>, <span class="dv">2014</span>, <span class="dv">2014</span>, <span class="dv">2014</span>)</span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">Serial =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">Field =</span> <span class="fu">c</span>(</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Economics"</span>, <span class="st">"Social science excluding econ"</span>, <span class="st">"Business and management"</span>,</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Humanities"</span>, <span class="st">"STEM"</span>, <span class="st">"Economics"</span>, <span class="st">"Social science excluding econ"</span>,</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Business and management"</span>, <span class="st">"Humanities"</span>, <span class="st">"STEM"</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">Percentage =</span> <span class="fu">c</span>(<span class="fl">30.5</span>, <span class="fl">46.7</span>, <span class="fl">32.3</span>, <span class="fl">51.1</span>, <span class="fl">40.6</span>, <span class="fl">31.4</span>, <span class="fl">56.4</span>, <span class="fl">42.8</span>, <span class="fl">51.9</span>, <span class="fl">55.7</span>),</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">Year =</span> <span class="fu">c</span>(<span class="dv">1995</span>, <span class="dv">1995</span>, <span class="dv">1995</span>, <span class="dv">1995</span>, <span class="dv">1995</span>, <span class="dv">2014</span>, <span class="dv">2014</span>, <span class="dv">2014</span>, <span class="dv">2014</span>, <span class="dv">2014</span>)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the side-by-side bar plot with rotated x-axis labels</span></span>
-<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> df, <span class="fu">aes</span>(<span class="at">x =</span> Field, <span class="at">y =</span> Percentage, <span class="at">fill =</span> <span class="fu">factor</span>(Year))) <span class="sc">+</span></span>
-<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
-<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Comparison of share of women in different fields (1995 vs. 2014)"</span>,</span>
-<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Percentage of Women"</span>,</span>
-<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Fields of Work"</span></span>
-<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Year"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> df, <span class="fu">aes</span>(<span class="at">x =</span> Field, <span class="at">y =</span> Percentage, <span class="at">fill =</span> <span class="fu">factor</span>(Year))) <span class="sc">+</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Comparison of share of women in different fields (1995 vs. 2014)"</span>,</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Percentage of Women"</span>,</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Fields of Work"</span></span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Year"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="Plots_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -332,35 +331,29 @@ Adding another scale for fill, which will replace the existing scale.</code></pr
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming your dataset is called "df"</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># If not, replace "df" with your actual data frame name</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Group the data by "institution_classification" and calculate the sum of "identified_positions"</span></span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming your dataset is called "df"</span></span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co"># If not, replace "df" with your actual data frame name</span></span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Group the data by "institution_classification" and calculate the sum of "identified_positions" and "senior_positions"</span></span>
-<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>summary2_data <span class="ot">&lt;-</span> new2_data <span class="sc">%&gt;%</span></span>
-<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(institution_classification) <span class="sc">%&gt;%</span></span>
-<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
-<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_identified_positions =</span> <span class="fu">sum</span>(identified_positions),</span>
-<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_senior_positions =</span> <span class="fu">sum</span>(senior_positions)</span>
-<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the bar chart with points</span></span>
-<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> summary2_data, <span class="fu">aes</span>(<span class="at">x =</span> institution_classification)) <span class="sc">+</span></span>
-<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">y =</span> total_identified_positions), <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"blue"</span>, <span class="at">width =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> total_senior_positions), <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Total Identified and Senior Positions by Institution Classification"</span>,</span>
-<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Count"</span>,</span>
-<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Institution Classification"</span></span>
-<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">sec.axis =</span> <span class="fu">sec_axis</span>(<span class="sc">~</span>., <span class="at">name =</span> <span class="st">"Senior Positions"</span>)) <span class="sc">+</span></span>
-<span id="cb16-30"><a href="#cb16-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb16-31"><a href="#cb16-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>summary2_data <span class="ot">&lt;-</span> new2_data <span class="sc">%&gt;%</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(institution_classification) <span class="sc">%&gt;%</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_identified_positions =</span> <span class="fu">sum</span>(identified_positions),</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_senior_positions =</span> <span class="fu">sum</span>(senior_positions)</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> summary2_data, <span class="fu">aes</span>(<span class="at">x =</span> institution_classification)) <span class="sc">+</span></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">y =</span> total_identified_positions), <span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"blue"</span>, <span class="at">width =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">y =</span> total_senior_positions), <span class="at">color =</span> <span class="st">"red"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Total Identified and Senior Positions by Institution Classification"</span>,</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Count"</span>,</span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Institution Classification"</span></span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">sec.axis =</span> <span class="fu">sec_axis</span>(<span class="sc">~</span>., <span class="at">name =</span> <span class="st">"Senior Positions"</span>)) <span class="sc">+</span></span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="Plots_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -374,16 +367,15 @@ Adding another scale for fill, which will replace the existing scale.</code></pr
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming your dataset is called "df"</span></span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Group by "world_region" and calculate the sums</span></span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>region_data <span class="ot">&lt;-</span> new2_updated <span class="sc">%&gt;%</span></span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(country) <span class="sc">%&gt;%</span></span>
-<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
-<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_senior_positions =</span> <span class="fu">sum</span>(senior_positions),</span>
-<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_identified_positions =</span> <span class="fu">sum</span>(identified_positions)</span>
-<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(maps)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>region_data <span class="ot">&lt;-</span> new2_updated <span class="sc">%&gt;%</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(country) <span class="sc">%&gt;%</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_senior_positions =</span> <span class="fu">sum</span>(senior_positions),</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">total_identified_positions =</span> <span class="fu">sum</span>(identified_positions)</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(maps)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Attaching package: 'maps'</code></pre>
@@ -393,30 +385,24 @@ Attaching package: 'maps'</code></pre>
 
     map</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get world map data</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>world_map <span class="ot">&lt;-</span> <span class="fu">map_data</span>(<span class="st">"world"</span>)</span>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>world_map <span class="ot">&lt;-</span> <span class="fu">map_data</span>(<span class="st">"world"</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for duplicates in "world_region"</span></span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="co">#if (any(duplicated(region_data$world_region))) {</span></span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a> <span class="co"># stop("Duplicates found in 'world_region'. Please ensure unique values.")</span></span>
-<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co">#}</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>merged_data <span class="ot">&lt;-</span> <span class="fu">merge</span>(world_map, region_data, <span class="at">by.x =</span> <span class="st">"region"</span>, <span class="at">by.y =</span> <span class="st">"country"</span>, <span class="at">all.x =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Merge your summarized data with the world map data</span></span>
-<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>merged_data <span class="ot">&lt;-</span> <span class="fu">merge</span>(world_map, region_data, <span class="at">by.x =</span> <span class="st">"region"</span>, <span class="at">by.y =</span> <span class="st">"country"</span>, <span class="at">all.x =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the world map</span></span>
-<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(merged_data, <span class="fu">aes</span>(<span class="at">x =</span> long, <span class="at">y =</span> lat, <span class="at">group =</span> group)) <span class="sc">+</span></span>
-<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span>  <span class="co"># Dark blue for map background</span></span>
-<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(<span class="fu">aes</span>(<span class="at">fill =</span> total_senior_positions), <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="fl">0.001</span>) <span class="sc">+</span></span>
-<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"lightblue"</span>, <span class="at">high =</span> <span class="st">"blue"</span>) <span class="sc">+</span>  <span class="co"># Lighter blue for data</span></span>
-<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_fixed</span>(<span class="at">ratio =</span> <span class="fl">1.3</span>) <span class="sc">+</span></span>
-<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Distribution of Senior Positions by World Region"</span>,</span>
-<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Longitude"</span>,</span>
-<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Latitude"</span></span>
-<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(merged_data, <span class="fu">aes</span>(<span class="at">x =</span> long, <span class="at">y =</span> lat, <span class="at">group =</span> group)) <span class="sc">+</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span>  </span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(<span class="fu">aes</span>(<span class="at">fill =</span> total_senior_positions), <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="fl">0.001</span>) <span class="sc">+</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"lightblue"</span>, <span class="at">high =</span> <span class="st">"blue"</span>) <span class="sc">+</span>  </span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_fixed</span>(<span class="at">ratio =</span> <span class="fl">1.3</span>) <span class="sc">+</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Distribution of Senior Positions by World Region"</span>,</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Longitude"</span>,</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Latitude"</span></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
 ℹ Please use `linewidth` instead.</code></pre>
@@ -430,9 +416,9 @@ Attaching package: 'maps'</code></pre>
 <h2 class="anchored" data-anchor-id="to-be-used-2">To be used</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(merged_data, <span class="fu">aes</span>(<span class="at">x =</span> long, <span class="at">y =</span> lat, <span class="at">group =</span> group)) <span class="sc">+</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span>  <span class="co"># Dark blue for map background</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(<span class="at">fill =</span> <span class="st">"white"</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span>  </span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_polygon</span>(<span class="fu">aes</span>(<span class="at">fill =</span> total_identified_positions), <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="fl">0.001</span>) <span class="sc">+</span></span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"lightpink"</span>, <span class="at">high =</span> <span class="st">"red"</span>) <span class="sc">+</span>  <span class="co"># Lighter blue for data</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_gradient</span>(<span class="at">low =</span> <span class="st">"lightpink"</span>, <span class="at">high =</span> <span class="st">"red"</span>) <span class="sc">+</span>  </span>
 <span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_fixed</span>(<span class="at">ratio =</span> <span class="fl">1.3</span>) <span class="sc">+</span></span>
 <span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Distribution of Identified Positions by World Region"</span>,</span>
@@ -444,10 +430,10 @@ Attaching package: 'maps'</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>distinct_countries <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">distinct</span>(country)</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Write distinct values to a text file</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="fu">writeLines</span>(distinct_countries<span class="sc">$</span>country, <span class="st">"distinct_countries.txt"</span>)</span>
 <span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Read and view the content of the text file</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>distinct_content <span class="ot">&lt;-</span> <span class="fu">readLines</span>(<span class="st">"distinct_countries.txt"</span>)</span>
 <span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>distinct_content</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -490,7 +476,7 @@ Attaching package: 'maps'</code></pre>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a function to categorize countries into groups</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>categorize_country <span class="ot">&lt;-</span> <span class="cf">function</span>(country) {</span>
 <span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  europe_gb <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"United Kingdom of Great Britain and Northern Ireland"</span>,</span>
@@ -514,10 +500,10 @@ Attaching package: 'maps'</code></pre>
 <span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb25-27"><a href="#cb25-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Add a new column for country groups</span></span>
+<span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a>new1_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">country_group =</span> <span class="fu">sapply</span>(country, categorize_country))</span>
 <span id="cb25-30"><a href="#cb25-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-31"><a href="#cb25-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter data for "Entry Level" and "Senior Level" and calculate total counts</span></span>
+<span id="cb25-31"><a href="#cb25-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-32"><a href="#cb25-32" aria-hidden="true" tabindex="-1"></a>filtered_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(level <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Entry Level"</span>, <span class="st">"Senior Level"</span>)) <span class="sc">%&gt;%</span></span>
 <span id="cb25-33"><a href="#cb25-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(country_group, level) <span class="sc">%&gt;%</span></span>
 <span id="cb25-34"><a href="#cb25-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total_female =</span> <span class="fu">sum</span>(female_ratio))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -525,23 +511,22 @@ Attaching package: 'maps'</code></pre>
 <pre><code>`summarise()` has grouped output by 'country_group'. You can override using the
 `.groups` argument.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reorder the levels of country_group</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>filtered_data<span class="sc">$</span>country_group <span class="ot">&lt;-</span> <span class="fu">factor</span>(filtered_data<span class="sc">$</span>country_group, <span class="at">levels =</span> <span class="fu">c</span>(</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe+Great Britain"</span>, <span class="st">"United States+Canada"</span>, <span class="st">"Australia and New Zealand"</span>, <span class="st">"Rest of the World"</span></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>))</span>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>filtered_data<span class="sc">$</span>country_group <span class="ot">&lt;-</span> <span class="fu">factor</span>(filtered_data<span class="sc">$</span>country_group, <span class="at">levels =</span> <span class="fu">c</span>(</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Europe+Great Britain"</span>, <span class="st">"United States+Canada"</span>, <span class="st">"Australia and New Zealand"</span>, <span class="st">"Rest of the World"</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the line chart with rotated x-axis labels</span></span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(filtered_data, <span class="fu">aes</span>(<span class="at">x =</span> country_group, <span class="at">y =</span> total_female, <span class="at">color =</span> level, <span class="at">group =</span> level)) <span class="sc">+</span></span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Total Female Count at Entry Level and Senior Level by Region"</span>,</span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Region"</span>,</span>
-<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Total Female Count"</span>,</span>
-<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Level"</span></span>
-<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Entry Level"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"Senior Level"</span> <span class="ot">=</span> <span class="st">"red"</span>)) <span class="sc">+</span></span>
-<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(filtered_data, <span class="fu">aes</span>(<span class="at">x =</span> country_group, <span class="at">y =</span> total_female, <span class="at">color =</span> level, <span class="at">group =</span> level)) <span class="sc">+</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Total Female Count at Entry Level and Senior Level by Region"</span>,</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Region"</span>,</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Total Female Count"</span>,</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Level"</span></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Entry Level"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"Senior Level"</span> <span class="ot">=</span> <span class="st">"red"</span>)) <span class="sc">+</span></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="Plots_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -549,30 +534,29 @@ Attaching package: 'maps'</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the data for the top 119 and top 120-238 institutions</span></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>top_119_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(rank <span class="sc">%in%</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">119</span>)</span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>top_120_238_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(rank <span class="sc">%in%</span> <span class="dv">120</span><span class="sc">:</span><span class="dv">238</span>)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>top_119_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(rank <span class="sc">%in%</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">119</span>)</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>top_120_238_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(rank <span class="sc">%in%</span> <span class="dv">120</span><span class="sc">:</span><span class="dv">238</span>)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create kernel density plots for each category</span></span>
-<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">data =</span> top_119_data, <span class="fu">aes</span>(<span class="at">x =</span> female_ratio, <span class="at">color =</span> rank), <span class="at">fill =</span> <span class="st">"blue"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">data =</span> top_120_238_data, <span class="fu">aes</span>(<span class="at">x =</span> female_ratio, <span class="at">color =</span> rank), <span class="at">fill =</span> <span class="st">"red"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>level, <span class="at">scales =</span> <span class="st">"free_y"</span>) <span class="sc">+</span></span>
-<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Kernel Density Plot of Female Ratio by Institution Rank"</span>,</span>
-<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Percentage of Women"</span>,</span>
-<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Density"</span></span>
-<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"red"</span>)) <span class="sc">+</span></span>
-<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Top 119"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"Top 120-238"</span> <span class="ot">=</span> <span class="st">"red"</span>)) <span class="sc">+</span></span>
-<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
-<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)</span>
-<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Rank Group"</span>), <span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Rank Group"</span>)) <span class="sc">+</span></span>
-<span id="cb28-25"><a href="#cb28-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expand_limits</span>(<span class="at">y =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
-<span id="cb28-26"><a href="#cb28-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">100</span>))  <span class="co"># Adjust the x-axis limits as needed to make the graph larger</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">data =</span> top_119_data, <span class="fu">aes</span>(<span class="at">x =</span> female_ratio, <span class="at">color =</span> rank), <span class="at">fill =</span> <span class="st">"blue"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">data =</span> top_120_238_data, <span class="fu">aes</span>(<span class="at">x =</span> female_ratio, <span class="at">color =</span> rank), <span class="at">fill =</span> <span class="st">"red"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>level, <span class="at">scales =</span> <span class="st">"free_y"</span>) <span class="sc">+</span></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Kernel Density Plot of Female Ratio by Institution Rank"</span>,</span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Percentage of Women"</span>,</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Density"</span></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"red"</span>)) <span class="sc">+</span></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Top 119"</span> <span class="ot">=</span> <span class="st">"blue"</span>, <span class="st">"Top 120-238"</span> <span class="ot">=</span> <span class="st">"red"</span>)) <span class="sc">+</span></span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)</span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Rank Group"</span>), <span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Rank Group"</span>)) <span class="sc">+</span></span>
+<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">expand_limits</span>(<span class="at">y =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb28-25"><a href="#cb28-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_cartesian</span>(<span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">100</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: The following aesthetics were dropped during statistical transformation: colour
 ℹ This can happen when ggplot fails to infer the correct grouping structure in
@@ -621,87 +605,86 @@ Attaching package: 'gridExtra'</code></pre>
 
     combine</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the countries in Europe+Great Britain and United States+Canada</span></span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>europe_great_britain <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"United Kingdom of Great Britain and Northern Ireland"</span>, <span class="st">"France"</span>, <span class="st">"Italy"</span>, <span class="st">"Spain"</span>,</span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Switzerland"</span>, <span class="st">"Belgium"</span>, <span class="st">"Netherlands"</span>, <span class="st">"Germany"</span>, <span class="st">"Romania"</span>, <span class="st">"Denmark"</span>,</span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Sweden"</span>, <span class="st">"Norway"</span>, <span class="st">"Czechia"</span>, <span class="st">"Austria"</span>, <span class="st">"Greece"</span>, <span class="st">"Poland"</span>, <span class="st">"Ireland"</span>,</span>
-<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Portugal"</span>, <span class="st">"Luxembourg"</span>, <span class="st">"Hungary"</span></span>
-<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>us_canada <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"United States of America"</span>, <span class="st">"Canada"</span>)</span>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>europe_great_britain <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"United Kingdom of Great Britain and Northern Ireland"</span>, <span class="st">"France"</span>, <span class="st">"Italy"</span>, <span class="st">"Spain"</span>,</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Switzerland"</span>, <span class="st">"Belgium"</span>, <span class="st">"Netherlands"</span>, <span class="st">"Germany"</span>, <span class="st">"Romania"</span>, <span class="st">"Denmark"</span>,</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Sweden"</span>, <span class="st">"Norway"</span>, <span class="st">"Czechia"</span>, <span class="st">"Austria"</span>, <span class="st">"Greece"</span>, <span class="st">"Poland"</span>, <span class="st">"Ireland"</span>,</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Portugal"</span>, <span class="st">"Luxembourg"</span>, <span class="st">"Hungary"</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>us_canada <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"United States of America"</span>, <span class="st">"Canada"</span>)</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the data for Europe+Great Britain and United States+Canada</span></span>
-<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>europe_great_britain_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(country <span class="sc">%in%</span> europe_great_britain)</span>
-<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>us_canada_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(country <span class="sc">%in%</span> us_canada)</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>europe_great_britain_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(country <span class="sc">%in%</span> europe_great_britain)</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>us_canada_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(country <span class="sc">%in%</span> us_canada)</span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a function to generate the side-by-side kernel density plots with different line colors</span></span>
-<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a>create_density_plot <span class="ot">&lt;-</span> <span class="cf">function</span>(data, title) {</span>
-<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> female_ratio, <span class="at">color =</span> rank)) <span class="sc">+</span></span>
-<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_density</span>(<span class="at">fill =</span> <span class="st">"blue"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb33-18"><a href="#cb33-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
-<span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span> title,</span>
-<span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> <span class="st">"Percentage of Women"</span>,</span>
-<span id="cb33-21"><a href="#cb33-21" aria-hidden="true" tabindex="-1"></a>      <span class="at">y =</span> <span class="st">"Density"</span></span>
-<span id="cb33-22"><a href="#cb33-22" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb33-23"><a href="#cb33-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Top 1-119"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="st">"Top 120-238"</span> <span class="ot">=</span> <span class="st">"blue"</span>)) <span class="sc">+</span></span>
-<span id="cb33-24"><a href="#cb33-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb33-25"><a href="#cb33-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
-<span id="cb33-26"><a href="#cb33-26" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
-<span id="cb33-27"><a href="#cb33-27" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)</span>
-<span id="cb33-28"><a href="#cb33-28" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb33-29"><a href="#cb33-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Rank Group"</span>)) <span class="sc">+</span></span>
-<span id="cb33-30"><a href="#cb33-30" aria-hidden="true" tabindex="-1"></a>    <span class="fu">expand_limits</span>(<span class="at">y =</span> <span class="dv">0</span>)</span>
-<span id="cb33-31"><a href="#cb33-31" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>create_density_plot <span class="ot">&lt;-</span> <span class="cf">function</span>(data, title) {</span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> female_ratio, <span class="at">color =</span> rank)) <span class="sc">+</span></span>
+<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_density</span>(<span class="at">fill =</span> <span class="st">"blue"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb33-18"><a href="#cb33-18" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span> title,</span>
+<span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> <span class="st">"Percentage of Women"</span>,</span>
+<span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">y =</span> <span class="st">"Density"</span></span>
+<span id="cb33-21"><a href="#cb33-21" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb33-22"><a href="#cb33-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Top 1-119"</span> <span class="ot">=</span> <span class="st">"red"</span>, <span class="st">"Top 120-238"</span> <span class="ot">=</span> <span class="st">"blue"</span>)) <span class="sc">+</span></span>
+<span id="cb33-23"><a href="#cb33-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb33-24"><a href="#cb33-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb33-25"><a href="#cb33-25" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>),</span>
+<span id="cb33-26"><a href="#cb33-26" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)</span>
+<span id="cb33-27"><a href="#cb33-27" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb33-28"><a href="#cb33-28" aria-hidden="true" tabindex="-1"></a>    <span class="fu">guides</span>(<span class="at">color =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Rank Group"</span>)) <span class="sc">+</span></span>
+<span id="cb33-29"><a href="#cb33-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">expand_limits</span>(<span class="at">y =</span> <span class="dv">0</span>)</span>
+<span id="cb33-30"><a href="#cb33-30" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb33-31"><a href="#cb33-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-32"><a href="#cb33-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-33"><a href="#cb33-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the side-by-side kernel density plots for Europe+Great Britain - All Positions</span></span>
-<span id="cb33-34"><a href="#cb33-34" aria-hidden="true" tabindex="-1"></a>europe_great_britain_data_all <span class="ot">&lt;-</span> europe_great_britain_data <span class="sc">%&gt;%</span></span>
-<span id="cb33-35"><a href="#cb33-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"All Positions"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb33-36"><a href="#cb33-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
-<span id="cb33-37"><a href="#cb33-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-38"><a href="#cb33-38" aria-hidden="true" tabindex="-1"></a>europe_great_britain_plot_all <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(europe_great_britain_data_all, <span class="st">"EU+Great Britain - All Positions"</span>)</span>
+<span id="cb33-33"><a href="#cb33-33" aria-hidden="true" tabindex="-1"></a>europe_great_britain_data_all <span class="ot">&lt;-</span> europe_great_britain_data <span class="sc">%&gt;%</span></span>
+<span id="cb33-34"><a href="#cb33-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"All Positions"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-35"><a href="#cb33-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
+<span id="cb33-36"><a href="#cb33-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-37"><a href="#cb33-37" aria-hidden="true" tabindex="-1"></a>europe_great_britain_plot_all <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(europe_great_britain_data_all, <span class="st">"EU+Great Britain - All Positions"</span>)</span>
+<span id="cb33-38"><a href="#cb33-38" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-39"><a href="#cb33-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-40"><a href="#cb33-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the side-by-side kernel density plots for United States+Canada - All Positions</span></span>
-<span id="cb33-41"><a href="#cb33-41" aria-hidden="true" tabindex="-1"></a>us_canada_data_all <span class="ot">&lt;-</span> us_canada_data <span class="sc">%&gt;%</span></span>
-<span id="cb33-42"><a href="#cb33-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"All Positions"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb33-43"><a href="#cb33-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
-<span id="cb33-44"><a href="#cb33-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-45"><a href="#cb33-45" aria-hidden="true" tabindex="-1"></a>us_canada_plot_all <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(us_canada_data_all, <span class="st">"United States+Canada - All Positions"</span>)</span>
+<span id="cb33-40"><a href="#cb33-40" aria-hidden="true" tabindex="-1"></a>us_canada_data_all <span class="ot">&lt;-</span> us_canada_data <span class="sc">%&gt;%</span></span>
+<span id="cb33-41"><a href="#cb33-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"All Positions"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-42"><a href="#cb33-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
+<span id="cb33-43"><a href="#cb33-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-44"><a href="#cb33-44" aria-hidden="true" tabindex="-1"></a>us_canada_plot_all <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(us_canada_data_all, <span class="st">"United States+Canada - All Positions"</span>)</span>
+<span id="cb33-45"><a href="#cb33-45" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-46"><a href="#cb33-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-47"><a href="#cb33-47" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the side-by-side kernel density plots for Europe+Great Britain - Senior Level</span></span>
-<span id="cb33-48"><a href="#cb33-48" aria-hidden="true" tabindex="-1"></a>europe_great_britain_data_senior <span class="ot">&lt;-</span> europe_great_britain_data <span class="sc">%&gt;%</span></span>
-<span id="cb33-49"><a href="#cb33-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"Senior Level"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb33-50"><a href="#cb33-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
-<span id="cb33-51"><a href="#cb33-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-52"><a href="#cb33-52" aria-hidden="true" tabindex="-1"></a>europe_great_britain_plot_senior <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(europe_great_britain_data_senior, <span class="st">"EU+Great Britain - Senior Level"</span>)</span>
+<span id="cb33-47"><a href="#cb33-47" aria-hidden="true" tabindex="-1"></a>europe_great_britain_data_senior <span class="ot">&lt;-</span> europe_great_britain_data <span class="sc">%&gt;%</span></span>
+<span id="cb33-48"><a href="#cb33-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"Senior Level"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-49"><a href="#cb33-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
+<span id="cb33-50"><a href="#cb33-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-51"><a href="#cb33-51" aria-hidden="true" tabindex="-1"></a>europe_great_britain_plot_senior <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(europe_great_britain_data_senior, <span class="st">"EU+Great Britain - Senior Level"</span>)</span>
+<span id="cb33-52"><a href="#cb33-52" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-53"><a href="#cb33-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-54"><a href="#cb33-54" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the side-by-side kernel density plots for United States+Canada - Senior Level</span></span>
-<span id="cb33-55"><a href="#cb33-55" aria-hidden="true" tabindex="-1"></a>us_canada_data_senior <span class="ot">&lt;-</span> us_canada_data <span class="sc">%&gt;%</span></span>
-<span id="cb33-56"><a href="#cb33-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"Senior Level"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb33-57"><a href="#cb33-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
-<span id="cb33-58"><a href="#cb33-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-59"><a href="#cb33-59" aria-hidden="true" tabindex="-1"></a>us_canada_plot_senior <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(us_canada_data_senior, <span class="st">"United States+Canada - Senior Level"</span>)</span>
+<span id="cb33-54"><a href="#cb33-54" aria-hidden="true" tabindex="-1"></a>us_canada_data_senior <span class="ot">&lt;-</span> us_canada_data <span class="sc">%&gt;%</span></span>
+<span id="cb33-55"><a href="#cb33-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"Senior Level"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-56"><a href="#cb33-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
+<span id="cb33-57"><a href="#cb33-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-58"><a href="#cb33-58" aria-hidden="true" tabindex="-1"></a>us_canada_plot_senior <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(us_canada_data_senior, <span class="st">"United States+Canada - Senior Level"</span>)</span>
+<span id="cb33-59"><a href="#cb33-59" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-60"><a href="#cb33-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-61"><a href="#cb33-61" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the side-by-side kernel density plots for Europe+Great Britain - Entry Level</span></span>
-<span id="cb33-62"><a href="#cb33-62" aria-hidden="true" tabindex="-1"></a>europe_great_britain_data_entry <span class="ot">&lt;-</span> europe_great_britain_data <span class="sc">%&gt;%</span></span>
-<span id="cb33-63"><a href="#cb33-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"Entry Level"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb33-64"><a href="#cb33-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
-<span id="cb33-65"><a href="#cb33-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-66"><a href="#cb33-66" aria-hidden="true" tabindex="-1"></a>europe_great_britain_plot_entry <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(europe_great_britain_data_entry, <span class="st">"EU+Great Britain - Entry Level"</span>)</span>
+<span id="cb33-61"><a href="#cb33-61" aria-hidden="true" tabindex="-1"></a>europe_great_britain_data_entry <span class="ot">&lt;-</span> europe_great_britain_data <span class="sc">%&gt;%</span></span>
+<span id="cb33-62"><a href="#cb33-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"Entry Level"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-63"><a href="#cb33-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
+<span id="cb33-64"><a href="#cb33-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-65"><a href="#cb33-65" aria-hidden="true" tabindex="-1"></a>europe_great_britain_plot_entry <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(europe_great_britain_data_entry, <span class="st">"EU+Great Britain - Entry Level"</span>)</span>
+<span id="cb33-66"><a href="#cb33-66" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-67"><a href="#cb33-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-68"><a href="#cb33-68" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the side-by-side kernel density plots for United States+Canada - Entry Level</span></span>
-<span id="cb33-69"><a href="#cb33-69" aria-hidden="true" tabindex="-1"></a>us_canada_data_entry <span class="ot">&lt;-</span> us_canada_data <span class="sc">%&gt;%</span></span>
-<span id="cb33-70"><a href="#cb33-70" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"Entry Level"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb33-71"><a href="#cb33-71" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
-<span id="cb33-72"><a href="#cb33-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-73"><a href="#cb33-73" aria-hidden="true" tabindex="-1"></a>us_canada_plot_entry <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(us_canada_data_entry, <span class="st">"United States+Canada - Entry Level"</span>)</span>
+<span id="cb33-68"><a href="#cb33-68" aria-hidden="true" tabindex="-1"></a>us_canada_data_entry <span class="ot">&lt;-</span> us_canada_data <span class="sc">%&gt;%</span></span>
+<span id="cb33-69"><a href="#cb33-69" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(level <span class="sc">==</span> <span class="st">"Entry Level"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-70"><a href="#cb33-70" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rank =</span> <span class="fu">ifelse</span>(rank <span class="sc">&lt;=</span> <span class="dv">119</span>, <span class="st">"Top 1-119"</span>, <span class="st">"Top 120-238"</span>))</span>
+<span id="cb33-71"><a href="#cb33-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-72"><a href="#cb33-72" aria-hidden="true" tabindex="-1"></a>us_canada_plot_entry <span class="ot">&lt;-</span> <span class="fu">create_density_plot</span>(us_canada_data_entry, <span class="st">"United States+Canada - Entry Level"</span>)</span>
+<span id="cb33-73"><a href="#cb33-73" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb33-74"><a href="#cb33-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-75"><a href="#cb33-75" aria-hidden="true" tabindex="-1"></a><span class="co"># Print all side-by-side plots</span></span>
-<span id="cb33-76"><a href="#cb33-76" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(</span>
-<span id="cb33-77"><a href="#cb33-77" aria-hidden="true" tabindex="-1"></a>  europe_great_britain_plot_all, us_canada_plot_all,</span>
-<span id="cb33-78"><a href="#cb33-78" aria-hidden="true" tabindex="-1"></a>  europe_great_britain_plot_senior, us_canada_plot_senior,</span>
-<span id="cb33-79"><a href="#cb33-79" aria-hidden="true" tabindex="-1"></a>  europe_great_britain_plot_entry, us_canada_plot_entry,</span>
-<span id="cb33-80"><a href="#cb33-80" aria-hidden="true" tabindex="-1"></a>  <span class="at">ncol =</span> <span class="dv">2</span></span>
-<span id="cb33-81"><a href="#cb33-81" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb33-75"><a href="#cb33-75" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(</span>
+<span id="cb33-76"><a href="#cb33-76" aria-hidden="true" tabindex="-1"></a>  europe_great_britain_plot_all, us_canada_plot_all,</span>
+<span id="cb33-77"><a href="#cb33-77" aria-hidden="true" tabindex="-1"></a>  europe_great_britain_plot_senior, us_canada_plot_senior,</span>
+<span id="cb33-78"><a href="#cb33-78" aria-hidden="true" tabindex="-1"></a>  europe_great_britain_plot_entry, us_canada_plot_entry,</span>
+<span id="cb33-79"><a href="#cb33-79" aria-hidden="true" tabindex="-1"></a>  <span class="at">ncol =</span> <span class="dv">2</span></span>
+<span id="cb33-80"><a href="#cb33-80" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="Plots_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -709,7 +692,7 @@ Attaching package: 'gridExtra'</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the countries in Europe+Great Britain and United States+Canada</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>europe_great_britain <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"United Kingdom of Great Britain and Northern Ireland"</span>, <span class="st">"France"</span>, <span class="st">"Italy"</span>, <span class="st">"Spain"</span>,</span>
 <span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Switzerland"</span>, <span class="st">"Belgium"</span>, <span class="st">"Netherlands"</span>, <span class="st">"Germany"</span>, <span class="st">"Romania"</span>, <span class="st">"Denmark"</span>,</span>
@@ -718,11 +701,11 @@ Attaching package: 'gridExtra'</code></pre>
 <span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>us_canada <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"United States of America"</span>, <span class="st">"Canada"</span>)</span>
 <span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the data for Europe+Great Britain and United States+Canada</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>europe_great_britain_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(country <span class="sc">%in%</span> europe_great_britain)</span>
 <span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>us_canada_data <span class="ot">&lt;-</span> new1_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(country <span class="sc">%in%</span> us_canada)</span>
 <span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a data frame for plotting</span></span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>plot_data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(</span>
 <span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">rank =</span> <span class="st">"Top 50"</span>, <span class="at">country_group =</span> <span class="st">"Europe+Great Britain"</span>, <span class="at">freq =</span> <span class="fu">length</span>(<span class="fu">unique</span>(europe_great_britain_data<span class="sc">$</span>rank[europe_great_britain_data<span class="sc">$</span>rank <span class="sc">&lt;=</span> <span class="dv">50</span>]))),</span>
 <span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">rank =</span> <span class="st">"Top 50"</span>, <span class="at">country_group =</span> <span class="st">"United States+Canada"</span>, <span class="at">freq =</span> <span class="fu">length</span>(<span class="fu">unique</span>(us_canada_data<span class="sc">$</span>rank[us_canada_data<span class="sc">$</span>rank <span class="sc">&lt;=</span> <span class="dv">50</span>]))),</span>
@@ -736,10 +719,10 @@ Attaching package: 'gridExtra'</code></pre>
 <span id="cb34-27"><a href="#cb34-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">rank =</span> <span class="st">"Top 238"</span>, <span class="at">country_group =</span> <span class="st">"United States+Canada"</span>, <span class="at">freq =</span> <span class="fu">length</span>(<span class="fu">unique</span>(us_canada_data<span class="sc">$</span>rank)))</span>
 <span id="cb34-28"><a href="#cb34-28" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb34-29"><a href="#cb34-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-30"><a href="#cb34-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify the order of levels for rank_group</span></span>
+<span id="cb34-30"><a href="#cb34-30" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-31"><a href="#cb34-31" aria-hidden="true" tabindex="-1"></a>plot_data<span class="sc">$</span>rank <span class="ot">&lt;-</span> <span class="fu">factor</span>(plot_data<span class="sc">$</span>rank, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Top 50"</span>, <span class="st">"Top 100"</span>, <span class="st">"Top 150"</span>, <span class="st">"Top 200"</span>, <span class="st">"Top 238"</span>))</span>
 <span id="cb34-32"><a href="#cb34-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-33"><a href="#cb34-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a bar plot</span></span>
+<span id="cb34-33"><a href="#cb34-33" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-34"><a href="#cb34-34" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(plot_data, <span class="fu">aes</span>(<span class="at">x =</span> rank, <span class="at">y =</span> freq, <span class="at">fill =</span> country_group)) <span class="sc">+</span></span>
 <span id="cb34-35"><a href="#cb34-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.9</span>)) <span class="sc">+</span></span>
 <span id="cb34-36"><a href="#cb34-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
@@ -761,32 +744,30 @@ Attaching package: 'gridExtra'</code></pre>
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gridExtra)</span>
 <span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming your datasets are named 'dataset1' and 'dataset2'</span></span>
-<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a scatter plot with a curved regression line for "all positions"</span></span>
-<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>scatter_all_positions <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> new3_data, <span class="fu">aes</span>(<span class="at">x =</span> rank_women_all_positions, <span class="at">y =</span> rank_gender_gap_index)) <span class="sc">+</span></span>
-<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span>  <span class="co"># Scatter plot</span></span>
-<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span>  <span class="co"># Curved regression line</span></span>
-<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"All Positions"</span>,</span>
-<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Share of Women"</span>,</span>
-<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Rank Gender Gap Index"</span></span>
-<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
-<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a scatter plot with a curved regression line for "senior level"</span></span>
-<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a>scatter_senior_level <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> new3_data, <span class="fu">aes</span>(<span class="at">x =</span> rank_women_senior_positions, <span class="at">y =</span> rank_gender_gap_index)) <span class="sc">+</span></span>
-<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span>  <span class="co"># Scatter plot</span></span>
-<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span>  <span class="co"># Curved regression line</span></span>
-<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Senior Level"</span>,</span>
-<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Share of Women"</span>,</span>
-<span id="cb35-24"><a href="#cb35-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Rank Gender Gap Index"</span></span>
-<span id="cb35-25"><a href="#cb35-25" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb35-26"><a href="#cb35-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
-<span id="cb35-27"><a href="#cb35-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-28"><a href="#cb35-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Arrange both scatter plots side by side</span></span>
-<span id="cb35-29"><a href="#cb35-29" aria-hidden="true" tabindex="-1"></a>scatter_grid <span class="ot">&lt;-</span> <span class="fu">grid.arrange</span>(scatter_all_positions, scatter_senior_level, <span class="at">ncol =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>scatter_all_positions <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> new3_data, <span class="fu">aes</span>(<span class="at">x =</span> rank_women_all_positions, <span class="at">y =</span> rank_gender_gap_index)) <span class="sc">+</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"blue"</span>) <span class="sc">+</span>  </span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"All Positions"</span>,</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Share of Women"</span>,</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Rank Gender Gap Index"</span></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>scatter_senior_level <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> new3_data, <span class="fu">aes</span>(<span class="at">x =</span> rank_women_senior_positions, <span class="at">y =</span> rank_gender_gap_index)) <span class="sc">+</span></span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span>  </span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span> </span>
+<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Senior Level"</span>,</span>
+<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Share of Women"</span>,</span>
+<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Rank Gender Gap Index"</span></span>
+<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb35-24"><a href="#cb35-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span>
+<span id="cb35-25"><a href="#cb35-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-26"><a href="#cb35-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-27"><a href="#cb35-27" aria-hidden="true" tabindex="-1"></a>scatter_grid <span class="ot">&lt;-</span> <span class="fu">grid.arrange</span>(scatter_all_positions, scatter_senior_level, <span class="at">ncol =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using formula = 'y ~ x'
 `geom_smooth()` using formula = 'y ~ x'</code></pre>
@@ -794,8 +775,7 @@ Attaching package: 'gridExtra'</code></pre>
 <div class="cell-output-display">
 <p><img src="Plots_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
 </div>
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the combined scatter plots</span></span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(scatter_grid)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(scatter_grid)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>TableGrob (1 x 2) "arrange": 2 grobs
   z     cells    name           grob

@@ -7,16 +7,19 @@ title: "Leaky Pipeline Phenomenon"
 
 </p>
 
-## The Glass Ceiling and Leaky Pipeline: Let's talk about the gender inequality in the workforce.
+## The Leaky Pipeline: Let's talk about the gender inequality in the workforce.
 
 In the realm of Economics, where analytical prowess needs to be utilized along with the knowledge of societal dynamics, a persistent gender gap remains. Unveiling this gender gap necessitates an exploration of the leaky pipeline phenomenon, reflecting the artificial barriers hampering the ascension of women in the workforce. As we embark on this data-driven journey, the question lingers: what revelations lie beneath the surface?
 
 We will explore these revelations as to where, why and how they occur. Are these actually related to the existing gender gap in the field of Economics? 
 
+What can we learn from the gender representation landscape in Economics, specifically exploring the emergence of the leaky pipeline? By "landscape," we delve into how, where, and why the leaky pipeline phenomenon surfaces, providing insights into the challenges faced by women in advancing within the field. Is the leaky pipeline a myth?
+
 
 ## Let's define terms
 
-The leaky pipeline is a phenomenon that explains why women disappear as they move up the ranks in their respective fields like a leaky pipeline. There are less number of women at the higher ranks of different fields.
+The "leaky pipeline" is a metaphorical concept that is often used to describe a phenomenon observed in various professional fields where the representation of women decreases at each successive stage of a career pipeline or hierarchy. In the context of gender disparities in the workplace, the leaky pipeline highlights the challenges and barriers that women face as they progress in their careers.
+
 
 ## Why Economics?
 
@@ -28,7 +31,7 @@ It is important to note this gender gap because it is not only for women in the 
 
 Hence, the field is mostly dominated by men in terms of faculty members in universities or positions in banks, etc, relative to the overall population and relative to other disciplines.
 
-
+![Nobel Prize winners (women) for Economic Sciences](info.png)
 
 ## *What is the change in the share of women (all positions) from 1995 to 2014 in major fields?*
 
@@ -47,10 +50,12 @@ The graph above illustrates the share of women across various fields, encompassi
 
 This visualization serves as the most straightforward depiction of the leaky pipeline phenomenon within Economics. Notably, senior positions represent a disproportionately small fraction of the total identified positions held by women across diverse institutions in the field. This contrast highlights a concerning trend: as one ascends the professional hierarchy, the representation of women diminishes significantly in senior positions.
 
+Here, you can also see the distribution for specific regions by colour. The darker shades show higher frequency of women in total identified positions in different regions and the lighter shades show lower frequency. This gives the same insights as above but notice specifically the stark difference in the frequency for USA in both graphs. It drops by a lot for senior positions!
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/app7/">
 
 </iframe>
 
+Here is the distribution of women by senior positions in different world regions. The darker shades show higher frequency of women in senior positions in different regions and the lighter shades show lower frequency.
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisram.shinyapps.io/ananditamisramgithub6/
 ">
@@ -58,15 +63,22 @@ This visualization serves as the most straightforward depiction of the leaky pip
 </iframe>
 
 
-## *What is the difference in share of women at entry level (fresh graduates entering the industry) and senior level by different world regions?*
+## *What is the difference in share of women at entry level and senior level by different world regions?*
 
 <iframe height="400" width="100%" frameborder="no" src="https://ananditamisra.shinyapps.io/ananditamisramgithub5/">
 
 </iframe>
 
-We see a clear difference from the above line graph between the number of women at entry level and senior level. The slope does not represent anything. However, for discrete values, the reason why a line graph was chosen, was to show the difference in share at entry and senior level. The line of senior level can be clearly seen to be below entry level and if not for a line chart, it would have been difficult to visualize this, say with a bar plot. As compared to the previous chart, this further highlights the leaky pipeline since instead of comparing total positions occupied by women, the visualization directly compares women at entry level and women at senior level. Women at senior level is less than women at entry level since they have been leaked out of the pipeline.
+The height of senior level bars can be clearly seen to be below entry level. As compared to the previous chart, this further highlights the leaky pipeline since instead of comparing total positions occupied by women, the visualization directly compares women at entry level and women at senior level (Senior level refers to full professors and associate professors; entry level refers to assistant professors and lecturers). Women at senior level is less than women at entry level since they have been leaked out of the pipeline.
 
-What we also notice here is that, the difference is the largest for the United States + Canada world region group. It is important to further explore this because of the economic position currently held by USA and Canada. There may be specific gender norms, government policies or country-specific confounder that may be causing this. Let's further explore why is that.
+<p align="center">
+
+<img src="pic.png" alt="Alt text" width="800" height="500"/>
+
+</p>
+
+
+What we also notice here is that, the difference is the largest for the United States + Canada world region group. It is important to further explore this because of the economic position currently held by USA and Canada. There may be specific gender norms, government policies or country-specific confounder that may be causing this. Let's further explore why is that. We will take the two major country groups of United States+Canada and Europe+Great Britain since they have the top most institutions and the greatest share of women by proportion in all country regions. They make up the highest share!
 
 <p align="center">
 
@@ -105,6 +117,13 @@ In the depicted visualization, kernel density plots are employed to analyze the 
 
 Notably, in the United States of America and Canada, a marked contrast in the spread of the plot between higher and lower-ranked institutions is observed right from the entry level. Lower-ranked institutions exhibit a larger share of women compared to their higher-ranked counterparts. A compelling observation arises from the senior level graph, where the lower-rank plot displays reduced spread, aligning with expectations of a leaky pipeline. But also notice that a distinct misalignment in the peaks of the two plots is apparent. The higher-rank plot is notably skewed leftward compared to the lower-rank plot, indicating that, in the US+Canada country group, prestigious institutions hire fewer women not only at senior positions but also at the entry level. 
 
+<p align="center">
+
+<img src="usa.png" alt="Alt text" width="800" height="500"/>
+
+</p>
+
+
 This phenomenon suggests the influence of cultural distinctions and hiring disparities within the academic job market, emphasizing the existence of a ranking effect. The situation appears to indicate that prestigious institutions in the United States set elevated expectations for their female faculty members not only in senior positions but also at the entry level. This phenomenon could be attributed to cultural distinctions and disparities in hiring practices within the academic job market.
 
 ## *Given the existence of the ranking effect, is the lower share of women in the United States and Canada at the senior level because of more number of high-ranked institutions in the region?*
@@ -135,6 +154,11 @@ The observed trends across countries, as depicted in the third visualization, co
 
 </p>
 
+<p align="center">
+
+<img src="pic2.png" alt="Alt text" width="800" height="500"/>
+
+</p>
 
 ##### **All in all, we saw why, where and how the leaky pipeline emerges- it is correlated as we expected to the country specific ranks of societal and institutional barriers and is seen more in higher-ranked institutions. Since, there are more number of higher-ranked institutions in USA and Canada, the leaky pipeline is much more apparent in those regions.**
 
