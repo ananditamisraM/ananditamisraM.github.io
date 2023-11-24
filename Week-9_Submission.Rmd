@@ -1,5 +1,5 @@
 ---
-title: "Week-11 Submission"
+title: "Week-13 Submission"
 author: "Anandita Misra"
 date: "2023-10-20"
 output: html_document
@@ -299,3 +299,69 @@ flowchart LR
 
 The next steps to be taken are to finalise the errors in graph which is coming in case of colours, for the first graph. They have to be made interactive once everything is checked for the static graphs. Going forward, since I was able to create the static graphs, as well as add the interactive placeholders by integrating the shiny app on my quarto website, the last steps are to just convert the ggplot to shiny and finalise my final writeup and the flowchart that I have added after learning myself, to summarise the concept that I am trying to explain. I wish to use more features of interactivity and hence, will learn more types of options to make it interactive in the next 2 days so that I learn new concepts outside of the class, apart from the ones learnt till now since right now, I have simply converted my ggplot to shiny directly in the simple way to convert the ggplots to shiny app. 
 
+
+
+
+
+## Final Submission- Week-13
+
+## Question 1
+
+What can we learn from the gender representation landscape in Economics, specifically exploring the emergence of the leaky pipeline? we delve into how, where, and why the leaky pipeline phenomenon surfaces. Is the leaky pipeline a myth?
+
+The theme of the data story revolves around the persistent gender gap in the field of Economics, focusing on the "leaky pipeline."- phenomenon that explains why women disappear as they move up the ranks in profession. The story delves into where, why, and how this gender gap occurs, using data to uncover insights regarding the representation of women at different career stages, and across regions. 
+
+## Question 2 
+
+Addressing gender disparity and leaky pipeline is a moral imperative and strategic necessity for economic growth. McKinsey & Company's projection of a $12 trillion boost to global GDP by 2025 by reducing gender inequality underscores the vast economic potential of women. The World Economic Forum's call for talent allocation based on merit rather than gender is crucial for maximizing human resources. Effectively understanding these challenges first is an investment in a fairer, more efficient future that capitalizes on human potential. In order to understand these challenges, I felt it was important to note where the phenomenon most emerges so that we can then understand why there are differences in regions. It is important to also understand whether the leaky pipeline is just a myth or does it actually relate to the gender disparities? If it does, then it will be crucial for policymakers to start addressing it accordingly. 
+
+## Question 3
+
+Datasets are derived from Proceedings of the National Academy of Sciences (PNAS), a reputable, globally recognized multidisciplinary scientific journal. To maintain relevance to research question, it narrows down to top 300 research institutions, excluding departments of central or federal banks.I cleaned the datasets to ensure complete information. Observations with missing values were removed. The datasets cover rankings, levels, female ratios, institutional details, and country-specific information for a multifaceted analysis of gender representation. Time-specific data allows tracking trends in gender representation, offering a dynamic view of the leaky pipeline over time for economics. Inclusion of world regions offers insights into regional variations. Data on gender gap index and positions held by women at different ranks enables an intersectional analysis of the leaky pipeline. Prioritizing top research institutions by specifying the rank aligns with the emphasis on the leaky pipeline in significant academic settings.
+
+## Question 4
+
+The share of women in economics has been the lowest as compared to other fields of STEM, Business and Management, etc and with the lowest change from 1995 to 2014, shown by a bar chart with bars for the two years shown side by side for each field. The senior positions held by women in economics occupy a smaller share of the total identified positions in different types of institutions, shown by a bar chart showing identified positions and dots to show senior positions which are less than half proportion. The entry level share is greater than senior level share of women in all regions of the world showing the leaky pipeline, shown by overlapping bar charts. Higher-ranked institutions hire less women at senior level than at entry level, shown by overlapping kernel density plots for the percentage of women at senior level and entry level, comparing top-ranked and lower-ranked institutions. This ranking effect is more for USA and Canada as compared to Europe and Great Britain, shown by kernel density plots as above but now specific to the regions. Ranking effect was greater in USA and Canada because of more number of top-ranked institutions in the region shown by side-by-side bar graph. The correlation between the rank of gender gap index and the rank of share of women of different countries was shown scatter plots with curved regression lines. 
+
+## Question 5
+
+The entire project was executed using R Studio through Quarto websites. I first downloaded csv datasets from the PNAS website and cleaned the dataset for missing values. I created different tabs by adding .qmd files and adding them to the quarto.yml file. I made static ggplots on .rmd file then proceeded to refer to it to make shiny apps for each plot in app.R files, embedded the links onto the .qmd to integrate the shiny dashboard by creating account, linking r studio, publishing the apps. The interactivity was either to display the values and description when the pointer hovers over the graph or for the user to choose different types or categories and see the respective graphs appear. I proceeded to add my writeups, images, background colours, headings, flowcharts onto my website. I executed my new concepts through the R studio website and learning on Youtube, or finding functions on the internet by specifying my logic.
+
+
+New concepts learnt-
+
+
+Visualizations: 
+
+1) Adding on the same graph, bars of two categories side by side for ease of comparison and after much difficulty, was able to make them of different colours and slant names of categories on the x-axis for clarity in sizing.
+
+
+2) both bars+points of different colours on same graph, each representing certain set of values and hence, making it interactive by letting the user choose what to view on the graph. 
+
+3) Making a world map and showing the distribution of the share of women. The world map is coloured for the areas in my dataset and grey for the other areas. I was able to show the distribution by a “shade card” where it’s darker for greater share, lighter for lesser share of women by frequency. 
+
+
+4) The most difficult visualizations were kernel density plots. It was a completely new way to visualise graphs and I was also able to show the overlap/comparison through different colour shades between the top-ranked institutions and lower-ranked institutions. I had to make many graphs accordingly so that users can choose the combination they want to view such as the country region and entry level/senior level/ all positions in the visualization.
+
+All these were used by using different functions under the ggplot, utilising different layers, using the separate world map and merging, data wrangling, etc. The functions were utilised to suit greater logic. 
+
+
+General website-				
+ - Adding icons embedded with links on quarto website 					
+- Choosing a custom template on website for image and text with a divider like on my “Home” tab for the web page	
+- I was also able to add a manual flowchart which can be changed to my liking to depict the information, I want, in the Mermaid language. 
+- Embedding videos 
+
+References- 
+Underrepresentation of women in the economics profession more ... - PNAS. (n.d.-a). https://www.pnas.org/doi/full/10.1073/pnas.2118853119 
+
+Woetzel, J., Madgavkar, A., Sneader, K., Tonby, O., Lin, D.-Y., Lydon, J., Sha, S., Krishnan, M., Ellingrud, K., & Gubieski, M. (2018, April 23). The power of parity: Advancing Women’s Equality in asia pacific. McKinsey & Company. https://www.mckinsey.com/featured-insights/gender-equality/the-power-of-parity-advancing-womens-equality-in-asia-pacific 
+
+BRODER, I. E. (1993). Professional achievements and gender differences among academic economists. Economic Inquiry, 31(1), 116–127. https://doi.org/10.1111/j.1465-7295.1993.tb00870.x 
+
+McClung, S. (2023, January 2). The glass ceiling and the “Leaky Pipeline” in economics. INOMICS. https://inomics.com/blog/the-glass-ceiling-and-the-leaky-pipeline-in-economics-1531226 
+
+
+
+
+Words above this- starting from ## Question 1 as on my google doc(1200)
